@@ -1,0 +1,2250 @@
+{
+  "issue": "BEANUTILS-417",
+  "source_commit": "1d95c95c3045da8939db4c93ba2d13cf27ae241f",
+  "source_tree": "19a97c4cd64f359e18cf8535e6475a5c7ae8f1ec",
+  "upstream_base": "22354f22fb150f82ae8cb7d4e444d2bf0d2bb1ff",
+  "branch": "1.X",
+  "assembled_at": "2026-10-22T18:36:36.693354+00:00",
+  "provenance": "The recorded test runs used a modified worktree at the upstream base. Every captured fixed-run source file was subsequently verified byte-for-byte against the published source commit; the complete Git tree matches the locally constructed tree. No tests were rerun merely to change HEAD metadata.",
+  "environment": {
+    "maven": "3.9.11",
+    "java_runtime": "OpenJDK 17.0.20",
+    "os": "Linux amd64",
+    "compiler_release": 8
+  },
+  "runs": [
+    {
+      "label": "baseline",
+      "command": [
+        "${MAVEN_HOME}/bin/mvn",
+        "--settings",
+        "${MAVEN_SETTINGS}",
+        "--errors",
+        "--show-version",
+        "--batch-mode",
+        "--no-transfer-progress",
+        "-Dmaven.repo.local=${MAVEN_REPO_LOCAL}",
+        "-DtrimStackTrace=false",
+        "-Dtest=DynaProperty*",
+        "clean",
+        "test"
+      ],
+      "started_at": "2026-10-22T18:21:29.779658+00:00",
+      "completed_at": "2026-10-22T18:21:50.520089+00:00",
+      "exit_code": 1,
+      "head": "22354f22fb150f82ae8cb7d4e444d2bf0d2bb1ff",
+      "head_tree": "4a7935ce9f6fa5f943d427aa7405ffe9131cf570",
+      "status": " M pom.xml\n M src/test/java/org/apache/commons/beanutils/DynaPropertySerializationTest.java\n",
+      "files": {
+        "pom.xml": {
+          "bytes": 19057,
+          "sha256": "cf8df3bd7e759a260f65738709022ab7dcbed93f474b35d2c3e8082d86ba3075",
+          "git_blob": "1c9a5c9602c0dbba29f0414ab23d51372584f5c7"
+        },
+        "src/main/java/org/apache/commons/beanutils/DynaProperty.java": {
+          "bytes": 11784,
+          "sha256": "391d7ae28e4205ae86c32336a0852836a14c9facaf7d026570ecfd188eaced68",
+          "git_blob": "af5538f16aac4147d42e374952124d109dd6153b"
+        },
+        "src/test/java/org/apache/commons/beanutils/DynaPropertySerializationTest.java": {
+          "bytes": 27482,
+          "sha256": "8a9484b2d9a39474dd9fc285f949c8dcb1fb3f99418a98df5efef1958d08e493",
+          "git_blob": "dd3f4643fff0b1150abab178e3511218c4d744bb"
+        },
+        "src/test/java/org/apache/commons/beanutils/DynaPropertySerializationReadVersion1Test.java": {
+          "bytes": 11269,
+          "sha256": "9b3e6a00995dc2422147c2eb52fddd18bbe2d2160600afd437c2c6e2bd2edc1d",
+          "git_blob": "c7e8cde3a6a61c6c068f368b53004cadd82fef6a"
+        },
+        "src/changes/changes.xml": {
+          "bytes": 39480,
+          "sha256": "a15796b832c6d47af3eb09bd20465901c7cd69c827d5b7165271dbfc572b1a20",
+          "git_blob": "5d33361b474a3a1c61cb3eb9bf187c3fad574452"
+        }
+      },
+      "legacy_fixture_sha256": {
+        "src/test/resources/org/apache/commons/beanutils/arrayListProp.ser": "fffd3e8751c5525c96dc0d6d7dbe57783ea35fa6b4b30c01cef5644bb753210a",
+        "src/test/resources/org/apache/commons/beanutils/boolProp.ser": "5b9ab896929e74a488e824b573f42ef90174024cdf24690ed3191ef5dfbd8831",
+        "src/test/resources/org/apache/commons/beanutils/byteProp.ser": "e22e61c8cd300a71f30bf9f827587580cc7c85928f764c7bbd274cc6c7c45d20",
+        "src/test/resources/org/apache/commons/beanutils/charProp.ser": "07614ea2286f1d8749ac177ac84a94ab3f8386d0d7f7c6b42b0ec517259fef2c",
+        "src/test/resources/org/apache/commons/beanutils/doubleProp.ser": "ca5d3bcbabd83662143868793aee25994db3fc88b0edfa97be4492459cbe1ec1",
+        "src/test/resources/org/apache/commons/beanutils/floatProp.ser": "701b52b9ee33eaa874a74cbebbd6718ce7153d30edd063f349cd59617e8c2ba4",
+        "src/test/resources/org/apache/commons/beanutils/hashMapProp.ser": "f9321ecdc1ea7f7c3025864e41166df1ddf5bb2b6588bae709de02379ac1fe61",
+        "src/test/resources/org/apache/commons/beanutils/intArrayProp.ser": "d3370fd8d66efaf8f45b1504e477a15d7e51f9bedd82082cb104d14e502d706a",
+        "src/test/resources/org/apache/commons/beanutils/intListProp.ser": "0f1e57b0365772a98c5d406c6e1ae69916245723804d763aa801fcc44bbfd971",
+        "src/test/resources/org/apache/commons/beanutils/intMapProp.ser": "3f4c25283d20e203dd4fb60e8e3a3f188a079d4fd258f0d84df554582c3eeb6b",
+        "src/test/resources/org/apache/commons/beanutils/intProp.ser": "484df64128bb7938eea14d5f4a6a99aa77b546062b3aa437e9f519598683f895",
+        "src/test/resources/org/apache/commons/beanutils/integerProp.ser": "00dc20c720b7606f5492d7707c46eb6454f0efd3e1e5c09292a6ef53e3280e8b",
+        "src/test/resources/org/apache/commons/beanutils/listProp.ser": "8e09fa14a9caffeb55ac3836ab09fc49424e4b685e50c7f45e75e10344f0049a",
+        "src/test/resources/org/apache/commons/beanutils/longProp.ser": "902a752553b0ca8a62a3fab07c5d25d464e710a2fc4c65a3f45a48923f70b5d9",
+        "src/test/resources/org/apache/commons/beanutils/mapProp.ser": "e7903a3d815fc51b6d98607c626d06ed3e9efd364bfce57d8927cfe0c802c711",
+        "src/test/resources/org/apache/commons/beanutils/nameOnly.ser": "7959eec5401133da66884d0e7f44a4db4879684329248392905837fd775780ce",
+        "src/test/resources/org/apache/commons/beanutils/objProp.ser": "235221d8f65c72a7599043d48b5d5793c9acb65219c40da04fc19e2c252fc1d8",
+        "src/test/resources/org/apache/commons/beanutils/shortProp.ser": "f7a474818b7d67820f84d7decbafba5e9391679d60fc7c7856de78ce8d8d87e9",
+        "src/test/resources/org/apache/commons/beanutils/strArrayProp.ser": "dadb6c8b87c57847a2621e7b4044d520d9f745074a09a50e8c7ea63cc0aaacb0",
+        "src/test/resources/org/apache/commons/beanutils/strProp.ser": "5c839719924bbdeaa4eba83b253fbbfbebe354ff3ec65fd6f2f6ebdbe8fd5307",
+        "src/test/resources/org/apache/commons/beanutils/typedListProp.ser": "b0e96a5cb29d83244643c6379d703915a6ea9ac70c7eb467790aa2d6876f647a",
+        "src/test/resources/org/apache/commons/beanutils/typedMapProp.ser": "e6d5434edc32ddffb76c40d07083e2d6d34ad0af0eafd20db74554f8b892b958"
+      },
+      "source_unchanged_during_run": true,
+      "legacy_fixtures_unchanged_during_run": true,
+      "totals": {
+        "reported": 104,
+        "failures": 3,
+        "errors": 9,
+        "skipped": 1,
+        "passed": 91
+      },
+      "suites": [
+        {
+          "name": "org.apache.commons.beanutils.DynaPropertySerializationReadVersion1Test",
+          "reported": 2,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 1,
+          "passed": 1,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "reported": 45,
+          "failures": 3,
+          "errors": 9,
+          "skipped": 0,
+          "passed": 33,
+          "failed_cases": [
+            "testLegacyPropertyCanBeReserializedAndCloned",
+            "testWireFormatPrimitiveTypeDataFollowsNameField",
+            "testSerializingObjectCloner(DynaProperty)[1]",
+            "testSerializingObjectCloner(DynaProperty)[3]",
+            "testSerializingObjectCloner(DynaProperty)[4]",
+            "testSerializingObjectCloner(DynaProperty)[5]",
+            "testSerializingObjectCloner(DynaProperty)[6]",
+            "testSerializingObjectCloner(DynaProperty)[7]",
+            "testSerializingObjectCloner(DynaProperty)[8]",
+            "testSubclassCanBeReserializedAndCloned",
+            "testWireFormatContentTypeDataFollowsNameFieldForMappedProperty",
+            "testWireFormatObjectTypeDataFollowsNameField"
+          ]
+        },
+        {
+          "name": "org.apache.commons.beanutils.DynaPropertyTest",
+          "reported": 2,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 2,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+          "reported": 55,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 55,
+          "failed_cases": []
+        }
+      ],
+      "raw_log_sha256": "d197bb6b0b63e731e41797e603df3c63ad4e73834e205f78dd3e88a3fcc21001",
+      "public_log": {
+        "path": "logs/baseline.log",
+        "bytes": 52459,
+        "sha256": "0ec1b5db6d9542c5ed80e1d7c391409370437863fc239215a4361b776b474958"
+      },
+      "xml_suite_count": 4,
+      "actual_testcase_count": 104,
+      "skipped_cases": [
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationReadVersion1Test",
+          "case": "testDeserializeFromTargetDirectory",
+          "type": null,
+          "message": "Requires manual execution of main() to produce files first",
+          "text": null
+        }
+      ],
+      "failed_cases": [
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testLegacyPropertyCanBeReserializedAndCloned",
+          "type": "java.lang.IllegalStateException",
+          "message": "defaultWriteObject may not be called in this context",
+          "text": "java.lang.IllegalStateException: defaultWriteObject may not be called in this context\n\tat org.jboss.marshalling.cloner.SerializingCloner$StepObjectOutputStream.defaultWriteObject(SerializingCloner.java:601)\n\tat org.apache.commons.beanutils.DynaProperty.writeObject(DynaProperty.java:341)\n\tat org.jboss.marshalling.reflect.JDKSpecific$SerMethods.callWriteObject(JDKSpecific.java:89)\n\tat org.jboss.marshalling.reflect.SerializableClass.callWriteObject(SerializableClass.java:199)\n\tat org.jboss.marshalling.cloner.SerializingCloner.initSerializableClone(SerializingCloner.java:302)\n\tat org.jboss.marshalling.cloner.SerializingCloner.clone(SerializingCloner.java:256)\n\tat org.jboss.marshalling.cloner.SerializingCloner.clone(SerializingCloner.java:132)\n\tat org.apache.commons.beanutils.DynaPropertySerializationTest.testLegacyPropertyCanBeReserializedAndCloned(DynaPropertySerializationTest.java:392)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:569)\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\n"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testWireFormatPrimitiveTypeDataFollowsNameField",
+          "type": "org.opentest4j.AssertionFailedError",
+          "message": "writeAnyClass must be invoked after defaultWriteObject: type-data divergence at byte 96 must follow name field at byte 100 ==> expected: <true> but was: <false>",
+          "text": "org.opentest4j.AssertionFailedError: writeAnyClass must be invoked after defaultWriteObject: type-data divergence at byte 96 must follow name field at byte 100 ==> expected: <true> but was: <false>\n\tat org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)\n\tat org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)\n\tat org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)\n\tat org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)\n\tat org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)\n\tat org.apache.commons.beanutils.DynaPropertySerializationTest.testWireFormatPrimitiveTypeDataFollowsNameField(DynaPropertySerializationTest.java:543)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:569)\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\n"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testSerializingObjectCloner(DynaProperty)[1]",
+          "type": "java.lang.IllegalStateException",
+          "message": "defaultWriteObject may not be called in this context",
+          "text": "java.lang.IllegalStateException: defaultWriteObject may not be called in this context\n\tat org.jboss.marshalling.cloner.SerializingCloner$StepObjectOutputStream.defaultWriteObject(SerializingCloner.java:601)\n\tat org.apache.commons.beanutils.DynaProperty.writeObject(DynaProperty.java:341)\n\tat org.jboss.marshalling.reflect.JDKSpecific$SerMethods.callWriteObject(JDKSpecific.java:89)\n\tat org.jboss.marshalling.reflect.SerializableClass.callWriteObject(SerializableClass.java:199)\n\tat org.jboss.marshalling.cloner.SerializingCloner.initSerializableClone(SerializingCloner.java:302)\n\tat org.jboss.marshalling.cloner.SerializingCloner.clone(SerializingCloner.java:256)\n\tat org.jboss.marshalling.cloner.SerializingCloner.clone(SerializingCloner.java:132)\n\tat org.apache.commons.beanutils.DynaPropertySerializationTest.testSerializingObjectCloner(DynaPropertySerializationTest.java:379)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:569)\n\tat java.base/java.util.Optional.ifPresent(Optional.java:178)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)\n\tat java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)\n\tat java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)\n\tat java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)\n\tat java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)\n\tat java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)\n\tat java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)\n\tat java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\n\tat java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)\n\tat java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)\n\tat java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)\n\tat java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)\n\tat java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)\n\tat java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\n\tat java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)\n\tat java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)\n\tat java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)\n\tat java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)\n\tat java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)\n\tat java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\n\tat java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\n"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testSerializingObjectCloner(DynaProperty)[3]",
+          "type": "java.lang.IllegalStateException",
+          "message": "defaultWriteObject may not be called in this context",
+          "text": "java.lang.IllegalStateException: defaultWriteObject may not be called in this context\n\tat org.jboss.marshalling.cloner.SerializingCloner$StepObjectOutputStream.defaultWriteObject(SerializingCloner.java:601)\n\tat org.apache.commons.beanutils.DynaProperty.writeObject(DynaProperty.java:341)\n\tat org.jboss.marshalling.reflect.JDKSpecific$SerMethods.callWriteObject(JDKSpecific.java:89)\n\tat org.jboss.marshalling.reflect.SerializableClass.callWriteObject(SerializableClass.java:199)\n\tat org.jboss.marshalling.cloner.SerializingCloner.initSerializableClone(SerializingCloner.java:302)\n\tat org.jboss.marshalling.cloner.SerializingCloner.clone(SerializingCloner.java:256)\n\tat org.jboss.marshalling.cloner.SerializingCloner.clone(SerializingCloner.java:132)\n\tat org.apache.commons.beanutils.DynaPropertySerializationTest.testSerializingObjectCloner(DynaPropertySerializationTest.java:379)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:569)\n\tat java.base/java.util.Optional.ifPresent(Optional.java:178)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)\n\tat java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)\n\tat java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)\n\tat java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)\n\tat java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)\n\tat java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)\n\tat java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)\n\tat java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\n\tat java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)\n\tat java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)\n\tat java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)\n\tat java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)\n\tat java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)\n\tat java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\n\tat java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)\n\tat java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)\n\tat java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)\n\tat java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)\n\tat java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)\n\tat java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\n\tat java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\n"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testSerializingObjectCloner(DynaProperty)[4]",
+          "type": "java.lang.IllegalStateException",
+          "message": "defaultWriteObject may not be called in this context",
+          "text": "java.lang.IllegalStateException: defaultWriteObject may not be called in this context\n\tat org.jboss.marshalling.cloner.SerializingCloner$StepObjectOutputStream.defaultWriteObject(SerializingCloner.java:601)\n\tat org.apache.commons.beanutils.DynaProperty.writeObject(DynaProperty.java:341)\n\tat org.jboss.marshalling.reflect.JDKSpecific$SerMethods.callWriteObject(JDKSpecific.java:89)\n\tat org.jboss.marshalling.reflect.SerializableClass.callWriteObject(SerializableClass.java:199)\n\tat org.jboss.marshalling.cloner.SerializingCloner.initSerializableClone(SerializingCloner.java:302)\n\tat org.jboss.marshalling.cloner.SerializingCloner.clone(SerializingCloner.java:256)\n\tat org.jboss.marshalling.cloner.SerializingCloner.clone(SerializingCloner.java:132)\n\tat org.apache.commons.beanutils.DynaPropertySerializationTest.testSerializingObjectCloner(DynaPropertySerializationTest.java:379)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:569)\n\tat java.base/java.util.Optional.ifPresent(Optional.java:178)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)\n\tat java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)\n\tat java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)\n\tat java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)\n\tat java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)\n\tat java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)\n\tat java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)\n\tat java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\n\tat java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)\n\tat java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)\n\tat java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)\n\tat java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)\n\tat java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)\n\tat java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\n\tat java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)\n\tat java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)\n\tat java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)\n\tat java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)\n\tat java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)\n\tat java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\n\tat java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\n"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testSerializingObjectCloner(DynaProperty)[5]",
+          "type": "java.lang.IllegalStateException",
+          "message": "defaultWriteObject may not be called in this context",
+          "text": "java.lang.IllegalStateException: defaultWriteObject may not be called in this context\n\tat org.jboss.marshalling.cloner.SerializingCloner$StepObjectOutputStream.defaultWriteObject(SerializingCloner.java:601)\n\tat org.apache.commons.beanutils.DynaProperty.writeObject(DynaProperty.java:341)\n\tat org.jboss.marshalling.reflect.JDKSpecific$SerMethods.callWriteObject(JDKSpecific.java:89)\n\tat org.jboss.marshalling.reflect.SerializableClass.callWriteObject(SerializableClass.java:199)\n\tat org.jboss.marshalling.cloner.SerializingCloner.initSerializableClone(SerializingCloner.java:302)\n\tat org.jboss.marshalling.cloner.SerializingCloner.clone(SerializingCloner.java:256)\n\tat org.jboss.marshalling.cloner.SerializingCloner.clone(SerializingCloner.java:132)\n\tat org.apache.commons.beanutils.DynaPropertySerializationTest.testSerializingObjectCloner(DynaPropertySerializationTest.java:379)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:569)\n\tat java.base/java.util.Optional.ifPresent(Optional.java:178)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)\n\tat java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)\n\tat java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)\n\tat java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)\n\tat java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)\n\tat java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)\n\tat java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)\n\tat java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\n\tat java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)\n\tat java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)\n\tat java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)\n\tat java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)\n\tat java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)\n\tat java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\n\tat java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)\n\tat java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)\n\tat java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)\n\tat java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)\n\tat java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)\n\tat java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\n\tat java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\n"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testSerializingObjectCloner(DynaProperty)[6]",
+          "type": "java.lang.IllegalStateException",
+          "message": "defaultWriteObject may not be called in this context",
+          "text": "java.lang.IllegalStateException: defaultWriteObject may not be called in this context\n\tat org.jboss.marshalling.cloner.SerializingCloner$StepObjectOutputStream.defaultWriteObject(SerializingCloner.java:601)\n\tat org.apache.commons.beanutils.DynaProperty.writeObject(DynaProperty.java:341)\n\tat org.jboss.marshalling.reflect.JDKSpecific$SerMethods.callWriteObject(JDKSpecific.java:89)\n\tat org.jboss.marshalling.reflect.SerializableClass.callWriteObject(SerializableClass.java:199)\n\tat org.jboss.marshalling.cloner.SerializingCloner.initSerializableClone(SerializingCloner.java:302)\n\tat org.jboss.marshalling.cloner.SerializingCloner.clone(SerializingCloner.java:256)\n\tat org.jboss.marshalling.cloner.SerializingCloner.clone(SerializingCloner.java:132)\n\tat org.apache.commons.beanutils.DynaPropertySerializationTest.testSerializingObjectCloner(DynaPropertySerializationTest.java:379)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:569)\n\tat java.base/java.util.Optional.ifPresent(Optional.java:178)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)\n\tat java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)\n\tat java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)\n\tat java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)\n\tat java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)\n\tat java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)\n\tat java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)\n\tat java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\n\tat java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)\n\tat java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)\n\tat java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)\n\tat java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)\n\tat java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)\n\tat java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\n\tat java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)\n\tat java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)\n\tat java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)\n\tat java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)\n\tat java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)\n\tat java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\n\tat java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\n"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testSerializingObjectCloner(DynaProperty)[7]",
+          "type": "java.lang.IllegalStateException",
+          "message": "defaultWriteObject may not be called in this context",
+          "text": "java.lang.IllegalStateException: defaultWriteObject may not be called in this context\n\tat org.jboss.marshalling.cloner.SerializingCloner$StepObjectOutputStream.defaultWriteObject(SerializingCloner.java:601)\n\tat org.apache.commons.beanutils.DynaProperty.writeObject(DynaProperty.java:341)\n\tat org.jboss.marshalling.reflect.JDKSpecific$SerMethods.callWriteObject(JDKSpecific.java:89)\n\tat org.jboss.marshalling.reflect.SerializableClass.callWriteObject(SerializableClass.java:199)\n\tat org.jboss.marshalling.cloner.SerializingCloner.initSerializableClone(SerializingCloner.java:302)\n\tat org.jboss.marshalling.cloner.SerializingCloner.clone(SerializingCloner.java:256)\n\tat org.jboss.marshalling.cloner.SerializingCloner.clone(SerializingCloner.java:132)\n\tat org.apache.commons.beanutils.DynaPropertySerializationTest.testSerializingObjectCloner(DynaPropertySerializationTest.java:379)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:569)\n\tat java.base/java.util.Optional.ifPresent(Optional.java:178)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)\n\tat java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)\n\tat java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)\n\tat java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)\n\tat java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)\n\tat java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)\n\tat java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)\n\tat java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\n\tat java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)\n\tat java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)\n\tat java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)\n\tat java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)\n\tat java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)\n\tat java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\n\tat java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)\n\tat java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)\n\tat java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)\n\tat java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)\n\tat java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)\n\tat java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\n\tat java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\n"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testSerializingObjectCloner(DynaProperty)[8]",
+          "type": "java.lang.IllegalStateException",
+          "message": "defaultWriteObject may not be called in this context",
+          "text": "java.lang.IllegalStateException: defaultWriteObject may not be called in this context\n\tat org.jboss.marshalling.cloner.SerializingCloner$StepObjectOutputStream.defaultWriteObject(SerializingCloner.java:601)\n\tat org.apache.commons.beanutils.DynaProperty.writeObject(DynaProperty.java:341)\n\tat org.jboss.marshalling.reflect.JDKSpecific$SerMethods.callWriteObject(JDKSpecific.java:89)\n\tat org.jboss.marshalling.reflect.SerializableClass.callWriteObject(SerializableClass.java:199)\n\tat org.jboss.marshalling.cloner.SerializingCloner.initSerializableClone(SerializingCloner.java:302)\n\tat org.jboss.marshalling.cloner.SerializingCloner.clone(SerializingCloner.java:256)\n\tat org.jboss.marshalling.cloner.SerializingCloner.clone(SerializingCloner.java:132)\n\tat org.apache.commons.beanutils.DynaPropertySerializationTest.testSerializingObjectCloner(DynaPropertySerializationTest.java:379)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:569)\n\tat java.base/java.util.Optional.ifPresent(Optional.java:178)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)\n\tat java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)\n\tat java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)\n\tat java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)\n\tat java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)\n\tat java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)\n\tat java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)\n\tat java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\n\tat java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)\n\tat java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)\n\tat java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)\n\tat java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)\n\tat java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)\n\tat java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\n\tat java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)\n\tat java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)\n\tat java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)\n\tat java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)\n\tat java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)\n\tat java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\n\tat java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\n"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testSubclassCanBeReserializedAndCloned",
+          "type": "java.lang.IllegalStateException",
+          "message": "defaultWriteObject may not be called in this context",
+          "text": "java.lang.IllegalStateException: defaultWriteObject may not be called in this context\n\tat org.jboss.marshalling.cloner.SerializingCloner$StepObjectOutputStream.defaultWriteObject(SerializingCloner.java:601)\n\tat org.apache.commons.beanutils.DynaProperty.writeObject(DynaProperty.java:341)\n\tat org.jboss.marshalling.reflect.JDKSpecific$SerMethods.callWriteObject(JDKSpecific.java:89)\n\tat org.jboss.marshalling.reflect.SerializableClass.callWriteObject(SerializableClass.java:199)\n\tat org.jboss.marshalling.cloner.SerializingCloner.initSerializableClone(SerializingCloner.java:302)\n\tat org.jboss.marshalling.cloner.SerializingCloner.initSerializableClone(SerializingCloner.java:281)\n\tat org.jboss.marshalling.cloner.SerializingCloner.clone(SerializingCloner.java:256)\n\tat org.jboss.marshalling.cloner.SerializingCloner.clone(SerializingCloner.java:132)\n\tat org.apache.commons.beanutils.DynaPropertySerializationTest.testSubclassCanBeReserializedAndCloned(DynaPropertySerializationTest.java:404)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:569)\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\n"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testWireFormatContentTypeDataFollowsNameFieldForMappedProperty",
+          "type": "org.opentest4j.AssertionFailedError",
+          "message": "The second writeAnyClass call (contentType) must follow defaultWriteObject: content-type divergence at byte 129 must follow name at byte 133 ==> expected: <true> but was: <false>",
+          "text": "org.opentest4j.AssertionFailedError: The second writeAnyClass call (contentType) must follow defaultWriteObject: content-type divergence at byte 129 must follow name at byte 133 ==> expected: <true> but was: <false>\n\tat org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)\n\tat org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)\n\tat org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)\n\tat org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)\n\tat org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)\n\tat org.apache.commons.beanutils.DynaPropertySerializationTest.testWireFormatContentTypeDataFollowsNameFieldForMappedProperty(DynaPropertySerializationTest.java:459)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:569)\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\n"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testWireFormatObjectTypeDataFollowsNameField",
+          "type": "org.opentest4j.AssertionFailedError",
+          "message": "writeAnyClass must be invoked after defaultWriteObject (String-type stream): type divergence at byte 96 must follow name at byte 129 ==> expected: <true> but was: <false>",
+          "text": "org.opentest4j.AssertionFailedError: writeAnyClass must be invoked after defaultWriteObject (String-type stream): type divergence at byte 96 must follow name at byte 129 ==> expected: <true> but was: <false>\n\tat org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)\n\tat org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)\n\tat org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)\n\tat org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)\n\tat org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)\n\tat org.apache.commons.beanutils.DynaPropertySerializationTest.testWireFormatObjectTypeDataFollowsNameField(DynaPropertySerializationTest.java:499)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:569)\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\n"
+        }
+      ],
+      "focused_serialization_cases": [
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testRoundTripListTypeWithExplicitContentType",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testRoundTripLongPrimitiveType",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testRoundTripBytePrimitiveType",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testTypeIsPreservedAfterRoundTripForEveryPrimitive",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testRoundTripIntegerWrapperType",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testReadObjectThrowsStreamCorruptedExceptionForInvalidPrimitiveTypeConstant",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testLegacyPropertyCanBeReserializedAndCloned",
+          "outcome": "error"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testRoundTripObjectType",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testRoundTripCharPrimitiveType",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testRoundTripMapTypeWithNoContentType",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testReadObjectThrowsStreamCorruptedExceptionForInvalidContentTypePrimitiveConstant",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testRoundTripIntPrimitiveType",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testRoundTripNameOnly",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testRoundTripBooleanPrimitiveType",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testRoundTripMapTypeWithObjectContentType",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testWireFormatPrimitiveTypeDataFollowsNameField",
+          "outcome": "failure"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testRoundTripListTypeWithPrimitiveContentType",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testRoundTripObjectArrayType",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testSerializingObjectCloner(DynaProperty)[1]",
+          "outcome": "error"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testSerializingObjectCloner(DynaProperty)[2]",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testSerializingObjectCloner(DynaProperty)[3]",
+          "outcome": "error"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testSerializingObjectCloner(DynaProperty)[4]",
+          "outcome": "error"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testSerializingObjectCloner(DynaProperty)[5]",
+          "outcome": "error"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testSerializingObjectCloner(DynaProperty)[6]",
+          "outcome": "error"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testSerializingObjectCloner(DynaProperty)[7]",
+          "outcome": "error"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testSerializingObjectCloner(DynaProperty)[8]",
+          "outcome": "error"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testIsIndexedPreservedAfterRoundTrip",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testContentTypeIsNullForSimpleProperty",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testRoundTripConcreteListSubtype",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testRoundTripStringType",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testRoundTripConcreteMapSubtype",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testMultipleSerializationsProduceSameResult",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testRoundTripShortPrimitiveType",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testRoundTripPrimitiveArrayType",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testRoundTripListTypeWithNoContentType",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testNameIsPreservedAfterRoundTrip",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testToStringAfterRoundTrip",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testRoundTripMapTypeWithPrimitiveContentType",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testIsMappedPreservedAfterRoundTrip",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testSerializationIsIdempotent",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testRoundTripDoublePrimitiveType",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testSubclassCanBeReserializedAndCloned",
+          "outcome": "error"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testWireFormatContentTypeDataFollowsNameFieldForMappedProperty",
+          "outcome": "failure"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testRoundTripFloatPrimitiveType",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testWireFormatObjectTypeDataFollowsNameField",
+          "outcome": "failure"
+        }
+      ]
+    },
+    {
+      "label": "fixed-focused",
+      "command": [
+        "${MAVEN_HOME}/bin/mvn",
+        "--settings",
+        "${MAVEN_SETTINGS}",
+        "--errors",
+        "--show-version",
+        "--batch-mode",
+        "--no-transfer-progress",
+        "-Dmaven.repo.local=${MAVEN_REPO_LOCAL}",
+        "-DtrimStackTrace=false",
+        "-Dtest=DynaProperty*",
+        "clean",
+        "test"
+      ],
+      "started_at": "2026-10-22T18:25:38.010369+00:00",
+      "completed_at": "2026-10-22T18:25:58.528113+00:00",
+      "exit_code": 0,
+      "head": "22354f22fb150f82ae8cb7d4e444d2bf0d2bb1ff",
+      "head_tree": "4a7935ce9f6fa5f943d427aa7405ffe9131cf570",
+      "status": " M pom.xml\n M src/changes/changes.xml\n M src/main/java/org/apache/commons/beanutils/DynaProperty.java\n M src/test/java/org/apache/commons/beanutils/DynaPropertySerializationTest.java\n?? src/main/java/org/apache/commons/beanutils/DynaPropertySerialization.java\n",
+      "files": {
+        "pom.xml": {
+          "bytes": 19057,
+          "sha256": "cf8df3bd7e759a260f65738709022ab7dcbed93f474b35d2c3e8082d86ba3075",
+          "git_blob": "1c9a5c9602c0dbba29f0414ab23d51372584f5c7"
+        },
+        "src/main/java/org/apache/commons/beanutils/DynaProperty.java": {
+          "bytes": 12267,
+          "sha256": "ada0fbb3684002aaffcc68a6c6792bbcd28321fb9b45e0c84f3b519aa6499db8",
+          "git_blob": "bc19eb96eb1101c9c86f7c74e045e241787a27c9"
+        },
+        "src/main/java/org/apache/commons/beanutils/DynaPropertySerialization.java": {
+          "bytes": 1841,
+          "sha256": "3e53add6284f3b843932f85f233d5da9cf0b97a68231d93ca040206465eca158",
+          "git_blob": "179913610acfce271a46f2ddea43a497fc7e23ba"
+        },
+        "src/test/java/org/apache/commons/beanutils/DynaPropertySerializationTest.java": {
+          "bytes": 27482,
+          "sha256": "8a9484b2d9a39474dd9fc285f949c8dcb1fb3f99418a98df5efef1958d08e493",
+          "git_blob": "dd3f4643fff0b1150abab178e3511218c4d744bb"
+        },
+        "src/test/java/org/apache/commons/beanutils/DynaPropertySerializationReadVersion1Test.java": {
+          "bytes": 11269,
+          "sha256": "9b3e6a00995dc2422147c2eb52fddd18bbe2d2160600afd437c2c6e2bd2edc1d",
+          "git_blob": "c7e8cde3a6a61c6c068f368b53004cadd82fef6a"
+        },
+        "src/changes/changes.xml": {
+          "bytes": 39676,
+          "sha256": "dab17b0939cc426422c6c7c93f48ff765240a6b0d18758f4598228a72b97af7e",
+          "git_blob": "76aecb533f83bbbe14e1d99a1291a2b13396ffb7"
+        }
+      },
+      "legacy_fixture_sha256": {
+        "src/test/resources/org/apache/commons/beanutils/arrayListProp.ser": "fffd3e8751c5525c96dc0d6d7dbe57783ea35fa6b4b30c01cef5644bb753210a",
+        "src/test/resources/org/apache/commons/beanutils/boolProp.ser": "5b9ab896929e74a488e824b573f42ef90174024cdf24690ed3191ef5dfbd8831",
+        "src/test/resources/org/apache/commons/beanutils/byteProp.ser": "e22e61c8cd300a71f30bf9f827587580cc7c85928f764c7bbd274cc6c7c45d20",
+        "src/test/resources/org/apache/commons/beanutils/charProp.ser": "07614ea2286f1d8749ac177ac84a94ab3f8386d0d7f7c6b42b0ec517259fef2c",
+        "src/test/resources/org/apache/commons/beanutils/doubleProp.ser": "ca5d3bcbabd83662143868793aee25994db3fc88b0edfa97be4492459cbe1ec1",
+        "src/test/resources/org/apache/commons/beanutils/floatProp.ser": "701b52b9ee33eaa874a74cbebbd6718ce7153d30edd063f349cd59617e8c2ba4",
+        "src/test/resources/org/apache/commons/beanutils/hashMapProp.ser": "f9321ecdc1ea7f7c3025864e41166df1ddf5bb2b6588bae709de02379ac1fe61",
+        "src/test/resources/org/apache/commons/beanutils/intArrayProp.ser": "d3370fd8d66efaf8f45b1504e477a15d7e51f9bedd82082cb104d14e502d706a",
+        "src/test/resources/org/apache/commons/beanutils/intListProp.ser": "0f1e57b0365772a98c5d406c6e1ae69916245723804d763aa801fcc44bbfd971",
+        "src/test/resources/org/apache/commons/beanutils/intMapProp.ser": "3f4c25283d20e203dd4fb60e8e3a3f188a079d4fd258f0d84df554582c3eeb6b",
+        "src/test/resources/org/apache/commons/beanutils/intProp.ser": "484df64128bb7938eea14d5f4a6a99aa77b546062b3aa437e9f519598683f895",
+        "src/test/resources/org/apache/commons/beanutils/integerProp.ser": "00dc20c720b7606f5492d7707c46eb6454f0efd3e1e5c09292a6ef53e3280e8b",
+        "src/test/resources/org/apache/commons/beanutils/listProp.ser": "8e09fa14a9caffeb55ac3836ab09fc49424e4b685e50c7f45e75e10344f0049a",
+        "src/test/resources/org/apache/commons/beanutils/longProp.ser": "902a752553b0ca8a62a3fab07c5d25d464e710a2fc4c65a3f45a48923f70b5d9",
+        "src/test/resources/org/apache/commons/beanutils/mapProp.ser": "e7903a3d815fc51b6d98607c626d06ed3e9efd364bfce57d8927cfe0c802c711",
+        "src/test/resources/org/apache/commons/beanutils/nameOnly.ser": "7959eec5401133da66884d0e7f44a4db4879684329248392905837fd775780ce",
+        "src/test/resources/org/apache/commons/beanutils/objProp.ser": "235221d8f65c72a7599043d48b5d5793c9acb65219c40da04fc19e2c252fc1d8",
+        "src/test/resources/org/apache/commons/beanutils/shortProp.ser": "f7a474818b7d67820f84d7decbafba5e9391679d60fc7c7856de78ce8d8d87e9",
+        "src/test/resources/org/apache/commons/beanutils/strArrayProp.ser": "dadb6c8b87c57847a2621e7b4044d520d9f745074a09a50e8c7ea63cc0aaacb0",
+        "src/test/resources/org/apache/commons/beanutils/strProp.ser": "5c839719924bbdeaa4eba83b253fbbfbebe354ff3ec65fd6f2f6ebdbe8fd5307",
+        "src/test/resources/org/apache/commons/beanutils/typedListProp.ser": "b0e96a5cb29d83244643c6379d703915a6ea9ac70c7eb467790aa2d6876f647a",
+        "src/test/resources/org/apache/commons/beanutils/typedMapProp.ser": "e6d5434edc32ddffb76c40d07083e2d6d34ad0af0eafd20db74554f8b892b958"
+      },
+      "source_unchanged_during_run": true,
+      "legacy_fixtures_unchanged_during_run": true,
+      "totals": {
+        "reported": 104,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 1,
+        "passed": 103
+      },
+      "suites": [
+        {
+          "name": "org.apache.commons.beanutils.DynaPropertySerializationReadVersion1Test",
+          "reported": 2,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 1,
+          "passed": 1,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "reported": 45,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 45,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.DynaPropertyTest",
+          "reported": 2,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 2,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+          "reported": 55,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 55,
+          "failed_cases": []
+        }
+      ],
+      "raw_log_sha256": "3ecceaac9a32ee936f1c4bb4edae5a89eb60f02e618a2114bf8614dcc7ab9e7c",
+      "public_log": {
+        "path": "logs/fixed-focused.log",
+        "bytes": 6061,
+        "sha256": "bfad324a6c7ac6bae8d15be2e81b2fe3a0a17bca96093b009e735dda5a41caed"
+      },
+      "xml_suite_count": 4,
+      "actual_testcase_count": 104,
+      "skipped_cases": [
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationReadVersion1Test",
+          "case": "testDeserializeFromTargetDirectory",
+          "type": null,
+          "message": "Requires manual execution of main() to produce files first",
+          "text": null
+        }
+      ],
+      "failed_cases": [],
+      "focused_serialization_cases": [
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testRoundTripListTypeWithExplicitContentType",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testRoundTripLongPrimitiveType",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testRoundTripBytePrimitiveType",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testTypeIsPreservedAfterRoundTripForEveryPrimitive",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testRoundTripIntegerWrapperType",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testReadObjectThrowsStreamCorruptedExceptionForInvalidPrimitiveTypeConstant",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testLegacyPropertyCanBeReserializedAndCloned",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testRoundTripObjectType",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testRoundTripCharPrimitiveType",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testRoundTripMapTypeWithNoContentType",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testReadObjectThrowsStreamCorruptedExceptionForInvalidContentTypePrimitiveConstant",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testRoundTripIntPrimitiveType",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testRoundTripNameOnly",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testRoundTripBooleanPrimitiveType",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testRoundTripMapTypeWithObjectContentType",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testWireFormatPrimitiveTypeDataFollowsNameField",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testRoundTripListTypeWithPrimitiveContentType",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testRoundTripObjectArrayType",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testSerializingObjectCloner(DynaProperty)[1]",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testSerializingObjectCloner(DynaProperty)[2]",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testSerializingObjectCloner(DynaProperty)[3]",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testSerializingObjectCloner(DynaProperty)[4]",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testSerializingObjectCloner(DynaProperty)[5]",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testSerializingObjectCloner(DynaProperty)[6]",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testSerializingObjectCloner(DynaProperty)[7]",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testSerializingObjectCloner(DynaProperty)[8]",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testIsIndexedPreservedAfterRoundTrip",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testContentTypeIsNullForSimpleProperty",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testRoundTripConcreteListSubtype",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testRoundTripStringType",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testRoundTripConcreteMapSubtype",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testMultipleSerializationsProduceSameResult",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testRoundTripShortPrimitiveType",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testRoundTripPrimitiveArrayType",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testRoundTripListTypeWithNoContentType",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testNameIsPreservedAfterRoundTrip",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testToStringAfterRoundTrip",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testRoundTripMapTypeWithPrimitiveContentType",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testIsMappedPreservedAfterRoundTrip",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testSerializationIsIdempotent",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testRoundTripDoublePrimitiveType",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testSubclassCanBeReserializedAndCloned",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testWireFormatContentTypeDataFollowsNameFieldForMappedProperty",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testRoundTripFloatPrimitiveType",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testWireFormatObjectTypeDataFollowsNameField",
+          "outcome": "passed"
+        }
+      ],
+      "all_captured_source_files_match_published_commit": true
+    },
+    {
+      "label": "default",
+      "command": [
+        "${MAVEN_HOME}/bin/mvn",
+        "--settings",
+        "${MAVEN_SETTINGS}",
+        "--errors",
+        "--show-version",
+        "--batch-mode",
+        "--no-transfer-progress",
+        "-Dmaven.repo.local=${MAVEN_REPO_LOCAL}",
+        "-DtrimStackTrace=false",
+        "-Dcommons.compiler.javadoc=${JDK_TOOLS}/javadoc"
+      ],
+      "started_at": "2026-10-22T18:26:23.095677+00:00",
+      "completed_at": "2026-10-22T18:27:51.730532+00:00",
+      "exit_code": 0,
+      "head": "22354f22fb150f82ae8cb7d4e444d2bf0d2bb1ff",
+      "head_tree": "4a7935ce9f6fa5f943d427aa7405ffe9131cf570",
+      "status": " M pom.xml\n M src/changes/changes.xml\n M src/main/java/org/apache/commons/beanutils/DynaProperty.java\n M src/test/java/org/apache/commons/beanutils/DynaPropertySerializationTest.java\n?? src/main/java/org/apache/commons/beanutils/DynaPropertySerialization.java\n",
+      "files": {
+        "pom.xml": {
+          "bytes": 19057,
+          "sha256": "cf8df3bd7e759a260f65738709022ab7dcbed93f474b35d2c3e8082d86ba3075",
+          "git_blob": "1c9a5c9602c0dbba29f0414ab23d51372584f5c7"
+        },
+        "src/main/java/org/apache/commons/beanutils/DynaProperty.java": {
+          "bytes": 12267,
+          "sha256": "ada0fbb3684002aaffcc68a6c6792bbcd28321fb9b45e0c84f3b519aa6499db8",
+          "git_blob": "bc19eb96eb1101c9c86f7c74e045e241787a27c9"
+        },
+        "src/main/java/org/apache/commons/beanutils/DynaPropertySerialization.java": {
+          "bytes": 1841,
+          "sha256": "3e53add6284f3b843932f85f233d5da9cf0b97a68231d93ca040206465eca158",
+          "git_blob": "179913610acfce271a46f2ddea43a497fc7e23ba"
+        },
+        "src/test/java/org/apache/commons/beanutils/DynaPropertySerializationTest.java": {
+          "bytes": 27482,
+          "sha256": "8a9484b2d9a39474dd9fc285f949c8dcb1fb3f99418a98df5efef1958d08e493",
+          "git_blob": "dd3f4643fff0b1150abab178e3511218c4d744bb"
+        },
+        "src/test/java/org/apache/commons/beanutils/DynaPropertySerializationReadVersion1Test.java": {
+          "bytes": 11269,
+          "sha256": "9b3e6a00995dc2422147c2eb52fddd18bbe2d2160600afd437c2c6e2bd2edc1d",
+          "git_blob": "c7e8cde3a6a61c6c068f368b53004cadd82fef6a"
+        },
+        "src/changes/changes.xml": {
+          "bytes": 39676,
+          "sha256": "dab17b0939cc426422c6c7c93f48ff765240a6b0d18758f4598228a72b97af7e",
+          "git_blob": "76aecb533f83bbbe14e1d99a1291a2b13396ffb7"
+        }
+      },
+      "legacy_fixture_sha256": {
+        "src/test/resources/org/apache/commons/beanutils/arrayListProp.ser": "fffd3e8751c5525c96dc0d6d7dbe57783ea35fa6b4b30c01cef5644bb753210a",
+        "src/test/resources/org/apache/commons/beanutils/boolProp.ser": "5b9ab896929e74a488e824b573f42ef90174024cdf24690ed3191ef5dfbd8831",
+        "src/test/resources/org/apache/commons/beanutils/byteProp.ser": "e22e61c8cd300a71f30bf9f827587580cc7c85928f764c7bbd274cc6c7c45d20",
+        "src/test/resources/org/apache/commons/beanutils/charProp.ser": "07614ea2286f1d8749ac177ac84a94ab3f8386d0d7f7c6b42b0ec517259fef2c",
+        "src/test/resources/org/apache/commons/beanutils/doubleProp.ser": "ca5d3bcbabd83662143868793aee25994db3fc88b0edfa97be4492459cbe1ec1",
+        "src/test/resources/org/apache/commons/beanutils/floatProp.ser": "701b52b9ee33eaa874a74cbebbd6718ce7153d30edd063f349cd59617e8c2ba4",
+        "src/test/resources/org/apache/commons/beanutils/hashMapProp.ser": "f9321ecdc1ea7f7c3025864e41166df1ddf5bb2b6588bae709de02379ac1fe61",
+        "src/test/resources/org/apache/commons/beanutils/intArrayProp.ser": "d3370fd8d66efaf8f45b1504e477a15d7e51f9bedd82082cb104d14e502d706a",
+        "src/test/resources/org/apache/commons/beanutils/intListProp.ser": "0f1e57b0365772a98c5d406c6e1ae69916245723804d763aa801fcc44bbfd971",
+        "src/test/resources/org/apache/commons/beanutils/intMapProp.ser": "3f4c25283d20e203dd4fb60e8e3a3f188a079d4fd258f0d84df554582c3eeb6b",
+        "src/test/resources/org/apache/commons/beanutils/intProp.ser": "484df64128bb7938eea14d5f4a6a99aa77b546062b3aa437e9f519598683f895",
+        "src/test/resources/org/apache/commons/beanutils/integerProp.ser": "00dc20c720b7606f5492d7707c46eb6454f0efd3e1e5c09292a6ef53e3280e8b",
+        "src/test/resources/org/apache/commons/beanutils/listProp.ser": "8e09fa14a9caffeb55ac3836ab09fc49424e4b685e50c7f45e75e10344f0049a",
+        "src/test/resources/org/apache/commons/beanutils/longProp.ser": "902a752553b0ca8a62a3fab07c5d25d464e710a2fc4c65a3f45a48923f70b5d9",
+        "src/test/resources/org/apache/commons/beanutils/mapProp.ser": "e7903a3d815fc51b6d98607c626d06ed3e9efd364bfce57d8927cfe0c802c711",
+        "src/test/resources/org/apache/commons/beanutils/nameOnly.ser": "7959eec5401133da66884d0e7f44a4db4879684329248392905837fd775780ce",
+        "src/test/resources/org/apache/commons/beanutils/objProp.ser": "235221d8f65c72a7599043d48b5d5793c9acb65219c40da04fc19e2c252fc1d8",
+        "src/test/resources/org/apache/commons/beanutils/shortProp.ser": "f7a474818b7d67820f84d7decbafba5e9391679d60fc7c7856de78ce8d8d87e9",
+        "src/test/resources/org/apache/commons/beanutils/strArrayProp.ser": "dadb6c8b87c57847a2621e7b4044d520d9f745074a09a50e8c7ea63cc0aaacb0",
+        "src/test/resources/org/apache/commons/beanutils/strProp.ser": "5c839719924bbdeaa4eba83b253fbbfbebe354ff3ec65fd6f2f6ebdbe8fd5307",
+        "src/test/resources/org/apache/commons/beanutils/typedListProp.ser": "b0e96a5cb29d83244643c6379d703915a6ea9ac70c7eb467790aa2d6876f647a",
+        "src/test/resources/org/apache/commons/beanutils/typedMapProp.ser": "e6d5434edc32ddffb76c40d07083e2d6d34ad0af0eafd20db74554f8b892b958"
+      },
+      "source_unchanged_during_run": true,
+      "legacy_fixtures_unchanged_during_run": true,
+      "totals": {
+        "reported": 1293,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 8,
+        "passed": 1285
+      },
+      "suites": [
+        {
+          "name": "org.apache.commons.beanutils.BasicDynaBeanTest",
+          "reported": 35,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 35,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.BeanComparatorTest",
+          "reported": 8,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 8,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.BeanIntrospectionDataTest",
+          "reported": 4,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 4,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.BeanMapTest",
+          "reported": 64,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 3,
+          "passed": 61,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.BeanPredicateTest",
+          "reported": 4,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 4,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.BeanPropertyValueChangeClosureTest",
+          "reported": 26,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 26,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.BeanPropertyValueEqualsPredicateTest",
+          "reported": 17,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 17,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.BeanToPropertyValueTransformerTest",
+          "reported": 17,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 17,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.BeanUtils2Test",
+          "reported": 55,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 55,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.BeanUtilsTest",
+          "reported": 55,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 55,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.BeanificationTest",
+          "reported": 8,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 8,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.ConstructorUtilsTest",
+          "reported": 11,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 11,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.ConvertUtilsTest",
+          "reported": 13,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 13,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.DefaultIntrospectionContextTest",
+          "reported": 9,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 9,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.DynaBeanMapDecoratorTest",
+          "reported": 13,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 13,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.DynaBeanUtilsTest",
+          "reported": 29,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 29,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.DynaPropertySerializationReadVersion1Test",
+          "reported": 2,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 1,
+          "passed": 1,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "reported": 45,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 45,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.DynaPropertyTest",
+          "reported": 2,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 2,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+          "reported": 55,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 55,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.DynaResultSetTest",
+          "reported": 8,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 8,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.DynaRowSetTest",
+          "reported": 9,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 9,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.FluentPropertyBeanIntrospectorTest",
+          "reported": 3,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 3,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.IndexedPropertyTest",
+          "reported": 29,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 2,
+          "passed": 27,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.JdbcDynaClassLocaleTest",
+          "reported": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 1,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.LazyDynaBeanTest",
+          "reported": 16,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 16,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.LazyDynaClassTest",
+          "reported": 15,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 15,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.LazyDynaListTest",
+          "reported": 15,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 15,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.LazyDynaMapTest",
+          "reported": 17,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 17,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.MappedPropertyTest",
+          "reported": 17,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 17,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.MethodUtilsTest",
+          "reported": 32,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 32,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.PropertyUtilsTest",
+          "reported": 116,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 116,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.SuppressPropertiesBeanIntrospectorTest",
+          "reported": 4,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 4,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.WrapDynaBeanTest",
+          "reported": 43,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 43,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.WrapDynaClassTest",
+          "reported": 2,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 2,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.bugs.EnumDeclaringClassTest",
+          "reported": 4,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 4,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.bugs.Jira157Test",
+          "reported": 3,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 3,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.bugs.Jira18Test",
+          "reported": 12,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 12,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.bugs.Jira273Test",
+          "reported": 6,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 6,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.bugs.Jira298Test",
+          "reported": 3,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 3,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.bugs.Jira339Test",
+          "reported": 2,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 2,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.bugs.Jira345Test",
+          "reported": 2,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 2,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.bugs.Jira347Test",
+          "reported": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 1,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.bugs.Jira349Test",
+          "reported": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 1,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.bugs.Jira357Test",
+          "reported": 3,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 3,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.bugs.Jira358Test",
+          "reported": 2,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 2,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.bugs.Jira359Test",
+          "reported": 4,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 4,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.bugs.Jira368Test",
+          "reported": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 1,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.bugs.Jira369Test",
+          "reported": 3,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 3,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.bugs.Jira381Test",
+          "reported": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 1,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.bugs.Jira411Test",
+          "reported": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 1,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.bugs.Jira422Test",
+          "reported": 2,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 2,
+          "passed": 0,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.bugs.Jira422bTest",
+          "reported": 2,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 2,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.bugs.Jira454Test",
+          "reported": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 1,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.bugs.Jira456Test",
+          "reported": 2,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 2,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.bugs.Jira458Test",
+          "reported": 2,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 2,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.bugs.Jira463Test",
+          "reported": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 1,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.bugs.Jira465Test",
+          "reported": 4,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 4,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.bugs.Jira492Test",
+          "reported": 8,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 8,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.bugs.Jira493Test",
+          "reported": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 1,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.bugs.Jira520Test",
+          "reported": 2,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 2,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.bugs.Jira541Test",
+          "reported": 2,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 2,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.bugs.Jira61Test",
+          "reported": 16,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 16,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.bugs.Jira87Test",
+          "reported": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 1,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.bugs.Jira92Test",
+          "reported": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 1,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.converters.ArrayConverterTestCase",
+          "reported": 7,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 7,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.converters.BigDecimalConverterTestCase",
+          "reported": 19,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 19,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.converters.BigIntegerConverterTestCase",
+          "reported": 19,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 19,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.converters.BooleanArrayConverterTestCase",
+          "reported": 9,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 9,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.converters.BooleanConverterTestCase",
+          "reported": 7,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 7,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.converters.ByteConverterTestCase",
+          "reported": 20,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 20,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.converters.CalendarConverterTestCase",
+          "reported": 11,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 11,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.converters.CharacterConverterTest",
+          "reported": 6,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 6,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.converters.ClassConverterTest",
+          "reported": 7,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 7,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.converters.ClassReloaderTest",
+          "reported": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 1,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.converters.DateConverterTest",
+          "reported": 11,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 11,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.converters.DoubleConverterTest",
+          "reported": 19,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 19,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.converters.FileConverterTest",
+          "reported": 2,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 2,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.converters.FloatConverterTest",
+          "reported": 20,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 20,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.converters.IntegerConverterTest",
+          "reported": 21,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 21,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.converters.LongConverterTest",
+          "reported": 21,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 21,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.converters.ShortConverterTest",
+          "reported": 20,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 20,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.converters.SqlDateConverterTest",
+          "reported": 12,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 12,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.converters.SqlTimeConverterTest",
+          "reported": 11,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 11,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.converters.SqlTimestampConverterTest",
+          "reported": 11,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 11,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.converters.StringArrayConverterTest",
+          "reported": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 1,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.converters.StringConverterTest",
+          "reported": 3,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 3,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.converters.URLConverterTest",
+          "reported": 2,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 2,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.expression.DefaultResolverTest",
+          "reported": 7,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 7,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.locale.LocaleBeanUtilsTest",
+          "reported": 2,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 2,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.locale.LocaleBeanificationTest",
+          "reported": 9,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 9,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.locale.LocaleConvertUtilsTest",
+          "reported": 6,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 6,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.locale.converters.BaseLocaleConverterTest",
+          "reported": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 1,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.locale.converters.BigDecimalLocaleConverterTest",
+          "reported": 11,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 11,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.locale.converters.BigIntegerLocaleConverterTest",
+          "reported": 12,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 12,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.locale.converters.ByteLocaleConverterTest",
+          "reported": 10,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 10,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.locale.converters.DateLocaleConverterTest",
+          "reported": 14,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 14,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.locale.converters.DecimalLocaleConverterTest",
+          "reported": 4,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 4,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.locale.converters.DoubleLocaleConverterTest",
+          "reported": 11,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 11,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.locale.converters.FloatLocaleConverterTest",
+          "reported": 12,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 12,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.locale.converters.IntegerLocaleConverterTest",
+          "reported": 12,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 12,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.locale.converters.LongLocaleConverterTest",
+          "reported": 11,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 11,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.locale.converters.ShortLocaleConverterTest",
+          "reported": 10,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 10,
+          "failed_cases": []
+        },
+        {
+          "name": "org.apache.commons.beanutils.memoryleaktests.MemoryLeakTest",
+          "reported": 8,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "passed": 8,
+          "failed_cases": []
+        }
+      ],
+      "raw_log_sha256": "b2db28d5dbdca5722fd42bac5c89542c0d6c656dbda47b1516e2b1090e7deee2",
+      "public_log": {
+        "path": "logs/default.log",
+        "bytes": 49438,
+        "sha256": "b7ac3e4111d9848b9c2d930c1a8acccdfa74f8a8918942ea7f958a419bc4a355"
+      },
+      "xml_suite_count": 104,
+      "actual_testcase_count": 1293,
+      "skipped_cases": [
+        {
+          "suite": "org.apache.commons.beanutils.BeanMapTest",
+          "case": "testReplaceKeyValueValue",
+          "type": "org.opentest4j.TestAbortedException",
+          "message": null,
+          "text": "org.opentest4j.TestAbortedException: Assumption failed: assumption is not true\n\tat org.apache.commons.collections4.map.AbstractMapTest.testReplaceKeyValueValue(AbstractMapTest.java:2276)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:569)\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\n"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.BeanMapTest",
+          "case": "testReplaceKeyValue",
+          "type": "org.opentest4j.TestAbortedException",
+          "message": null,
+          "text": "org.opentest4j.TestAbortedException: Assumption failed: assumption is not true\n\tat org.apache.commons.collections4.map.AbstractMapTest.testReplaceKeyValue(AbstractMapTest.java:2242)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:569)\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\n"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.BeanMapTest",
+          "case": "testRemoveKeyValue",
+          "type": "org.opentest4j.TestAbortedException",
+          "message": null,
+          "text": "org.opentest4j.TestAbortedException: Assumption failed: assumption is not true\n\tat org.apache.commons.collections4.map.AbstractMapTest.testRemoveKeyValue(AbstractMapTest.java:2204)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:569)\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\n"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationReadVersion1Test",
+          "case": "testDeserializeFromTargetDirectory",
+          "type": null,
+          "message": "Requires manual execution of main() to produce files first",
+          "text": null
+        },
+        {
+          "suite": "org.apache.commons.beanutils.IndexedPropertyTest",
+          "case": "testListIndexedWriteMethod",
+          "type": "org.junit.AssumptionViolatedException",
+          "message": null,
+          "text": "org.junit.AssumptionViolatedException: JDK does not support index bean properties on java.util.List\n\tat org.junit.Assume.assumeTrue(Assume.java:68)\n\tat org.apache.commons.beanutils.IndexedPropertyTest.testListIndexedWriteMethod(IndexedPropertyTest.java:316)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:569)\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\n"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.IndexedPropertyTest",
+          "case": "testListIndexedReadMethod",
+          "type": "org.junit.AssumptionViolatedException",
+          "message": null,
+          "text": "org.junit.AssumptionViolatedException: JDK does not support index bean properties on java.util.List\n\tat org.junit.Assume.assumeTrue(Assume.java:68)\n\tat org.apache.commons.beanutils.IndexedPropertyTest.testListIndexedReadMethod(IndexedPropertyTest.java:304)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:569)\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\n"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.bugs.Jira422Test",
+          "case": "testRootBean",
+          "type": "org.opentest4j.TestAbortedException",
+          "message": null,
+          "text": "org.opentest4j.TestAbortedException: Assumption failed: BEANUTILS-492: IndexedPropertyDescriptor no longer supported for java.util.List\n\tat org.apache.commons.beanutils.bugs.Jira422Test.assumeSupportsIndexedLists(Jira422Test.java:58)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:569)\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\n"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.bugs.Jira422Test",
+          "case": "testSecondChildBean",
+          "type": "org.opentest4j.TestAbortedException",
+          "message": null,
+          "text": "org.opentest4j.TestAbortedException: Assumption failed: BEANUTILS-492: IndexedPropertyDescriptor no longer supported for java.util.List\n\tat org.apache.commons.beanutils.bugs.Jira422Test.assumeSupportsIndexedLists(Jira422Test.java:58)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:569)\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\n"
+        }
+      ],
+      "failed_cases": [],
+      "focused_serialization_cases": [
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testRoundTripListTypeWithExplicitContentType",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testRoundTripLongPrimitiveType",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testRoundTripBytePrimitiveType",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testTypeIsPreservedAfterRoundTripForEveryPrimitive",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testRoundTripIntegerWrapperType",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testReadObjectThrowsStreamCorruptedExceptionForInvalidPrimitiveTypeConstant",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testLegacyPropertyCanBeReserializedAndCloned",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testRoundTripObjectType",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testRoundTripCharPrimitiveType",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testRoundTripMapTypeWithNoContentType",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testReadObjectThrowsStreamCorruptedExceptionForInvalidContentTypePrimitiveConstant",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testRoundTripIntPrimitiveType",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testRoundTripNameOnly",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testRoundTripBooleanPrimitiveType",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testRoundTripMapTypeWithObjectContentType",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testWireFormatPrimitiveTypeDataFollowsNameField",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testRoundTripListTypeWithPrimitiveContentType",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testRoundTripObjectArrayType",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testSerializingObjectCloner(DynaProperty)[1]",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testSerializingObjectCloner(DynaProperty)[2]",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testSerializingObjectCloner(DynaProperty)[3]",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testSerializingObjectCloner(DynaProperty)[4]",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testSerializingObjectCloner(DynaProperty)[5]",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testSerializingObjectCloner(DynaProperty)[6]",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testSerializingObjectCloner(DynaProperty)[7]",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testSerializingObjectCloner(DynaProperty)[8]",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testIsIndexedPreservedAfterRoundTrip",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testContentTypeIsNullForSimpleProperty",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testRoundTripConcreteListSubtype",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testRoundTripStringType",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testRoundTripConcreteMapSubtype",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testMultipleSerializationsProduceSameResult",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testRoundTripShortPrimitiveType",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testRoundTripPrimitiveArrayType",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testRoundTripListTypeWithNoContentType",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testNameIsPreservedAfterRoundTrip",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testToStringAfterRoundTrip",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testRoundTripMapTypeWithPrimitiveContentType",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testIsMappedPreservedAfterRoundTrip",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testSerializationIsIdempotent",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testRoundTripDoublePrimitiveType",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testSubclassCanBeReserializedAndCloned",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testWireFormatContentTypeDataFollowsNameFieldForMappedProperty",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testRoundTripFloatPrimitiveType",
+          "outcome": "passed"
+        },
+        {
+          "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+          "case": "testWireFormatObjectTypeDataFollowsNameField",
+          "outcome": "passed"
+        }
+      ],
+      "all_captured_source_files_match_published_commit": true
+    }
+  ],
+  "limitations": [
+    "No Java 8 runtime, other JDK/OS, application-server integration, hosted CI, human review or upstream acceptance is claimed.",
+    "The full configured suite retains the project exclusions for MemoryTest/MemoryTestCase classes and eight recorded skips.",
+    "JaCoCo, PMD and SpotBugs are not executed by this default build; no coverage percentage or their success is claimed.",
+    "The successful build includes nonfatal missing dependency-POM metadata, minimal SPDX-package generation, cached SPDX-license fallback and CycloneDX schema warnings.",
+    "Japicmp reports the serializable-superclass modification. New readers consuming historical/new streams are tested; old readers consuming new output are not promised."
+  ],
+  "baseline_control": {
+    "changed_files": [
+      "pom.xml",
+      "src/test/java/org/apache/commons/beanutils/DynaPropertySerializationTest.java"
+    ],
+    "production_matches_upstream_base": true,
+    "strict_cloner_baseline_errors": 9,
+    "layout_assertion_failures": 3,
+    "already_passing_cloner_parameter": "instance 2: primitive Integer.TYPE",
+    "legacy_resources_case": "one passing test method reads all 22 unchanged committed .ser fixtures"
+  },
+  "gates": {
+    "default_goal": "clean apache-rat:check verify japicmp:cmp javadoc:javadoc checkstyle:check",
+    "rat": {
+      "approved": 292,
+      "unapproved": 0,
+      "unknown": 0
+    },
+    "checkstyle_violations": 0,
+    "japicmp": {
+      "reference_version": "1.11.0",
+      "candidate_version": "1.11.1-SNAPSHOT",
+      "DynaProperty": {
+        "binaryCompatible": true,
+        "sourceCompatible": true,
+        "javaObjectSerializationCompatible": "SERIALIZABLE_INCOMPATIBLE_SUPERCLASS_MODIFIED",
+        "oldSerialVersionUID": 1,
+        "newSerialVersionUID": 1
+      }
+    },
+    "javadoc_index_sha256": "3e53b6d4bcd88aa20eee95344617daf56e81670d4530b29bb98604cde8633204",
+    "reports": [
+      {
+        "path": "gates/rat.txt",
+        "bytes": 52941,
+        "sha256": "f3a4d1b910559aa3ad846ec17766dfffe59c0f4d7e922a9f332055a99da6ac2e",
+        "raw_sha256": "f3a4d1b910559aa3ad846ec17766dfffe59c0f4d7e922a9f332055a99da6ac2e"
+      },
+      {
+        "path": "gates/checkstyle-result.xml",
+        "bytes": 28694,
+        "sha256": "f8a38ab23812a78dbc8ca0246dfd10f4d34a477502a89b8a98df3dc86dec1f2a",
+        "raw_sha256": "edf017f8e6efe449f9498fb446e9997dc9d6766e50ff64e888b91ae8150f6a38"
+      },
+      {
+        "path": "gates/japicmp/default-cli.diff",
+        "bytes": 1065,
+        "sha256": "eecaaf4c38156e94c5842ccc4d2a4a00200baa11325109057a4971e99048a000",
+        "raw_sha256": "eecaaf4c38156e94c5842ccc4d2a4a00200baa11325109057a4971e99048a000"
+      },
+      {
+        "path": "gates/japicmp/default-cli.xml",
+        "bytes": 13182,
+        "sha256": "c2d22c78878c70a708fbcee25b6c1116594906c8c173dfdf9ef4c0a42fe6899e",
+        "raw_sha256": "c2d22c78878c70a708fbcee25b6c1116594906c8c173dfdf9ef4c0a42fe6899e"
+      }
+    ]
+  },
+  "precompiled_client": {
+    "compiled_once_against_base": "22354f22fb150f82ae8cb7d4e444d2bf0d2bb1ff",
+    "class_file_major_version": 52,
+    "original_source_classes_and_stream_unchanged": true,
+    "baseline_write_exit": 0,
+    "fixed_read_exit": 0,
+    "final_write_and_read_exits": [
+      0,
+      0
+    ],
+    "details": "precompiled-client/receipts.json"
+  },
+  "environment_adaptation": "The installed JDK modules provide compiler/Javadoc/javap tools; native launchers were absent. The recorded full command sets the Javadoc launcher and prefixes the launcher directory on PATH. These are environment-only changes, with no weakened source or project gate."
+}

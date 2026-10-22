@@ -1,0 +1,98 @@
+{
+  "baseline": {
+    "baseline": "22354f22fb150f82ae8cb7d4e444d2bf0d2bb1ff",
+    "at": "2026-10-22T18:24:44.430378+00:00",
+    "commands": [
+      {
+        "command": [
+          "${JDK_TOOLS}/javac",
+          "--release",
+          "8",
+          "-cp",
+          "${CHECKOUT}/target/classes",
+          "-d",
+          "${PROOF_DIR}/precompiled-client/classes",
+          "${PROOF_DIR}/precompiled-client/PrecompiledDynaPropertyClient.java"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "java",
+          "-cp",
+          "${PROOF_DIR}/precompiled-client/classes:${CHECKOUT}/target/classes",
+          "PrecompiledDynaPropertyClient",
+          "write",
+          "${PROOF_DIR}/precompiled-client/baseline-subclass.ser"
+        ],
+        "exit_code": 0,
+        "stdout": "PASS write: UID, public constructors, protected metadata and subclass state\n",
+        "stderr": ""
+      }
+    ],
+    "compiled_against_dyna_property_sha256": "63a041e148049680068cb98e1c7ce9d046c205c114d41938471d69acfdded830",
+    "files": {
+      "PrecompiledDynaPropertyClient.java": "4391a96b2eefa7b10af887eb26b1c764ad2724cdae174632290ee1ef7f8e8ed9",
+      "baseline-subclass.ser": "a556df8fba924093e421c8de9f0721ba2f11ae49e3db501ed36a9b237606f3b7",
+      "classes/PrecompiledDynaPropertyClient$ExtendedProperty.class": "df4a7b6a36629ef901d14bb54d443a6c6882dabfd98941ef902b06f6cc8fbf75",
+      "classes/PrecompiledDynaPropertyClient.class": "c8e2799d7a2aa59f0748198081d7cb0292f9b9143d8db6f69257cba74a8071c8",
+      "classes/PrecompiledDynaPropertyClient$1.class": "a1e6b9aae378434c1177a1a1900be776356da14b33cabfc0ff5d7e68778a098b"
+    }
+  },
+  "fixed": {
+    "at": "2026-10-22T18:26:16.804404+00:00",
+    "command": [
+      "java",
+      "-cp",
+      "${PROOF_DIR}/precompiled-client/classes:${CHECKOUT}/target/classes",
+      "PrecompiledDynaPropertyClient",
+      "read",
+      "${PROOF_DIR}/precompiled-client/baseline-subclass.ser"
+    ],
+    "exit_code": 0,
+    "stdout": "PASS read: UID, public constructors, protected metadata and subclass state\n",
+    "stderr": "",
+    "client_and_baseline_stream_bytes_unchanged": true,
+    "runtime_dyna_property_sha256": "e1baf91d0c7547815d39e007308466913d6ed9e0d56393cf7911202283223887",
+    "runtime_helper_sha256": "2d64a4a9502049f2349473cb0e87d8d54bd9dfdb090bd1fc0d4df5e64247a3d0"
+  },
+  "final": {
+    "at": "2026-10-22T18:28:29.767924+00:00",
+    "commands": [
+      {
+        "command": [
+          "java",
+          "-cp",
+          "${PROOF_DIR}/precompiled-client/classes:${CHECKOUT}/target/classes",
+          "PrecompiledDynaPropertyClient",
+          "write",
+          "${PROOF_DIR}/precompiled-client/fixed-subclass.ser"
+        ],
+        "exit_code": 0,
+        "stdout": "PASS write: UID, public constructors, protected metadata and subclass state\n",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "java",
+          "-cp",
+          "${PROOF_DIR}/precompiled-client/classes:${CHECKOUT}/target/classes",
+          "PrecompiledDynaPropertyClient",
+          "read",
+          "${PROOF_DIR}/precompiled-client/baseline-subclass.ser"
+        ],
+        "exit_code": 0,
+        "stdout": "PASS read: UID, public constructors, protected metadata and subclass state\n",
+        "stderr": ""
+      }
+    ],
+    "client_and_baseline_stream_bytes_unchanged": true,
+    "runtime_class_hashes": {
+      "DynaProperty.class": "e1baf91d0c7547815d39e007308466913d6ed9e0d56393cf7911202283223887",
+      "DynaPropertySerialization.class": "2d64a4a9502049f2349473cb0e87d8d54bd9dfdb090bd1fc0d4df5e64247a3d0"
+    },
+    "fixed_subclass_stream_sha256": "45b20a1b0acd400e9de80e735aeff031034dd8a86b4cdad918b7746f2024dcc6"
+  }
+}

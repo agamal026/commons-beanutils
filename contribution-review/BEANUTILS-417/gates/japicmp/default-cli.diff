@@ -1,0 +1,15 @@
+Comparing source compatibility of commons-beanutils-1.11.1-SNAPSHOT.jar against commons-beanutils-1.11.0.jar
+***  MODIFIED CLASS: PUBLIC org.apache.commons.beanutils.DynaProperty  (superclass modified)
+	===  CLASS FILE FORMAT VERSION: 52.0 <- 52.0
+	***  MODIFIED SUPERCLASS: org.apache.commons.beanutils.DynaPropertySerialization (<- java.lang.Object)
+***  MODIFIED CLASS: PUBLIC org.apache.commons.beanutils.locale.converters.BigDecimalLocaleConverter  (not serializable)
+	===  CLASS FILE FORMAT VERSION: 52.0 <- 52.0
+	+++  NEW METHOD: PROTECTED(+) boolean isParseBigDecimal()
+***  MODIFIED CLASS: PUBLIC org.apache.commons.beanutils.locale.converters.BigIntegerLocaleConverter  (not serializable)
+	===  CLASS FILE FORMAT VERSION: 52.0 <- 52.0
+	+++  NEW METHOD: PROTECTED(+) boolean isParseBigDecimal()
+***  MODIFIED CLASS: PUBLIC org.apache.commons.beanutils.locale.converters.DecimalLocaleConverter  (not serializable)
+	===  CLASS FILE FORMAT VERSION: 52.0 <- 52.0
+	+++  NEW METHOD: PROTECTED(+) boolean isParseBigDecimal()
+
+Semantic versioning suggestion: 0.1.0

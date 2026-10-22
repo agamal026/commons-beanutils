@@ -1,0 +1,1327 @@
+*****************************************************
+Summary
+*****************************************************
+Generated at: 2026-10-22T11:27:36-07:00
+    by Apache Creadur RAT::Core 0.18 (Apache Software Foundation)
+
+-----------------------------------------------------
+Counters
+-----------------------------------------------------
+    (Entries starting with '!' exceed the minimum or maximum values)
+  Approved:           292    A count of approved licenses.
+  Archives:           0    A count of archive files.
+  Binaries:           23    A count of binary files.
+  Document types:     4    A count of distinct document types.
+  Ignored:            6    A count of ignored files.
+  License categories: 1    A count of distinct license categories.
+  License names:      1    A count of distinct license names.
+  Notices:            4    A count of notice files.
+  Standards:          292    A count of standard files.
+  Unapproved:         0    A count of unapproved licenses.
+  Unknown:            0    A count of unknown file types.
+
+
+-----------------------------------------------------
+Licenses detected
+-----------------------------------------------------
+
+Apache License 2.0: 292 
+
+-----------------------------------------------------
+License Categories detected
+-----------------------------------------------------
+
+AL   : 292 
+
+-----------------------------------------------------
+Document Types detected
+-----------------------------------------------------
+
+BINARY: 23 
+IGNORED: 6 
+NOTICE: 4 
+STANDARD: 292 
+
+*****************************************************
+Detail
+*****************************************************
+
+  Documents with unapproved licenses will start with a '!'
+  The first character on the next line identifies the document type.
+   
+   char         type
+    A       Archive file
+    B       Binary file
+    I       Ignored file
+    N       Notice file
+    S       Standard file
+    U       Unknown file.
+  
+  /.git
+  I         application/octet-stream     (directory)
+
+  /.github
+  I         application/octet-stream     (directory)
+
+  /.gitignore
+  I         application/octet-stream    
+
+  /BUILDING.txt
+  N         text/plain    ISO-8859-1
+
+  /CODE_OF_CONDUCT.md
+  S         text/x-web-markdown    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /CONTRIBUTING.md
+  S         text/x-web-markdown    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /LICENSE.txt
+  N         text/plain    ISO-8859-1
+
+  /NOTICE.txt
+  N         text/plain    ISO-8859-1
+
+  /README.md
+  S         text/x-web-markdown    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /RELEASE-NOTES.txt
+  N         text/plain    ISO-8859-1
+
+  /SECURITY.md
+  S         text/x-web-markdown    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /build.properties.sample
+  S         text/plain    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /build.xml
+  S         application/xml    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /pom.xml
+  S         application/xml    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/changes/changes.xml
+  S         application/xml    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/changes/release-notes.vm
+  S         text/plain    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/conf/checkstyle-header.txt
+  S         text/plain    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/conf/checkstyle-suppressions.xml
+  S         application/xml    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/conf/checkstyle.xml
+  S         application/xml    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/assembly/bin.xml
+  S         application/xml    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/assembly/src.xml
+  S         application/xml    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/BaseDynaBeanMapDecorator.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/BasicDynaBean.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/BasicDynaClass.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/BeanAccessLanguageException.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/BeanComparator.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/BeanIntrospectionData.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/BeanIntrospector.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/BeanMap.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/BeanPredicate.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/BeanPropertyValueChangeClosure.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/BeanPropertyValueEqualsPredicate.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/BeanToPropertyValueTransformer.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/BeanUtils.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/BeanUtilsBean.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/BeanUtilsBean2.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/ConstructorUtils.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/ContextClassLoaderLocal.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/ConversionException.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/ConvertUtils.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/ConvertUtilsBean.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/ConvertUtilsBean2.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/Converter.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/ConvertingWrapDynaBean.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/DefaultBeanIntrospector.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/DefaultIntrospectionContext.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/DynaBean.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/DynaBeanMapDecorator.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/DynaBeanPropertyMapDecorator.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/DynaClass.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/DynaProperty.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/DynaPropertySerialization.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/FluentPropertyBeanIntrospector.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/IntrospectionContext.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/JDBCDynaClass.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/LazyDynaBean.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/LazyDynaClass.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/LazyDynaList.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/LazyDynaMap.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/MappedPropertyDescriptor.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/MethodUtils.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/MutableDynaClass.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/NestedNullException.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/PropertyUtils.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/PropertyUtilsBean.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/ResultSetDynaClass.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/ResultSetIterator.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/RowSetDynaClass.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/SuppressPropertiesBeanIntrospector.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/WeakFastHashMap.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/WrapDynaBean.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/WrapDynaClass.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/converters/AbstractArrayConverter.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/converters/AbstractConverter.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/converters/ArrayConverter.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/converters/BigDecimalConverter.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/converters/BigIntegerConverter.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/converters/BooleanArrayConverter.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/converters/BooleanConverter.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/converters/ByteArrayConverter.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/converters/ByteConverter.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/converters/CalendarConverter.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/converters/CharacterArrayConverter.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/converters/CharacterConverter.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/converters/ClassConverter.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/converters/ConverterFacade.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/converters/DateConverter.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/converters/DateTimeConverter.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/converters/DoubleArrayConverter.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/converters/DoubleConverter.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/converters/FileConverter.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/converters/FloatArrayConverter.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/converters/FloatConverter.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/converters/IntegerArrayConverter.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/converters/IntegerConverter.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/converters/LongArrayConverter.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/converters/LongConverter.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/converters/NumberConverter.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/converters/ShortArrayConverter.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/converters/ShortConverter.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/converters/SqlDateConverter.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/converters/SqlTimeConverter.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/converters/SqlTimestampConverter.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/converters/StringArrayConverter.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/converters/StringConverter.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/converters/URLConverter.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/converters/package-info.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/expression/DefaultResolver.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/expression/Resolver.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/expression/package-info.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/locale/BaseLocaleConverter.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/locale/LocaleBeanUtils.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/locale/LocaleBeanUtilsBean.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/locale/LocaleConvertUtils.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/locale/LocaleConvertUtilsBean.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/locale/LocaleConverter.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/locale/converters/BigDecimalLocaleConverter.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/locale/converters/BigIntegerLocaleConverter.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/locale/converters/ByteLocaleConverter.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/locale/converters/DateLocaleConverter.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/locale/converters/DecimalLocaleConverter.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/locale/converters/DoubleLocaleConverter.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/locale/converters/FloatLocaleConverter.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/locale/converters/IntegerLocaleConverter.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/locale/converters/LongLocaleConverter.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/locale/converters/ShortLocaleConverter.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/locale/converters/SqlDateLocaleConverter.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/locale/converters/SqlTimeLocaleConverter.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/locale/converters/SqlTimestampLocaleConverter.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/locale/converters/StringLocaleConverter.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/locale/converters/package-info.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/locale/package-info.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/java/org/apache/commons/beanutils/package-info.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/main/javadoc/overview.html
+  S         text/html    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/media/logo.xcf
+  I         image/x-xcf    
+
+  /src/site/resources/download_beanutils.cgi
+  I         text/x-cgi    
+
+  /src/site/resources/images/logo.png
+  B         image/png    
+
+  /src/site/site.xml
+  S         application/xml    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/site/xdoc/bean-collections.xml
+  S         application/xml    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/site/xdoc/building.xml
+  S         application/xml    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/site/xdoc/download_beanutils.xml
+  S         application/xml    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/site/xdoc/index.xml
+  S         application/xml    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/site/xdoc/issue-tracking.xml
+  S         application/xml    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/site/xdoc/mail-lists.xml
+  S         application/xml    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/site/xdoc/proposal.xml
+  S         application/xml    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/site/xdoc/security.xml
+  S         application/xml    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/A.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/AbstractChild.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/AbstractParent.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/AlphaBean.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/BasicDynaBeanTest.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/BeanComparatorTest.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/BeanIntrospectionDataTest.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/BeanMapTest.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/BeanPredicateTest.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/BeanPropertyValueChangeClosureTest.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/BeanPropertyValueEqualsPredicateTest.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/BeanToPropertyValueTransformerTest.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/BeanUtilCaches.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/BeanUtils2Test.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/BeanUtilsBenchCase.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/BeanUtilsTest.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/BeanWithInnerBean.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/BeanificationTest.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/BenchBean.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/BetaBean.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/Child.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/ConstructorUtilsTest.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/ConvertUtilsTest.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/DefaultIntrospectionContextTest.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/DynaBeanMapDecoratorTest.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/DynaBeanUtilsTest.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/DynaPropertySerializationReadVersion1Test.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/DynaPropertySerializationTest.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/DynaPropertyTest.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/DynaPropertyUtilsTest.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/DynaResultSetTest.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/DynaRowSetTest.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/ExtendMapBean.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/FluentIntrospectionTestBean.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/FluentPropertyBeanIntrospectorTest.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/IndexedPropertyTest.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/IndexedTestBean.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/JdbcDynaClassLocaleTest.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/LazyDynaBeanTest.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/LazyDynaClassTest.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/LazyDynaListTest.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/LazyDynaMapTest.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/MappedPropertyChildBean.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/MappedPropertyChildInterface.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/MappedPropertyTest.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/MappedPropertyTestBean.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/MappedPropertyTestInterface.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/MethodUtilsTest.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/NestedTestBean.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/PassTestException.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/PrimitiveBean.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/PropertyUtilsBenchCase.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/PropertyUtilsTest.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/PropsFirstPropertyUtilsBean.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/SonOfAlphaBean.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/SuppressPropertiesBeanIntrospectorTest.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/TestBean.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/TestBeanPackageSubclass.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/TestBeanPublicSubclass.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/TestEnum.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/TestResultSet.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/TestResultSetMetaData.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/ThrowExceptionConverter.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/WrapDynaBeanTest.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/WrapDynaClassTest.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/bugs/EnumDeclaringClassTest.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/bugs/Jira157Test.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/bugs/Jira18Test.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/bugs/Jira273Test.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/bugs/Jira298Test.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/bugs/Jira339Test.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/bugs/Jira345Test.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/bugs/Jira347Test.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/bugs/Jira349Test.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/bugs/Jira357Test.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/bugs/Jira358Test.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/bugs/Jira359Test.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/bugs/Jira368Test.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/bugs/Jira369Test.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/bugs/Jira381Test.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/bugs/Jira411Test.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/bugs/Jira422Test.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/bugs/Jira422bTest.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/bugs/Jira454Test.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/bugs/Jira456Test.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/bugs/Jira458Test.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/bugs/Jira463Test.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/bugs/Jira465Test.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/bugs/Jira492Test.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/bugs/Jira493Test.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/bugs/Jira520Test.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/bugs/Jira541Test.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/bugs/Jira61Test.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/bugs/Jira87Test.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/bugs/Jira92Test.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/bugs/other/Jira18BeanFactory.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/bugs/other/Jira273BeanFactory.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/bugs/other/Jira298BeanFactory.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/bugs/other/Jira492IndexedListsSupport.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/bugs/other/Jira61BeanFactory.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/bugs/other/Jira87BeanFactory.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/converters/ArrayConverterTestCase.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/converters/BigDecimalConverterTestCase.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/converters/BigIntegerConverterTestCase.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/converters/BooleanArrayConverterTestCase.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/converters/BooleanConverterTestCase.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/converters/ByteConverterTestCase.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/converters/CalendarConverterTestCase.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/converters/CharacterConverterTest.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/converters/ClassConverterTest.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/converters/ClassReloader.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/converters/ClassReloaderTest.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/converters/ConverterTestSuite.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/converters/DateConverterTest.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/converters/DateConverterTestBase.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/converters/DoubleConverterTest.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/converters/FileConverterTest.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/converters/FloatConverterTest.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/converters/IntegerConverterTest.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/converters/LongConverterTest.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/converters/MemoryTest.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/converters/NumberConverterTest.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/converters/ShortConverterTest.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/converters/SqlDateConverterTest.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/converters/SqlTimeConverterTest.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/converters/SqlTimestampConverterTest.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/converters/StringArrayConverterTest.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/converters/StringConverterTest.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/converters/URLConverterTest.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/expression/DefaultResolverTest.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/locale/LocaleBeanUtilsTest.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/locale/LocaleBeanificationTest.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/locale/LocaleConvertTestSuite.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/locale/LocaleConvertUtilsTest.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/locale/converters/BaseLocaleConverterTest.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/locale/converters/BigDecimalLocaleConverterTest.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/locale/converters/BigIntegerLocaleConverterTest.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/locale/converters/ByteLocaleConverterTest.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/locale/converters/DateLocaleConverterTest.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/locale/converters/DecimalLocaleConverterTest.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/locale/converters/DoubleLocaleConverterTest.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/locale/converters/FloatLocaleConverterTest.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/locale/converters/IntegerLocaleConverterTest.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/locale/converters/LongLocaleConverterTest.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/locale/converters/ShortLocaleConverterTest.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/memoryleaktests/MemoryLeakTest.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/memoryleaktests/pojotests/CustomInteger.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/memoryleaktests/pojotests/SomeMappedPojo.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/memoryleaktests/pojotests/SomePojo.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/priv/PackageBean.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/priv/PrivateBean.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/priv/PrivateBeanFactory.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/priv/PrivateBeanSubclass.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/priv/PrivateDirect.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/priv/PrivateIndirect.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/java/org/apache/commons/beanutils/priv/PublicSubBean.java
+  S         text/x-java-source    ISO-8859-1
+    AL       AL2.0         Apache License 2.0
+
+  /src/test/resources/org/apache/commons/beanutils/arrayListProp.ser
+  B         application/java-serialized-object    
+
+  /src/test/resources/org/apache/commons/beanutils/boolProp.ser
+  B         application/java-serialized-object    
+
+  /src/test/resources/org/apache/commons/beanutils/byteProp.ser
+  B         application/java-serialized-object    
+
+  /src/test/resources/org/apache/commons/beanutils/charProp.ser
+  B         application/java-serialized-object    
+
+  /src/test/resources/org/apache/commons/beanutils/doubleProp.ser
+  B         application/java-serialized-object    
+
+  /src/test/resources/org/apache/commons/beanutils/floatProp.ser
+  B         application/java-serialized-object    
+
+  /src/test/resources/org/apache/commons/beanutils/hashMapProp.ser
+  B         application/java-serialized-object    
+
+  /src/test/resources/org/apache/commons/beanutils/intArrayProp.ser
+  B         application/java-serialized-object    
+
+  /src/test/resources/org/apache/commons/beanutils/intListProp.ser
+  B         application/java-serialized-object    
+
+  /src/test/resources/org/apache/commons/beanutils/intMapProp.ser
+  B         application/java-serialized-object    
+
+  /src/test/resources/org/apache/commons/beanutils/intProp.ser
+  B         application/java-serialized-object    
+
+  /src/test/resources/org/apache/commons/beanutils/integerProp.ser
+  B         application/java-serialized-object    
+
+  /src/test/resources/org/apache/commons/beanutils/listProp.ser
+  B         application/java-serialized-object    
+
+  /src/test/resources/org/apache/commons/beanutils/longProp.ser
+  B         application/java-serialized-object    
+
+  /src/test/resources/org/apache/commons/beanutils/mapProp.ser
+  B         application/java-serialized-object    
+
+  /src/test/resources/org/apache/commons/beanutils/nameOnly.ser
+  B         application/java-serialized-object    
+
+  /src/test/resources/org/apache/commons/beanutils/objProp.ser
+  B         application/java-serialized-object    
+
+  /src/test/resources/org/apache/commons/beanutils/shortProp.ser
+  B         application/java-serialized-object    
+
+  /src/test/resources/org/apache/commons/beanutils/strArrayProp.ser
+  B         application/java-serialized-object    
+
+  /src/test/resources/org/apache/commons/beanutils/strProp.ser
+  B         application/java-serialized-object    
+
+  /src/test/resources/org/apache/commons/beanutils/typedListProp.ser
+  B         application/java-serialized-object    
+
+  /src/test/resources/org/apache/commons/beanutils/typedMapProp.ser
+  B         application/java-serialized-object    
+
+  /target
+  I         application/octet-stream     (directory)
+
+

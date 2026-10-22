@@ -1,0 +1,94 @@
+Apache Maven 3.9.11 (3e54c93a704957b63ee3494413a2b544fd3d825b)
+Maven home: ${MAVEN_HOME}
+Java version: 17.0.20, vendor: Ubuntu, runtime: /usr/lib/jvm/java-17-openjdk-amd64
+Default locale: en, platform encoding: UTF-8
+OS name: "linux", version: "6.18.55", arch: "amd64", family: "unix"
+[INFO] Error stacktraces are turned on.
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------< commons-beanutils:commons-beanutils >-----------------
+[INFO] Building Apache Commons BeanUtils 1.11.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[WARNING] Parameter 'forkMode' is unknown for plugin 'maven-surefire-plugin:3.6.0:test (default-test)'
+[WARNING] The POM for commons-collections:commons-collections-testframework:jar:3.2.1 is missing, no dependency information available
+[INFO] 
+[INFO] --- clean:3.5.0:clean (default-clean) @ commons-beanutils ---
+[INFO] Deleting ${CHECKOUT}/target
+[INFO] 
+[INFO] --- enforcer:3.6.3:enforce (enforce-maven-version) @ commons-beanutils ---
+[INFO] Rule 0: org.apache.maven.enforcer.rules.version.RequireMavenVersion passed
+[INFO] 
+[INFO] --- enforcer:3.6.3:enforce (enforce-java-version) @ commons-beanutils ---
+[INFO] Rule 0: org.apache.maven.enforcer.rules.version.RequireJavaVersion passed
+[INFO] 
+[INFO] --- apache-rat:0.18:check (rat-check) @ commons-beanutils ---
+[INFO] No issues found.
+[INFO] 
+[INFO] --- artifact:3.7.0:check-buildplan (check-buildplan) @ commons-beanutils ---
+[WARNING] Parameter 'forkMode' is unknown for plugin 'maven-surefire-plugin:3.6.0:test (default-test)'
+[INFO] No known issue in 19 plugins
+[INFO] 
+[INFO] --- build-helper:3.6.2:parse-version (parse-version) @ commons-beanutils ---
+[INFO] 
+[INFO] --- antrun:3.2.0:run (javadoc.resources) @ commons-beanutils ---
+[INFO] Executing tasks
+[INFO]      [copy] Copying 2 files to ${CHECKOUT}/target/apidocs/META-INF
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- remote-resources:3.3.0:process (process-resource-bundles) @ commons-beanutils ---
+[INFO] Skipping remote resources execution.
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ commons-beanutils ---
+[INFO] skip non existing resourceDirectory ${CHECKOUT}/src/main/resources
+[INFO] Copying 2 resources from . to target/classes/META-INF
+[INFO] 
+[INFO] --- compiler:3.16.0:compile (default-compile) @ commons-beanutils ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 112 source files with javac [debug release 8] to target/classes
+[INFO] ${CHECKOUT}/src/main/java/org/apache/commons/beanutils/BeanComparator.java: Some input files use unchecked or unsafe operations.
+[INFO] ${CHECKOUT}/src/main/java/org/apache/commons/beanutils/BeanComparator.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- bundle:6.2.0:manifest (bundle-manifest) @ commons-beanutils ---
+[INFO] No MANIFEST.MF file found, generating manifest.
+[INFO] Writing manifest: ${CHECKOUT}/target/osgi/MANIFEST.MF
+[INFO] 
+[INFO] --- resources:3.5.0:testResources (default-testResources) @ commons-beanutils ---
+[INFO] Copying 22 resources from src/test/resources to target/test-classes
+[INFO] Copying 2 resources from . to target/test-classes/META-INF
+[INFO] 
+[INFO] --- compiler:3.16.0:testCompile (default-testCompile) @ commons-beanutils ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 156 source files with javac [debug release 8] to target/test-classes
+[INFO] ${CHECKOUT}/src/test/java/org/apache/commons/beanutils/converters/BooleanArrayConverterTestCase.java: Some input files use or override a deprecated API.
+[INFO] ${CHECKOUT}/src/test/java/org/apache/commons/beanutils/converters/BooleanArrayConverterTestCase.java: Recompile with -Xlint:deprecation for details.
+[INFO] ${CHECKOUT}/src/test/java/org/apache/commons/beanutils/bugs/EnumDeclaringClassTest.java: ${CHECKOUT}/src/test/java/org/apache/commons/beanutils/bugs/EnumDeclaringClassTest.java uses unchecked or unsafe operations.
+[INFO] ${CHECKOUT}/src/test/java/org/apache/commons/beanutils/bugs/EnumDeclaringClassTest.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- surefire:3.6.0:test (default-test) @ commons-beanutils ---
+[INFO] Surefire report directory: ${CHECKOUT}/target/surefire-reports
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] parallel='none', perCoreThreadCount=true, threadCount=0, useUnlimitedThreads=false, threadCountSuites=0, threadCountClasses=0, threadCountMethods=0, parallelOptimized=true, enableOutErrElements=true, enablePropertiesElement=true
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.commons.beanutils.DynaPropertyTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 s -- in org.apache.commons.beanutils.DynaPropertyTest
+[INFO] Running org.apache.commons.beanutils.DynaPropertyUtilsTest
+[INFO] Tests run: 55, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.130 s -- in org.apache.commons.beanutils.DynaPropertyUtilsTest
+[INFO] Running org.apache.commons.beanutils.DynaPropertySerializationTest
+[INFO] Tests run: 45, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.265 s -- in org.apache.commons.beanutils.DynaPropertySerializationTest
+[INFO] Running org.apache.commons.beanutils.DynaPropertySerializationReadVersion1Test
+[WARNING] Tests run: 2, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.009 s -- in org.apache.commons.beanutils.DynaPropertySerializationReadVersion1Test
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 104, Failures: 0, Errors: 0, Skipped: 1
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  18.570 s
+[INFO] Finished at: 2026-10-22T11:25:58-07:00
+[INFO] ------------------------------------------------------------------------
