@@ -1,0 +1,23 @@
+{
+  "recorded_utc": "2026-10-30T17:18:18Z",
+  "repository": "apache/commons-beanutils",
+  "pr_number": 444,
+  "action": "github_update_pull_request",
+  "fields_requested": [
+    "body"
+  ],
+  "source_head": "51a346ab12e0fd683df794ab40c9f18e58f92068",
+  "reviewed_body_sha256": "69d26ac507b41598dac25c7c537655198f5c8df03672f34feca6eacc9d8fdac5",
+  "status": 403,
+  "message": "Resource not accessible by integration",
+  "documentation_url": "https://docs.github.com/rest/pulls/pulls#update-a-pull-request",
+  "readback": {
+    "body_unchanged": true,
+    "head_unchanged": true,
+    "state": "open",
+    "merged": false
+  },
+  "retries": 0,
+  "reason_for_change": "The completed natural hourly run found that the existing PR description still cites the prior revision and test totals; the reviewed replacement binds the description to current source and exact correction proof.",
+  "boundary": "No retry or alternate upstream wrapper absent a new supported authorization/capability change."
+}
