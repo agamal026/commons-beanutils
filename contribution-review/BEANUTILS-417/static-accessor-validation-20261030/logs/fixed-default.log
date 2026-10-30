@@ -1,0 +1,550 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------< commons-beanutils:commons-beanutils >-----------------
+[INFO] Building Apache Commons BeanUtils 1.11.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[WARNING] Parameter 'forkMode' is unknown for plugin 'maven-surefire-plugin:3.6.0:test (default-test)'
+[WARNING] The POM for commons-collections:commons-collections-testframework:jar:3.2.1 is missing, no dependency information available
+[INFO] 
+[INFO] --- clean:3.5.0:clean (default-clean) @ commons-beanutils ---
+[INFO] Deleting $CHECKOUT/target
+[INFO] 
+[INFO] --- apache-rat:0.18:check (default-cli) @ commons-beanutils ---
+[INFO] No issues found.
+[INFO] 
+[INFO] --- enforcer:3.6.3:enforce (enforce-maven-version) @ commons-beanutils ---
+[INFO] Rule 0: org.apache.maven.enforcer.rules.version.RequireMavenVersion passed
+[INFO] 
+[INFO] --- enforcer:3.6.3:enforce (enforce-java-version) @ commons-beanutils ---
+[INFO] Rule 0: org.apache.maven.enforcer.rules.version.RequireJavaVersion passed
+[INFO] 
+[INFO] --- apache-rat:0.18:check (rat-check) @ commons-beanutils ---
+[INFO] No issues found.
+[INFO] 
+[INFO] --- artifact:3.7.0:check-buildplan (check-buildplan) @ commons-beanutils ---
+[WARNING] Parameter 'forkMode' is unknown for plugin 'maven-surefire-plugin:3.6.0:test (default-test)'
+[INFO] No known issue in 19 plugins
+[INFO] 
+[INFO] --- build-helper:3.6.2:parse-version (parse-version) @ commons-beanutils ---
+[INFO] 
+[INFO] --- antrun:3.2.0:run (javadoc.resources) @ commons-beanutils ---
+[INFO] Executing tasks
+[INFO]      [copy] Copying 2 files to $CHECKOUT/target/apidocs/META-INF
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- remote-resources:3.3.0:process (process-resource-bundles) @ commons-beanutils ---
+[INFO] Skipping remote resources execution.
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ commons-beanutils ---
+[INFO] skip non existing resourceDirectory $CHECKOUT/src/main/resources
+[INFO] Copying 2 resources from . to target/classes/META-INF
+[INFO] 
+[INFO] --- compiler:3.16.0:compile (default-compile) @ commons-beanutils ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 112 source files with javac [debug release 8] to target/classes
+[INFO] $CHECKOUT/src/main/java/org/apache/commons/beanutils/BeanComparator.java: Some input files use unchecked or unsafe operations.
+[INFO] $CHECKOUT/src/main/java/org/apache/commons/beanutils/BeanComparator.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- bundle:6.2.0:manifest (bundle-manifest) @ commons-beanutils ---
+[INFO] No MANIFEST.MF file found, generating manifest.
+[INFO] Writing manifest: $CHECKOUT/target/osgi/MANIFEST.MF
+[INFO] 
+[INFO] --- resources:3.5.0:testResources (default-testResources) @ commons-beanutils ---
+[INFO] Copying 22 resources from src/test/resources to target/test-classes
+[INFO] Copying 2 resources from . to target/test-classes/META-INF
+[INFO] 
+[INFO] --- compiler:3.16.0:testCompile (default-testCompile) @ commons-beanutils ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 157 source files with javac [debug release 8] to target/test-classes
+[INFO] $CHECKOUT/src/test/java/org/apache/commons/beanutils/converters/BooleanArrayConverterTestCase.java: Some input files use or override a deprecated API.
+[INFO] $CHECKOUT/src/test/java/org/apache/commons/beanutils/converters/BooleanArrayConverterTestCase.java: Recompile with -Xlint:deprecation for details.
+[INFO] $CHECKOUT/src/test/java/org/apache/commons/beanutils/bugs/EnumDeclaringClassTest.java: $CHECKOUT/src/test/java/org/apache/commons/beanutils/bugs/EnumDeclaringClassTest.java uses unchecked or unsafe operations.
+[INFO] $CHECKOUT/src/test/java/org/apache/commons/beanutils/bugs/EnumDeclaringClassTest.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- surefire:3.6.0:test (default-test) @ commons-beanutils ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts
+[INFO] Running org.apache.commons.beanutils.MappedPropertyTest
+[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 s -- in org.apache.commons.beanutils.MappedPropertyTest
+[INFO] Running org.apache.commons.beanutils.ConstructorUtilsTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s -- in org.apache.commons.beanutils.ConstructorUtilsTest
+[INFO] Running org.apache.commons.beanutils.PropertyUtilsTest
+[INFO] Tests run: 116, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.204 s -- in org.apache.commons.beanutils.PropertyUtilsTest
+[INFO] Running org.apache.commons.beanutils.BeanPropertyValueChangeClosureTest
+[INFO] Tests run: 26, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 s -- in org.apache.commons.beanutils.BeanPropertyValueChangeClosureTest
+[INFO] Running org.apache.commons.beanutils.BeanUtils2Test
+[INFO] Tests run: 55, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.078 s -- in org.apache.commons.beanutils.BeanUtils2Test
+[INFO] Running org.apache.commons.beanutils.FluentPropertyBeanIntrospectorTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s -- in org.apache.commons.beanutils.FluentPropertyBeanIntrospectorTest
+[INFO] Running org.apache.commons.beanutils.BeanPredicateTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 s -- in org.apache.commons.beanutils.BeanPredicateTest
+[INFO] Running org.apache.commons.beanutils.SuppressPropertiesBeanIntrospectorTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s -- in org.apache.commons.beanutils.SuppressPropertiesBeanIntrospectorTest
+[INFO] Running org.apache.commons.beanutils.BeanificationTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.134 s -- in org.apache.commons.beanutils.BeanificationTest
+[INFO] Running org.apache.commons.beanutils.LazyDynaBeanTest
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s -- in org.apache.commons.beanutils.LazyDynaBeanTest
+[INFO] Running org.apache.commons.beanutils.ConvertUtilsTest
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 s -- in org.apache.commons.beanutils.ConvertUtilsTest
+[INFO] Running org.apache.commons.beanutils.MethodUtilsTest
+[INFO] Tests run: 32, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s -- in org.apache.commons.beanutils.MethodUtilsTest
+[INFO] Running org.apache.commons.beanutils.DynaRowSetTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 s -- in org.apache.commons.beanutils.DynaRowSetTest
+[INFO] Running org.apache.commons.beanutils.BeanPropertyValueEqualsPredicateTest
+[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s -- in org.apache.commons.beanutils.BeanPropertyValueEqualsPredicateTest
+[INFO] Running org.apache.commons.beanutils.expression.DefaultResolverTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s -- in org.apache.commons.beanutils.expression.DefaultResolverTest
+[INFO] Running org.apache.commons.beanutils.BeanToPropertyValueTransformerTest
+[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s -- in org.apache.commons.beanutils.BeanToPropertyValueTransformerTest
+[INFO] Running org.apache.commons.beanutils.DynaBeanMapDecoratorTest
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s -- in org.apache.commons.beanutils.DynaBeanMapDecoratorTest
+[INFO] Running org.apache.commons.beanutils.LazyDynaListTest
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 s -- in org.apache.commons.beanutils.LazyDynaListTest
+[INFO] Running org.apache.commons.beanutils.locale.LocaleConvertUtilsTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s -- in org.apache.commons.beanutils.locale.LocaleConvertUtilsTest
+[INFO] Running org.apache.commons.beanutils.locale.LocaleBeanificationTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.133 s -- in org.apache.commons.beanutils.locale.LocaleBeanificationTest
+[INFO] Running org.apache.commons.beanutils.locale.LocaleBeanUtilsTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s -- in org.apache.commons.beanutils.locale.LocaleBeanUtilsTest
+[INFO] Running org.apache.commons.beanutils.locale.converters.ShortLocaleConverterTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s -- in org.apache.commons.beanutils.locale.converters.ShortLocaleConverterTest
+[INFO] Running org.apache.commons.beanutils.locale.converters.ByteLocaleConverterTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s -- in org.apache.commons.beanutils.locale.converters.ByteLocaleConverterTest
+[INFO] Running org.apache.commons.beanutils.locale.converters.DecimalLocaleConverterTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s -- in org.apache.commons.beanutils.locale.converters.DecimalLocaleConverterTest
+[INFO] Running org.apache.commons.beanutils.locale.converters.DoubleLocaleConverterTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s -- in org.apache.commons.beanutils.locale.converters.DoubleLocaleConverterTest
+[INFO] Running org.apache.commons.beanutils.locale.converters.DateLocaleConverterTest
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 s -- in org.apache.commons.beanutils.locale.converters.DateLocaleConverterTest
+[INFO] Running org.apache.commons.beanutils.locale.converters.BigDecimalLocaleConverterTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s -- in org.apache.commons.beanutils.locale.converters.BigDecimalLocaleConverterTest
+[INFO] Running org.apache.commons.beanutils.locale.converters.LongLocaleConverterTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s -- in org.apache.commons.beanutils.locale.converters.LongLocaleConverterTest
+[INFO] Running org.apache.commons.beanutils.locale.converters.BaseLocaleConverterTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in org.apache.commons.beanutils.locale.converters.BaseLocaleConverterTest
+[INFO] Running org.apache.commons.beanutils.locale.converters.BigIntegerLocaleConverterTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s -- in org.apache.commons.beanutils.locale.converters.BigIntegerLocaleConverterTest
+[INFO] Running org.apache.commons.beanutils.locale.converters.IntegerLocaleConverterTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s -- in org.apache.commons.beanutils.locale.converters.IntegerLocaleConverterTest
+[INFO] Running org.apache.commons.beanutils.locale.converters.FloatLocaleConverterTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s -- in org.apache.commons.beanutils.locale.converters.FloatLocaleConverterTest
+[INFO] Running org.apache.commons.beanutils.DynaResultSetTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s -- in org.apache.commons.beanutils.DynaResultSetTest
+[INFO] Running org.apache.commons.beanutils.DefaultIntrospectionContextTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s -- in org.apache.commons.beanutils.DefaultIntrospectionContextTest
+[INFO] Running org.apache.commons.beanutils.BeanUtilsTest
+[INFO] Tests run: 55, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 s -- in org.apache.commons.beanutils.BeanUtilsTest
+[INFO] Running org.apache.commons.beanutils.LazyDynaMapTest
+[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s -- in org.apache.commons.beanutils.LazyDynaMapTest
+[INFO] Running org.apache.commons.beanutils.LazyDynaClassTest
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s -- in org.apache.commons.beanutils.LazyDynaClassTest
+[INFO] Running org.apache.commons.beanutils.DynaPropertyTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s -- in org.apache.commons.beanutils.DynaPropertyTest
+[INFO] Running org.apache.commons.beanutils.DynaPropertyUtilsTest
+[INFO] Tests run: 55, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 s -- in org.apache.commons.beanutils.DynaPropertyUtilsTest
+[INFO] Running org.apache.commons.beanutils.BeanIntrospectionDataTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s -- in org.apache.commons.beanutils.BeanIntrospectionDataTest
+[INFO] Running org.apache.commons.beanutils.converters.ClassReloaderTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s -- in org.apache.commons.beanutils.converters.ClassReloaderTest
+[INFO] Running org.apache.commons.beanutils.converters.BigDecimalConverterTestCase
+[INFO] Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s -- in org.apache.commons.beanutils.converters.BigDecimalConverterTestCase
+[INFO] Running org.apache.commons.beanutils.converters.StringArrayConverterTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s -- in org.apache.commons.beanutils.converters.StringArrayConverterTest
+[INFO] Running org.apache.commons.beanutils.converters.IntegerConverterTest
+[INFO] Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s -- in org.apache.commons.beanutils.converters.IntegerConverterTest
+[INFO] Running org.apache.commons.beanutils.converters.URLConverterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.02 s -- in org.apache.commons.beanutils.converters.URLConverterTest
+[INFO] Running org.apache.commons.beanutils.converters.BigIntegerConverterTestCase
+[INFO] Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s -- in org.apache.commons.beanutils.converters.BigIntegerConverterTestCase
+[INFO] Running org.apache.commons.beanutils.converters.DateConverterTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s -- in org.apache.commons.beanutils.converters.DateConverterTest
+[INFO] Running org.apache.commons.beanutils.converters.BooleanConverterTestCase
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s -- in org.apache.commons.beanutils.converters.BooleanConverterTestCase
+[INFO] Running org.apache.commons.beanutils.converters.SqlDateConverterTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s -- in org.apache.commons.beanutils.converters.SqlDateConverterTest
+[INFO] Running org.apache.commons.beanutils.converters.ShortConverterTest
+[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s -- in org.apache.commons.beanutils.converters.ShortConverterTest
+[INFO] Running org.apache.commons.beanutils.converters.ByteConverterTestCase
+[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s -- in org.apache.commons.beanutils.converters.ByteConverterTestCase
+[INFO] Running org.apache.commons.beanutils.converters.FileConverterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s -- in org.apache.commons.beanutils.converters.FileConverterTest
+[INFO] Running org.apache.commons.beanutils.converters.SqlTimestampConverterTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s -- in org.apache.commons.beanutils.converters.SqlTimestampConverterTest
+[INFO] Running org.apache.commons.beanutils.converters.CalendarConverterTestCase
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s -- in org.apache.commons.beanutils.converters.CalendarConverterTestCase
+[INFO] Running org.apache.commons.beanutils.converters.ClassConverterTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s -- in org.apache.commons.beanutils.converters.ClassConverterTest
+[INFO] Running org.apache.commons.beanutils.converters.StringConverterTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in org.apache.commons.beanutils.converters.StringConverterTest
+[INFO] Running org.apache.commons.beanutils.converters.BooleanArrayConverterTestCase
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s -- in org.apache.commons.beanutils.converters.BooleanArrayConverterTestCase
+[INFO] Running org.apache.commons.beanutils.converters.FloatConverterTest
+[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s -- in org.apache.commons.beanutils.converters.FloatConverterTest
+[INFO] Running org.apache.commons.beanutils.converters.CharacterConverterTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s -- in org.apache.commons.beanutils.converters.CharacterConverterTest
+[INFO] Running org.apache.commons.beanutils.converters.LongConverterTest
+[INFO] Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s -- in org.apache.commons.beanutils.converters.LongConverterTest
+[INFO] Running org.apache.commons.beanutils.converters.DoubleConverterTest
+[INFO] Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s -- in org.apache.commons.beanutils.converters.DoubleConverterTest
+[INFO] Running org.apache.commons.beanutils.converters.ArrayConverterTestCase
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s -- in org.apache.commons.beanutils.converters.ArrayConverterTestCase
+[INFO] Running org.apache.commons.beanutils.converters.SqlTimeConverterTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s -- in org.apache.commons.beanutils.converters.SqlTimeConverterTest
+[INFO] Running org.apache.commons.beanutils.bugs.Jira349Test
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s -- in org.apache.commons.beanutils.bugs.Jira349Test
+[INFO] Running org.apache.commons.beanutils.bugs.Jira87Test
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s -- in org.apache.commons.beanutils.bugs.Jira87Test
+[INFO] Running org.apache.commons.beanutils.bugs.Jira157Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s -- in org.apache.commons.beanutils.bugs.Jira157Test
+[INFO] Running org.apache.commons.beanutils.bugs.Jira345Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s -- in org.apache.commons.beanutils.bugs.Jira345Test
+[INFO] Running org.apache.commons.beanutils.bugs.Jira456Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s -- in org.apache.commons.beanutils.bugs.Jira456Test
+[INFO] Running org.apache.commons.beanutils.bugs.Jira61Test
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s -- in org.apache.commons.beanutils.bugs.Jira61Test
+[INFO] Running org.apache.commons.beanutils.bugs.Jira298Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s -- in org.apache.commons.beanutils.bugs.Jira298Test
+[INFO] Running org.apache.commons.beanutils.bugs.Jira339Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s -- in org.apache.commons.beanutils.bugs.Jira339Test
+[INFO] Running org.apache.commons.beanutils.bugs.Jira18Test
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s -- in org.apache.commons.beanutils.bugs.Jira18Test
+[INFO] Running org.apache.commons.beanutils.bugs.Jira411Test
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s -- in org.apache.commons.beanutils.bugs.Jira411Test
+[INFO] Running org.apache.commons.beanutils.bugs.Jira369Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s -- in org.apache.commons.beanutils.bugs.Jira369Test
+[INFO] Running org.apache.commons.beanutils.bugs.Jira359Test
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s -- in org.apache.commons.beanutils.bugs.Jira359Test
+[INFO] Running org.apache.commons.beanutils.bugs.Jira465Test
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s -- in org.apache.commons.beanutils.bugs.Jira465Test
+[INFO] Running org.apache.commons.beanutils.bugs.Jira368Test
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s -- in org.apache.commons.beanutils.bugs.Jira368Test
+[INFO] Running org.apache.commons.beanutils.bugs.Jira358Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in org.apache.commons.beanutils.bugs.Jira358Test
+[INFO] Running org.apache.commons.beanutils.bugs.Jira520Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in org.apache.commons.beanutils.bugs.Jira520Test
+[INFO] Running org.apache.commons.beanutils.bugs.Jira357Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s -- in org.apache.commons.beanutils.bugs.Jira357Test
+[INFO] Running org.apache.commons.beanutils.bugs.Jira458Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in org.apache.commons.beanutils.bugs.Jira458Test
+[INFO] Running org.apache.commons.beanutils.bugs.Jira463Test
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in org.apache.commons.beanutils.bugs.Jira463Test
+[INFO] Running org.apache.commons.beanutils.bugs.Jira347Test
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.389 s -- in org.apache.commons.beanutils.bugs.Jira347Test
+[INFO] Running org.apache.commons.beanutils.bugs.Jira273Test
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s -- in org.apache.commons.beanutils.bugs.Jira273Test
+[INFO] Running org.apache.commons.beanutils.bugs.Jira92Test
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s -- in org.apache.commons.beanutils.bugs.Jira92Test
+[INFO] Running org.apache.commons.beanutils.bugs.Jira381Test
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in org.apache.commons.beanutils.bugs.Jira381Test
+[INFO] Running org.apache.commons.beanutils.bugs.Jira454Test
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s -- in org.apache.commons.beanutils.bugs.Jira454Test
+[INFO] Running org.apache.commons.beanutils.DynaBeanUtilsTest
+[INFO] Tests run: 29, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s -- in org.apache.commons.beanutils.DynaBeanUtilsTest
+[INFO] Running org.apache.commons.beanutils.memoryleaktests.MemoryLeakTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.60 s -- in org.apache.commons.beanutils.memoryleaktests.MemoryLeakTest
+[INFO] Running org.apache.commons.beanutils.IndexedPropertyTest
+[WARNING] Tests run: 29, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.041 s -- in org.apache.commons.beanutils.IndexedPropertyTest
+[INFO] Running org.apache.commons.beanutils.BeanMapTest
+[WARNING] Tests run: 64, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 0.144 s -- in org.apache.commons.beanutils.BeanMapTest
+[INFO] Running org.apache.commons.beanutils.DynaPropertySerializationReadVersion1Test
+[WARNING] Tests run: 2, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.011 s -- in org.apache.commons.beanutils.DynaPropertySerializationReadVersion1Test
+[INFO] Running org.apache.commons.beanutils.DynaPropertySubclassCompatibilityTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s -- in org.apache.commons.beanutils.DynaPropertySubclassCompatibilityTest
+[INFO] Running org.apache.commons.beanutils.BeanComparatorTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s -- in org.apache.commons.beanutils.BeanComparatorTest
+[INFO] Running org.apache.commons.beanutils.WrapDynaBeanTest
+[INFO] Tests run: 43, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 s -- in org.apache.commons.beanutils.WrapDynaBeanTest
+[INFO] Running org.apache.commons.beanutils.DynaPropertySerializationTest
+[INFO] Tests run: 45, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.096 s -- in org.apache.commons.beanutils.DynaPropertySerializationTest
+[INFO] Running org.apache.commons.beanutils.JdbcDynaClassLocaleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s -- in org.apache.commons.beanutils.JdbcDynaClassLocaleTest
+[INFO] Running org.apache.commons.beanutils.WrapDynaClassTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.122 s -- in org.apache.commons.beanutils.WrapDynaClassTest
+[INFO] Running org.apache.commons.beanutils.BasicDynaBeanTest
+[INFO] Tests run: 35, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 s -- in org.apache.commons.beanutils.BasicDynaBeanTest
+[INFO] Running org.apache.commons.beanutils.bugs.EnumDeclaringClassTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s -- in org.apache.commons.beanutils.bugs.EnumDeclaringClassTest
+[INFO] Running org.apache.commons.beanutils.bugs.Jira422Test
+[WARNING] Tests run: 2, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.002 s -- in org.apache.commons.beanutils.bugs.Jira422Test
+[INFO] Running org.apache.commons.beanutils.bugs.Jira541Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.154 s -- in org.apache.commons.beanutils.bugs.Jira541Test
+[INFO] Running org.apache.commons.beanutils.bugs.Jira492Test
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s -- in org.apache.commons.beanutils.bugs.Jira492Test
+[INFO] Running org.apache.commons.beanutils.bugs.Jira422bTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s -- in org.apache.commons.beanutils.bugs.Jira422bTest
+[INFO] Running org.apache.commons.beanutils.bugs.Jira493Test
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s -- in org.apache.commons.beanutils.bugs.Jira493Test
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 1294, Failures: 0, Errors: 0, Skipped: 8
+[INFO] 
+[INFO] 
+[INFO] --- jar:3.5.1:jar (default-jar) @ commons-beanutils ---
+[INFO] Building jar: $CHECKOUT/target/commons-beanutils-1.11.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- jar:3.5.1:test-jar (default) @ commons-beanutils ---
+[INFO] Building jar: $CHECKOUT/target/commons-beanutils-1.11.1-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- source:3.4.0:jar-no-fork (attach-sources) @ commons-beanutils ---
+[INFO] Building jar: $CHECKOUT/target/commons-beanutils-1.11.1-SNAPSHOT-sources.jar
+[INFO] 
+[INFO] --- source:3.4.0:test-jar-no-fork (attach-sources) @ commons-beanutils ---
+[INFO] Building jar: $CHECKOUT/target/commons-beanutils-1.11.1-SNAPSHOT-test-sources.jar
+[INFO] 
+[INFO] --- cyclonedx:2.9.3:makeAggregateBom (build-sbom-cyclonedx) @ commons-beanutils ---
+[INFO] CycloneDX: Resolving Dependencies
+[WARNING] Unable to create Maven project for commons-collections:commons-collections-testframework:jar:3.2.1 from repository.
+[INFO] CycloneDX: Creating BOM version 1.6 with 2 component(s)
+[INFO] CycloneDX: Writing and validating BOM (XML): $CHECKOUT/target/commons-beanutils-1.11.1-SNAPSHOT-bom.xml
+[INFO]            attaching as commons-beanutils-1.11.1-SNAPSHOT-cyclonedx.xml
+[INFO] CycloneDX: Writing and validating BOM (JSON): $CHECKOUT/target/commons-beanutils-1.11.1-SNAPSHOT-bom.json
+[WARNING] Unknown keyword meta:enum - you should define your own Meta Schema. If the keyword is irrelevant for validation, just use a NonValidationKeyword or if it should generate annotations AnnotationKeyword
+[WARNING] Unknown keyword deprecated - you should define your own Meta Schema. If the keyword is irrelevant for validation, just use a NonValidationKeyword or if it should generate annotations AnnotationKeyword
+[INFO]            attaching as commons-beanutils-1.11.1-SNAPSHOT-cyclonedx.json
+[INFO] 
+[INFO] --- spdx:1.0.4:createSPDX (build-sbom-spdx) @ commons-beanutils ---
+[INFO] spdx file type = .json
+[INFO] Creating SPDX File $CHECKOUT/target/site/commons-beanutils_commons-beanutils-1.11.1-SNAPSHOT.spdx.json
+[WARNING] IO Exception opening web page for JSON for SPDX listed licenses.  Using cached version
+[ERROR] I/O error reading license TOC
+java.net.UnknownHostException: spdx.org
+    at sun.nio.ch.NioSocketImpl.connect (NioSocketImpl.java:572)
+    at java.net.SocksSocketImpl.connect (SocksSocketImpl.java:351)
+    at java.net.Socket.connect (Socket.java:633)
+    at sun.security.ssl.SSLSocketImpl.connect (SSLSocketImpl.java:304)
+    at sun.security.ssl.BaseSSLSocketImpl.connect (BaseSSLSocketImpl.java:174)
+    at sun.net.NetworkClient.doConnect (NetworkClient.java:183)
+    at sun.net.www.http.HttpClient.openServer (HttpClient.java:541)
+    at sun.net.www.http.HttpClient.openServer (HttpClient.java:646)
+    at sun.net.www.protocol.https.HttpsClient.<init> (HttpsClient.java:267)
+    at sun.net.www.protocol.https.HttpsClient.New (HttpsClient.java:381)
+    at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient (AbstractDelegateHttpsURLConnection.java:196)
+    at sun.net.www.protocol.http.HttpURLConnection.plainConnect0 (HttpURLConnection.java:1265)
+    at sun.net.www.protocol.http.HttpURLConnection.plainConnect (HttpURLConnection.java:1151)
+    at sun.net.www.protocol.http.HttpURLConnection.connect (HttpURLConnection.java:1080)
+    at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect (AbstractDelegateHttpsURLConnection.java:181)
+    at sun.net.www.protocol.http.HttpURLConnection.getInputStream0 (HttpURLConnection.java:1719)
+    at sun.net.www.protocol.http.HttpURLConnection.getInputStream (HttpURLConnection.java:1644)
+    at java.net.HttpURLConnection.getResponseCode (HttpURLConnection.java:529)
+    at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode (HttpsURLConnectionImpl.java:308)
+    at org.spdx.utility.DownloadCache.processPossibleRedirect (DownloadCache.java:397)
+    at org.spdx.utility.DownloadCache.getUrlInputStreamDirect (DownloadCache.java:248)
+    at org.spdx.utility.DownloadCache.getUrlInputStream (DownloadCache.java:231)
+    at org.spdx.utility.DownloadCache.getUrlInputStream (DownloadCache.java:177)
+    at org.spdx.storage.listedlicense.SpdxListedLicenseWebStore.getUrlInputStream (SpdxListedLicenseWebStore.java:42)
+    at org.spdx.storage.listedlicense.SpdxListedLicenseWebStore.getTocInputStream (SpdxListedLicenseWebStore.java:47)
+    at org.spdx.storage.listedlicense.SpdxListedLicenseModelStore.loadIds (SpdxListedLicenseModelStore.java:161)
+    at org.spdx.storage.listedlicense.SpdxListedLicenseModelStore.<init> (SpdxListedLicenseModelStore.java:117)
+    at org.spdx.storage.listedlicense.SpdxListedLicenseWebStore.<init> (SpdxListedLicenseWebStore.java:38)
+    at org.spdx.library.ListedLicenses.initializeLicenseModelStore (ListedLicenses.java:93)
+    at org.spdx.library.ListedLicenses.<init> (ListedLicenses.java:74)
+    at org.spdx.library.ListedLicenses.getListedLicenses (ListedLicenses.java:137)
+    at org.spdx.library.LicenseInfoFactory.isSpdxListedLicenseId (LicenseInfoFactory.java:350)
+    at org.spdx.utility.license.LicenseExpressionParser.parseSimpleLicenseTokenCompatV2 (LicenseExpressionParser.java:588)
+    at org.spdx.utility.license.LicenseExpressionParser.parseLicenseExpressionCompatV2 (LicenseExpressionParser.java:331)
+    at org.spdx.utility.license.LicenseExpressionParser.parseLicenseExpressionCompatV2 (LicenseExpressionParser.java:164)
+    at org.spdx.library.LicenseInfoFactory.parseSPDXLicenseStringCompatV2 (LicenseInfoFactory.java:112)
+    at org.spdx.maven.utils.SpdxV2LicenseManager.mavenLicenseToSpdxLicense (SpdxV2LicenseManager.java:207)
+    at org.spdx.maven.utils.SpdxV2LicenseManager.mavenLicenseListToSpdxLicense (SpdxV2LicenseManager.java:162)
+    at org.spdx.maven.utils.SpdxV2DocumentBuilder.mavenLicenseListToSpdxLicenseExpression (SpdxV2DocumentBuilder.java:484)
+    at org.spdx.maven.CreateSpdxMojo.getSpdxProjectInfoFromParameters (CreateSpdxMojo.java:978)
+    at org.spdx.maven.CreateSpdxMojo.execute (CreateSpdxMojo.java:600)
+    at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo (DefaultBuildPluginManager.java:126)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2 (MojoExecutor.java:328)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute (MojoExecutor.java:316)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:212)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:174)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.access$000 (MojoExecutor.java:75)
+    at org.apache.maven.lifecycle.internal.MojoExecutor$1.run (MojoExecutor.java:162)
+    at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute (DefaultMojosExecutionStrategy.java:39)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:159)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:105)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:73)
+    at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build (SingleThreadedBuilder.java:53)
+    at org.apache.maven.lifecycle.internal.LifecycleStarter.execute (LifecycleStarter.java:118)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:261)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:173)
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:101)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:919)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:285)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:207)
+    at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0 (Native Method)
+    at jdk.internal.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:77)
+    at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke (Method.java:569)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:255)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:201)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:362)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:314)
+[WARNING] Unable to access the most current listed licenses from https://spdx.org/licenses - using locally cached licenses: I/O error reading license TOC Note: you can set the org.spdx.useJARLicenseInfoOnly property to true to avoid this warning.
+org.spdx.library.model.v2.license.SpdxListedLicenseException: I/O error reading license TOC
+    at org.spdx.storage.listedlicense.SpdxListedLicenseModelStore.loadIds (SpdxListedLicenseModelStore.java:187)
+    at org.spdx.storage.listedlicense.SpdxListedLicenseModelStore.<init> (SpdxListedLicenseModelStore.java:117)
+    at org.spdx.storage.listedlicense.SpdxListedLicenseWebStore.<init> (SpdxListedLicenseWebStore.java:38)
+    at org.spdx.library.ListedLicenses.initializeLicenseModelStore (ListedLicenses.java:93)
+    at org.spdx.library.ListedLicenses.<init> (ListedLicenses.java:74)
+    at org.spdx.library.ListedLicenses.getListedLicenses (ListedLicenses.java:137)
+    at org.spdx.library.LicenseInfoFactory.isSpdxListedLicenseId (LicenseInfoFactory.java:350)
+    at org.spdx.utility.license.LicenseExpressionParser.parseSimpleLicenseTokenCompatV2 (LicenseExpressionParser.java:588)
+    at org.spdx.utility.license.LicenseExpressionParser.parseLicenseExpressionCompatV2 (LicenseExpressionParser.java:331)
+    at org.spdx.utility.license.LicenseExpressionParser.parseLicenseExpressionCompatV2 (LicenseExpressionParser.java:164)
+    at org.spdx.library.LicenseInfoFactory.parseSPDXLicenseStringCompatV2 (LicenseInfoFactory.java:112)
+    at org.spdx.maven.utils.SpdxV2LicenseManager.mavenLicenseToSpdxLicense (SpdxV2LicenseManager.java:207)
+    at org.spdx.maven.utils.SpdxV2LicenseManager.mavenLicenseListToSpdxLicense (SpdxV2LicenseManager.java:162)
+    at org.spdx.maven.utils.SpdxV2DocumentBuilder.mavenLicenseListToSpdxLicenseExpression (SpdxV2DocumentBuilder.java:484)
+    at org.spdx.maven.CreateSpdxMojo.getSpdxProjectInfoFromParameters (CreateSpdxMojo.java:978)
+    at org.spdx.maven.CreateSpdxMojo.execute (CreateSpdxMojo.java:600)
+    at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo (DefaultBuildPluginManager.java:126)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2 (MojoExecutor.java:328)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute (MojoExecutor.java:316)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:212)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:174)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.access$000 (MojoExecutor.java:75)
+    at org.apache.maven.lifecycle.internal.MojoExecutor$1.run (MojoExecutor.java:162)
+    at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute (DefaultMojosExecutionStrategy.java:39)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:159)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:105)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:73)
+    at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build (SingleThreadedBuilder.java:53)
+    at org.apache.maven.lifecycle.internal.LifecycleStarter.execute (LifecycleStarter.java:118)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:261)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:173)
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:101)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:919)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:285)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:207)
+    at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0 (Native Method)
+    at jdk.internal.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:77)
+    at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke (Method.java:569)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:255)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:201)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:362)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:314)
+Caused by: java.net.UnknownHostException: spdx.org
+    at sun.nio.ch.NioSocketImpl.connect (NioSocketImpl.java:572)
+    at java.net.SocksSocketImpl.connect (SocksSocketImpl.java:351)
+    at java.net.Socket.connect (Socket.java:633)
+    at sun.security.ssl.SSLSocketImpl.connect (SSLSocketImpl.java:304)
+    at sun.security.ssl.BaseSSLSocketImpl.connect (BaseSSLSocketImpl.java:174)
+    at sun.net.NetworkClient.doConnect (NetworkClient.java:183)
+    at sun.net.www.http.HttpClient.openServer (HttpClient.java:541)
+    at sun.net.www.http.HttpClient.openServer (HttpClient.java:646)
+    at sun.net.www.protocol.https.HttpsClient.<init> (HttpsClient.java:267)
+    at sun.net.www.protocol.https.HttpsClient.New (HttpsClient.java:381)
+    at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient (AbstractDelegateHttpsURLConnection.java:196)
+    at sun.net.www.protocol.http.HttpURLConnection.plainConnect0 (HttpURLConnection.java:1265)
+    at sun.net.www.protocol.http.HttpURLConnection.plainConnect (HttpURLConnection.java:1151)
+    at sun.net.www.protocol.http.HttpURLConnection.connect (HttpURLConnection.java:1080)
+    at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect (AbstractDelegateHttpsURLConnection.java:181)
+    at sun.net.www.protocol.http.HttpURLConnection.getInputStream0 (HttpURLConnection.java:1719)
+    at sun.net.www.protocol.http.HttpURLConnection.getInputStream (HttpURLConnection.java:1644)
+    at java.net.HttpURLConnection.getResponseCode (HttpURLConnection.java:529)
+    at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode (HttpsURLConnectionImpl.java:308)
+    at org.spdx.utility.DownloadCache.processPossibleRedirect (DownloadCache.java:397)
+    at org.spdx.utility.DownloadCache.getUrlInputStreamDirect (DownloadCache.java:248)
+    at org.spdx.utility.DownloadCache.getUrlInputStream (DownloadCache.java:231)
+    at org.spdx.utility.DownloadCache.getUrlInputStream (DownloadCache.java:177)
+    at org.spdx.storage.listedlicense.SpdxListedLicenseWebStore.getUrlInputStream (SpdxListedLicenseWebStore.java:42)
+    at org.spdx.storage.listedlicense.SpdxListedLicenseWebStore.getTocInputStream (SpdxListedLicenseWebStore.java:47)
+    at org.spdx.storage.listedlicense.SpdxListedLicenseModelStore.loadIds (SpdxListedLicenseModelStore.java:161)
+    at org.spdx.storage.listedlicense.SpdxListedLicenseModelStore.<init> (SpdxListedLicenseModelStore.java:117)
+    at org.spdx.storage.listedlicense.SpdxListedLicenseWebStore.<init> (SpdxListedLicenseWebStore.java:38)
+    at org.spdx.library.ListedLicenses.initializeLicenseModelStore (ListedLicenses.java:93)
+    at org.spdx.library.ListedLicenses.<init> (ListedLicenses.java:74)
+    at org.spdx.library.ListedLicenses.getListedLicenses (ListedLicenses.java:137)
+    at org.spdx.library.LicenseInfoFactory.isSpdxListedLicenseId (LicenseInfoFactory.java:350)
+    at org.spdx.utility.license.LicenseExpressionParser.parseSimpleLicenseTokenCompatV2 (LicenseExpressionParser.java:588)
+    at org.spdx.utility.license.LicenseExpressionParser.parseLicenseExpressionCompatV2 (LicenseExpressionParser.java:331)
+    at org.spdx.utility.license.LicenseExpressionParser.parseLicenseExpressionCompatV2 (LicenseExpressionParser.java:164)
+    at org.spdx.library.LicenseInfoFactory.parseSPDXLicenseStringCompatV2 (LicenseInfoFactory.java:112)
+    at org.spdx.maven.utils.SpdxV2LicenseManager.mavenLicenseToSpdxLicense (SpdxV2LicenseManager.java:207)
+    at org.spdx.maven.utils.SpdxV2LicenseManager.mavenLicenseListToSpdxLicense (SpdxV2LicenseManager.java:162)
+    at org.spdx.maven.utils.SpdxV2DocumentBuilder.mavenLicenseListToSpdxLicenseExpression (SpdxV2DocumentBuilder.java:484)
+    at org.spdx.maven.CreateSpdxMojo.getSpdxProjectInfoFromParameters (CreateSpdxMojo.java:978)
+    at org.spdx.maven.CreateSpdxMojo.execute (CreateSpdxMojo.java:600)
+    at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo (DefaultBuildPluginManager.java:126)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2 (MojoExecutor.java:328)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute (MojoExecutor.java:316)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:212)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:174)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.access$000 (MojoExecutor.java:75)
+    at org.apache.maven.lifecycle.internal.MojoExecutor$1.run (MojoExecutor.java:162)
+    at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute (DefaultMojosExecutionStrategy.java:39)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:159)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:105)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:73)
+    at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build (SingleThreadedBuilder.java:53)
+    at org.apache.maven.lifecycle.internal.LifecycleStarter.execute (LifecycleStarter.java:118)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:261)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:173)
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:101)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:919)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:285)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:207)
+    at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0 (Native Method)
+    at jdk.internal.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:77)
+    at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke (Method.java:569)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:255)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:201)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:362)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:314)
+[ERROR] Maven Project Build Error creating SPDX package for dependency artifact ID commons-collections-testframework:Error resolving project artifact: The following artifacts could not be resolved: commons-collections:commons-collections-testframework:pom:3.2.1 (absent): commons-collections:commons-collections-testframework:pom:3.2.1 was not found in https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced for project commons-collections:commons-collections-testframework:jar:3.2.1
+[WARNING] Error creating SPDX package for dependency artifact ID commons-collections-testframework.  A minimal SPDX package will be created.
+[INFO] Duplicate dependency occurred for org.apache.commons:commons-collections4:4.5.0
+[INFO] 
+[INFO] --- moditect:1.3.0.Final:add-module-info (add-module-infos) @ commons-beanutils ---
+[INFO] Running jdeps --generate-module-info $CHECKOUT/target/moditect --add-modules org.apache.commons.logging,commons.collections --module-path $MAVEN_REPO/commons-logging/commons-logging/1.4.0/commons-logging-1.4.0.jar:$MAVEN_REPO/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar --multi-release=9 $CHECKOUT/target/commons-beanutils-1.11.1-SNAPSHOT.jar
+writing to $CHECKOUT/target/moditect/commons.beanutils/versions/9/module-info.java
+[INFO] Created module descriptor at $CHECKOUT/target/moditect/generated-sources/org.apache.commons.beanutils/module-info.java
+[INFO] 
+[INFO] --- site:3.22.0:attach-descriptor (attach-descriptor) @ commons-beanutils ---
+[INFO] Skipping because packaging 'jar' is not pom.
+[INFO] 
+[INFO] --- changes:3.0.0-M3:changes-validate (validate-changes) @ commons-beanutils ---
+[INFO] 
+[INFO] --- japicmp:0.26.3:cmp (default-cli) @ commons-beanutils ---
+[INFO] Written file '$CHECKOUT/target/japicmp/default-cli.diff'.
+[INFO] Written file '$CHECKOUT/target/japicmp/default-cli.md'.
+[INFO] Created file '$CHECKOUT/target/japicmp/default-cli.xml'.
+[INFO] Written file '$CHECKOUT/target/japicmp/default-cli.html'.
+[INFO] 
+[INFO] >>> javadoc:3.12.0:javadoc (default-cli) > generate-sources @ commons-beanutils >>>
+[INFO] 
+[INFO] --- enforcer:3.6.3:enforce (enforce-maven-version) @ commons-beanutils ---
+[INFO] 
+[INFO] --- enforcer:3.6.3:enforce (enforce-java-version) @ commons-beanutils ---
+[INFO] 
+[INFO] --- apache-rat:0.18:check (rat-check) @ commons-beanutils ---
+[INFO] No issues found.
+[INFO] 
+[INFO] --- artifact:3.7.0:check-buildplan (check-buildplan) @ commons-beanutils ---
+[WARNING] Parameter 'forkMode' is unknown for plugin 'maven-surefire-plugin:3.6.0:test (default-test)'
+[INFO] No known issue in 19 plugins
+[INFO] 
+[INFO] --- build-helper:3.6.2:parse-version (parse-version) @ commons-beanutils ---
+[INFO] 
+[INFO] --- antrun:3.2.0:run (javadoc.resources) @ commons-beanutils ---
+[INFO] Executing tasks
+[INFO] Executed tasks
+[INFO] 
+[INFO] <<< javadoc:3.12.0:javadoc (default-cli) < generate-sources @ commons-beanutils <<<
+[INFO] 
+[INFO] 
+[INFO] --- javadoc:3.12.0:javadoc (default-cli) @ commons-beanutils ---
+[INFO] 
+[INFO] --- checkstyle:3.6.0:check (default-cli) @ commons-beanutils ---
+[INFO] You have 0 Checkstyle violations.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  47.841 s
+[INFO] Finished at: 2026-10-30T23:56:42+09:00
+[INFO] ------------------------------------------------------------------------

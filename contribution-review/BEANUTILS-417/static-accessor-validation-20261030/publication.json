@@ -1,0 +1,34 @@
+{
+  "observed_utc": "2026-10-30T15:08:21.084379+00:00",
+  "source_commit": "51a346ab12e0fd683df794ab40c9f18e58f92068",
+  "source_tree": "285a9ca59ab976121d2935722875f310d80756b6",
+  "parent": "1d95c95c3045da8939db4c93ba2d13cf27ae241f",
+  "repository": "agamal026/commons-beanutils",
+  "branch": "BEANUTILS-417-compatible-serialization",
+  "pr": "https://github.com/apache/commons-beanutils/pull/444",
+  "pr_head_verified": "51a346ab12e0fd683df794ab40c9f18e58f92068",
+  "pr_base": "22354f22fb150f82ae8cb7d4e444d2bf0d2bb1ff",
+  "pr_base_ref": "1.X",
+  "pr_state": "open",
+  "merged": false,
+  "source_update": "Non-forced expected-head update from retained parent; complete remote commit tree equals tested local tree.",
+  "hosted_ci": [
+    {
+      "id": 41077699457,
+      "name": "Java CI",
+      "conclusion": "action_required",
+      "jobs": 0,
+      "head": "51a346ab12e0fd683df794ab40c9f18e58f92068",
+      "url": "https://github.com/apache/commons-beanutils/actions/runs/41077699457"
+    },
+    {
+      "id": 41077699636,
+      "name": "CodeQL",
+      "conclusion": "action_required",
+      "jobs": 0,
+      "head": "51a346ab12e0fd683df794ab40c9f18e58f92068",
+      "url": "https://github.com/apache/commons-beanutils/actions/runs/41077699636"
+    }
+  ],
+  "hosted_ci_limit": "Both runs are unexecuted with zero jobs; local validation does not establish hosted CI success or maintainer acceptance."
+}

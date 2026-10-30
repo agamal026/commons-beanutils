@@ -1,0 +1,210 @@
+{
+  "prepared_utc": "2026-10-30T14:57:47.749992+00:00",
+  "source": {
+    "base_head": "1d95c95c3045da8939db4c93ba2d13cf27ae241f",
+    "tree": "285a9ca59ab976121d2935722875f310d80756b6",
+    "patch_sha256": "40b5bbac26ff116f8695622fcd4be53d4ba052e8ecd1f0df80d1ab93bef629db",
+    "files": [
+      {
+        "path": "src/main/java/org/apache/commons/beanutils/DynaProperty.java",
+        "bytes": 12327,
+        "git_blob": "63f84235ee6df6d626d876594278f9d68408d7b6",
+        "sha256": "fa0fa20815bc547f7e474cf7bd2c0fc8d0d1a15ad01fba727ac52b54330b2432"
+      },
+      {
+        "path": "src/main/java/org/apache/commons/beanutils/DynaPropertySerialization.java",
+        "bytes": 1891,
+        "git_blob": "38a611534cff4e0d7d0223b95a6eb6b22ef42c16",
+        "sha256": "bfa6611259d872f270a1f94616fd090a9108cdc39abd06de9637beeb73274862"
+      },
+      {
+        "path": "src/test/java/org/apache/commons/beanutils/DynaPropertySubclassCompatibilityTest.java",
+        "bytes": 2539,
+        "git_blob": "6b4f02eb29857fa25c0520e33b678938aaa2e56d",
+        "sha256": "f3720edd7be38b1640f802f1002bcd4967a78b3c7c126233c4fd36fefc09d627"
+      }
+    ]
+  },
+  "execution_environment": {
+    "os": "Linux amd64",
+    "java": "Eclipse Temurin 17.0.21+9 full JDK",
+    "maven": "3.9.16",
+    "compiler_release": "8",
+    "runtime_java8_tested": false,
+    "notes": "External Maven settings, workspace dependency cache and existing system Java CA trust were used. No POM, dependency, coverage, exclusion, warning or gate settings were changed for this correction."
+  },
+  "runs": [
+    {
+      "start_utc": "2026-10-30T14:50:11.406044+00:00",
+      "end_utc": "2026-10-30T14:50:13.200724+00:00",
+      "exit_code": 1,
+      "name": "setup-missing-system-trust",
+      "command": [
+        "$MAVEN_HOME/bin/mvn",
+        "-B",
+        "-ntp",
+        "-s",
+        "$MAVEN_SETTINGS",
+        "-Dmaven.repo.local=$MAVEN_REPO",
+        "-Dtest=DynaPropertySubclassCompatibilityTest",
+        "test"
+      ],
+      "raw_log_sha256": "f9d60eca911e36cb419297ff060cb16faeec37fd63a50486a7424ed7cca4226e",
+      "public_log": "logs/setup-missing-system-trust.log",
+      "public_log_sha256": "00c23da3d51228a37d9efb1bd125c683d6f07d36ddc7c423e858a6cf80919fb6",
+      "console_build_success_marker": false,
+      "classification": "Environment setup failure at parent-POM resolution; no compilation or tests. Resolved by using existing system Java CA trust; TLS verification remained enabled."
+    },
+    {
+      "start_utc": "2026-10-30T14:51:04.269683+00:00",
+      "end_utc": "2026-10-30T14:51:36.003041+00:00",
+      "exit_code": 1,
+      "name": "submitted-regression",
+      "command": [
+        "$MAVEN_HOME/bin/mvn",
+        "-B",
+        "-ntp",
+        "-U",
+        "-s",
+        "$MAVEN_SETTINGS",
+        "-Dmaven.repo.local=$MAVEN_REPO",
+        "-Dtest=DynaPropertySubclassCompatibilityTest",
+        "test"
+      ],
+      "raw_log_sha256": "3dace434e8210dfaaa4f109b2fe01baec9e5ae01a49fb0eb930b66c6fa24b25b",
+      "public_log": "logs/submitted-regression.log",
+      "public_log_sha256": "194e691afaef6742b6dd14a2a00ac3d8c4f9ec294604f0ebb336e235d948475d",
+      "console_build_success_marker": false,
+      "classification": "Expected test-compilation rejection on submitted production plus new regression. No JUnit tests executed in this control."
+    },
+    {
+      "start_utc": "2026-10-30T14:52:08.934820+00:00",
+      "end_utc": "2026-10-30T14:52:19.250325+00:00",
+      "exit_code": 0,
+      "name": "fixed-focused",
+      "command": [
+        "$MAVEN_HOME/bin/mvn",
+        "-B",
+        "-ntp",
+        "-s",
+        "$MAVEN_SETTINGS",
+        "-Dmaven.repo.local=$MAVEN_REPO",
+        "-Dtest=DynaProperty*Test",
+        "test"
+      ],
+      "raw_log_sha256": "584941c891c7cf7be389b195cd7a64d5e8a916b6f5782cefad4195773f63bad3",
+      "public_log": "logs/fixed-focused.log",
+      "public_log_sha256": "bbef8e65d29edfbb1ed01a0ea8c578355290cd104e03b753942c534e9b8473a3",
+      "console_build_success_marker": true,
+      "classification": "Actual focused JUnit/JBoss run on reviewed v2 bytes."
+    },
+    {
+      "start_utc": "2026-10-30T14:52:42.983909+00:00",
+      "end_utc": "2026-10-30T14:53:57.749349+00:00",
+      "exit_code": 0,
+      "name": "attempt1-fixed-default",
+      "command": [
+        "$MAVEN_HOME/bin/mvn",
+        "-B",
+        "-ntp",
+        "-s",
+        "$MAVEN_SETTINGS",
+        "-Dmaven.repo.local=$MAVEN_REPO"
+      ],
+      "raw_log_sha256": "84b98acea98ea3184f22fc12036daa93077565e1a87a2eeb9b3b0db92af58b62",
+      "public_log": "logs/attempt1-fixed-default.log",
+      "public_log_sha256": "f6ba492ee07da03c13fd3152c1ad17148bcf3004bc091fc4ef6d5cbe9227cc0b",
+      "console_build_success_marker": false,
+      "classification": "Exited 0 and produced all test/gate reports, but redirected console stopped early. Preserved as incomplete console evidence; not used as the final complete-log proof."
+    },
+    {
+      "start_utc": "2026-10-30T14:55:53.611345+00:00",
+      "end_utc": "2026-10-30T14:56:42.639511+00:00",
+      "exit_code": 0,
+      "name": "fixed-default",
+      "command": [
+        "$MAVEN_HOME/bin/mvn",
+        "-B",
+        "-ntp",
+        "-l",
+        "$EVIDENCE/fixed-default.log",
+        "-s",
+        "$MAVEN_SETTINGS",
+        "-Dmaven.repo.local=$MAVEN_REPO"
+      ],
+      "raw_log_sha256": "008b93ddb9d20e8c9b1ba83516d8f761462b86fff6edc525cf39917d1f7a4631",
+      "public_log": "logs/fixed-default.log",
+      "public_log_sha256": "59c395279150e579eee113ff4139d4bcef06c226e0e008b2e1121ee80d736606",
+      "console_build_success_marker": true,
+      "classification": "Final full configured default build; no goal or test selector. One repeat used native Maven log capture to resolve the first run's incomplete console record. Counts are not combined."
+    }
+  ],
+  "final_counts": {
+    "tests": 1294,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 8,
+    "passed": 1286
+  },
+  "focused_counts": {
+    "tests": 105,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 1,
+    "passed": 104
+  },
+  "gates": {
+    "rat": {
+      "approved": 293,
+      "unapproved": 0,
+      "unknown": 0
+    },
+    "checkstyle": {
+      "files": 269,
+      "violations": 0
+    },
+    "japicmp_dyna_property": {
+      "binaryCompatible": "true",
+      "changeStatus": "MODIFIED",
+      "fullyQualifiedName": "org.apache.commons.beanutils.DynaProperty",
+      "javaObjectSerializationCompatible": "SERIALIZABLE_INCOMPATIBLE_SUPERCLASS_MODIFIED",
+      "javaObjectSerializationCompatibleAsString": "superclass modified",
+      "sourceCompatible": "true"
+    },
+    "javadoc_index": {
+      "relative_path": "target/reports/apidocs/index.html",
+      "bytes": 6490,
+      "sha256": "3e53b6d4bcd88aa20eee95344617daf56e81670d4530b29bb98604cde8633204"
+    }
+  },
+  "warnings": [
+    "[WARNING] Error creating SPDX package for dependency artifact ID commons-collections-testframework.  A minimal SPDX package will be created.",
+    "[WARNING] IO Exception opening web page for JSON for SPDX listed licenses.  Using cached version",
+    "[WARNING] Parameter 'forkMode' is unknown for plugin 'maven-surefire-plugin:3.6.0:test (default-test)'",
+    "[WARNING] Tests run: 2, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.011 s -- in org.apache.commons.beanutils.DynaPropertySerializationReadVersion1Test",
+    "[WARNING] Tests run: 2, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.002 s -- in org.apache.commons.beanutils.bugs.Jira422Test",
+    "[WARNING] Tests run: 29, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.041 s -- in org.apache.commons.beanutils.IndexedPropertyTest",
+    "[WARNING] Tests run: 64, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 0.144 s -- in org.apache.commons.beanutils.BeanMapTest",
+    "[WARNING] The POM for commons-collections:commons-collections-testframework:jar:3.2.1 is missing, no dependency information available",
+    "[WARNING] Unable to access the most current listed licenses from https://spdx.org/licenses - using locally cached licenses: I/O error reading license TOC Note: you can set the org.spdx.useJARLicenseInfoOnly property to true to avoid this warning.",
+    "[WARNING] Unable to create Maven project for commons-collections:commons-collections-testframework:jar:3.2.1 from repository.",
+    "[WARNING] Unknown keyword deprecated - you should define your own Meta Schema. If the keyword is irrelevant for validation, just use a NonValidationKeyword or if it should generate annotations AnnotationKeyword",
+    "[WARNING] Unknown keyword meta:enum - you should define your own Meta Schema. If the keyword is irrelevant for validation, just use a NonValidationKeyword or if it should generate annotations AnnotationKeyword"
+  ],
+  "important_nonfatal_output": "The complete log retains an ERROR-labeled SPDX dependency-metadata message for the existing commons-collections-testframework 3.2.1 POM. The plugin creates a minimal package and the configured lifecycle succeeds. This is not complete-SBOM or warning-free proof.",
+  "log_redactions": "Only absolute execution/tool/cache paths and any runtime network hostname were consistently replaced. Raw log SHA-256 and public log SHA-256 are both recorded. Raw Surefire XML properties, Maven settings, Javadoc option files, private recovery records and credentials are excluded.",
+  "review": {
+    "design": "Independent native AI design reviewer, cycle 1: no must-fix source or test defect in the exact v2 bytes.",
+    "integration": "Independent native AI source/integration reviewer, cycle 1: PASS after actual XML/default-log/gate verification.",
+    "human_review_claimed": false,
+    "evidence_privacy": "Third independent native AI reviewer: GO; no corrections requested."
+  },
+  "limits": [
+    "New readers accepting old and new streams is the intended direction; older releases reading newly written data are not supported.",
+    "Added superclass is visible to reflection and the Japicmp serialization compatibility warning remains unsuppressed.",
+    "Eight skipped cases and the original memory-test exclusions remain. One active test reads all 22 historical fixtures; they are not 22 separate JUnit cases.",
+    "The new JUnit case is a source-compatibility and deserialization-dispatch regression, not an independently precompiled binary client.",
+    "The earlier unchanged-bytecode/UID/wire probes retain their original execution times; they were not rerun here.",
+    "No other runtime or operating system, complete application server, coverage percentage, hosted CI success, human review or upstream acceptance is claimed."
+  ]
+}

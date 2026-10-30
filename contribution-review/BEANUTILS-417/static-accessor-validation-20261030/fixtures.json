@@ -1,0 +1,93 @@
+{
+  "unchanged_from": "22354f22fb150f82ae8cb7d4e444d2bf0d2bb1ff",
+  "fixtures": [
+    {
+      "path": "src/test/resources/org/apache/commons/beanutils/arrayListProp.ser",
+      "sha256": "fffd3e8751c5525c96dc0d6d7dbe57783ea35fa6b4b30c01cef5644bb753210a"
+    },
+    {
+      "path": "src/test/resources/org/apache/commons/beanutils/boolProp.ser",
+      "sha256": "5b9ab896929e74a488e824b573f42ef90174024cdf24690ed3191ef5dfbd8831"
+    },
+    {
+      "path": "src/test/resources/org/apache/commons/beanutils/byteProp.ser",
+      "sha256": "e22e61c8cd300a71f30bf9f827587580cc7c85928f764c7bbd274cc6c7c45d20"
+    },
+    {
+      "path": "src/test/resources/org/apache/commons/beanutils/charProp.ser",
+      "sha256": "07614ea2286f1d8749ac177ac84a94ab3f8386d0d7f7c6b42b0ec517259fef2c"
+    },
+    {
+      "path": "src/test/resources/org/apache/commons/beanutils/doubleProp.ser",
+      "sha256": "ca5d3bcbabd83662143868793aee25994db3fc88b0edfa97be4492459cbe1ec1"
+    },
+    {
+      "path": "src/test/resources/org/apache/commons/beanutils/floatProp.ser",
+      "sha256": "701b52b9ee33eaa874a74cbebbd6718ce7153d30edd063f349cd59617e8c2ba4"
+    },
+    {
+      "path": "src/test/resources/org/apache/commons/beanutils/hashMapProp.ser",
+      "sha256": "f9321ecdc1ea7f7c3025864e41166df1ddf5bb2b6588bae709de02379ac1fe61"
+    },
+    {
+      "path": "src/test/resources/org/apache/commons/beanutils/intArrayProp.ser",
+      "sha256": "d3370fd8d66efaf8f45b1504e477a15d7e51f9bedd82082cb104d14e502d706a"
+    },
+    {
+      "path": "src/test/resources/org/apache/commons/beanutils/intListProp.ser",
+      "sha256": "0f1e57b0365772a98c5d406c6e1ae69916245723804d763aa801fcc44bbfd971"
+    },
+    {
+      "path": "src/test/resources/org/apache/commons/beanutils/intMapProp.ser",
+      "sha256": "3f4c25283d20e203dd4fb60e8e3a3f188a079d4fd258f0d84df554582c3eeb6b"
+    },
+    {
+      "path": "src/test/resources/org/apache/commons/beanutils/intProp.ser",
+      "sha256": "484df64128bb7938eea14d5f4a6a99aa77b546062b3aa437e9f519598683f895"
+    },
+    {
+      "path": "src/test/resources/org/apache/commons/beanutils/integerProp.ser",
+      "sha256": "00dc20c720b7606f5492d7707c46eb6454f0efd3e1e5c09292a6ef53e3280e8b"
+    },
+    {
+      "path": "src/test/resources/org/apache/commons/beanutils/listProp.ser",
+      "sha256": "8e09fa14a9caffeb55ac3836ab09fc49424e4b685e50c7f45e75e10344f0049a"
+    },
+    {
+      "path": "src/test/resources/org/apache/commons/beanutils/longProp.ser",
+      "sha256": "902a752553b0ca8a62a3fab07c5d25d464e710a2fc4c65a3f45a48923f70b5d9"
+    },
+    {
+      "path": "src/test/resources/org/apache/commons/beanutils/mapProp.ser",
+      "sha256": "e7903a3d815fc51b6d98607c626d06ed3e9efd364bfce57d8927cfe0c802c711"
+    },
+    {
+      "path": "src/test/resources/org/apache/commons/beanutils/nameOnly.ser",
+      "sha256": "7959eec5401133da66884d0e7f44a4db4879684329248392905837fd775780ce"
+    },
+    {
+      "path": "src/test/resources/org/apache/commons/beanutils/objProp.ser",
+      "sha256": "235221d8f65c72a7599043d48b5d5793c9acb65219c40da04fc19e2c252fc1d8"
+    },
+    {
+      "path": "src/test/resources/org/apache/commons/beanutils/shortProp.ser",
+      "sha256": "f7a474818b7d67820f84d7decbafba5e9391679d60fc7c7856de78ce8d8d87e9"
+    },
+    {
+      "path": "src/test/resources/org/apache/commons/beanutils/strArrayProp.ser",
+      "sha256": "dadb6c8b87c57847a2621e7b4044d520d9f745074a09a50e8c7ea63cc0aaacb0"
+    },
+    {
+      "path": "src/test/resources/org/apache/commons/beanutils/strProp.ser",
+      "sha256": "5c839719924bbdeaa4eba83b253fbbfbebe354ff3ec65fd6f2f6ebdbe8fd5307"
+    },
+    {
+      "path": "src/test/resources/org/apache/commons/beanutils/typedListProp.ser",
+      "sha256": "b0e96a5cb29d83244643c6379d703915a6ea9ac70c7eb467790aa2d6876f647a"
+    },
+    {
+      "path": "src/test/resources/org/apache/commons/beanutils/typedMapProp.ser",
+      "sha256": "e6d5434edc32ddffb76c40d07083e2d6d34ad0af0eafd20db74554f8b892b958"
+    }
+  ]
+}

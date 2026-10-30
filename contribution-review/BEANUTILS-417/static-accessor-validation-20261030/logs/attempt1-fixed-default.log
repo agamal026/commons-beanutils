@@ -1,0 +1,117 @@
+Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------< commons-beanutils:commons-beanutils >-----------------
+[INFO] Building Apache Commons BeanUtils 1.11.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[WARNING] Parameter 'forkMode' is unknown for plugin 'maven-surefire-plugin:3.6.0:test (default-test)'
+[WARNING] The POM for commons-collections:commons-collections-testframework:jar:3.2.1 is missing, no dependency information available
+[INFO] 
+[INFO] --- clean:3.5.0:clean (default-clean) @ commons-beanutils ---
+[INFO] Deleting $CHECKOUT/target
+[INFO] 
+[INFO] --- apache-rat:0.18:check (default-cli) @ commons-beanutils ---
+[INFO] No issues found.
+[INFO] 
+[INFO] --- enforcer:3.6.3:enforce (enforce-maven-version) @ commons-beanutils ---
+[INFO] Rule 0: org.apache.maven.enforcer.rules.version.RequireMavenVersion passed
+[INFO] 
+[INFO] --- enforcer:3.6.3:enforce (enforce-java-version) @ commons-beanutils ---
+[INFO] Rule 0: org.apache.maven.enforcer.rules.version.RequireJavaVersion passed
+[INFO] 
+[INFO] --- apache-rat:0.18:check (rat-check) @ commons-beanutils ---
+[INFO] No issues found.
+[INFO] 
+[INFO] --- artifact:3.7.0:check-buildplan (check-buildplan) @ commons-beanutils ---
+[WARNING] Parameter 'forkMode' is unknown for plugin 'maven-surefire-plugin:3.6.0:test (default-test)'
+[INFO] No known issue in 19 plugins
+[INFO] 
+[INFO] --- build-helper:3.6.2:parse-version (parse-version) @ commons-beanutils ---
+[INFO] 
+[INFO] --- antrun:3.2.0:run (javadoc.resources) @ commons-beanutils ---
+[INFO] Executing tasks
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- remote-resources:3.3.0:process (process-resource-bundles) @ commons-beanutils ---
+[INFO] Skipping remote resources execution.
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ commons-beanutils ---
+[INFO] skip non existing resourceDirectory $CHECKOUT/src/main/resources
+[INFO] Copying 2 resources from . to target/classes/META-INF
+[INFO] 
+[INFO] --- compiler:3.16.0:compile (default-compile) @ commons-beanutils ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- bundle:6.2.0:manifest (bundle-manifest) @ commons-beanutils ---
+[INFO] Writing manifest: $CHECKOUT/target/osgi/MANIFEST.MF
+[INFO] 
+[INFO] --- resources:3.5.0:testResources (default-testResources) @ commons-beanutils ---
+[INFO] Copying 22 resources from src/test/resources to target/test-classes
+[INFO] Copying 2 resources from . to target/test-classes/META-INF
+[INFO] 
+[INFO] --- compiler:3.16.0:testCompile (default-testCompile) @ commons-beanutils ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- surefire:3.6.0:test (default-test) @ commons-beanutils ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts
+[INFO] Running org.apache.commons.beanutils.MappedPropertyTest
+[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 s -- in org.apache.commons.beanutils.MappedPropertyTest
+[INFO] Running org.apache.commons.beanutils.ConstructorUtilsTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s -- in org.apache.commons.beanutils.ConstructorUtilsTest
+[INFO] Running org.apache.commons.beanutils.PropertyUtilsTest
+[INFO] Tests run: 116, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.214 s -- in org.apache.commons.beanutils.PropertyUtilsTest
+[INFO] Running org.apache.commons.beanutils.BeanPropertyValueChangeClosureTest
+[INFO] Tests run: 26, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 s -- in org.apache.commons.beanutils.BeanPropertyValueChangeClosureTest
+[INFO] Running org.apache.commons.beanutils.BeanUtils2Test
+[INFO] Tests run: 55, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.086 s -- in org.apache.commons.beanutils.BeanUtils2Test
+[INFO] Running org.apache.commons.beanutils.FluentPropertyBeanIntrospectorTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s -- in org.apache.commons.beanutils.FluentPropertyBeanIntrospectorTest
+[INFO] Running org.apache.commons.beanutils.BeanPredicateTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s -- in org.apache.commons.beanutils.BeanPredicateTest
+[INFO] Running org.apache.commons.beanutils.SuppressPropertiesBeanIntrospectorTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s -- in org.apache.commons.beanutils.SuppressPropertiesBeanIntrospectorTest
+[INFO] Running org.apache.commons.beanutils.BeanificationTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.147 s -- in org.apache.commons.beanutils.BeanificationTest
+[INFO] Running org.apache.commons.beanutils.LazyDynaBeanTest
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s -- in org.apache.commons.beanutils.LazyDynaBeanTest
+[INFO] Running org.apache.commons.beanutils.ConvertUtilsTest
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.054 s -- in org.apache.commons.beanutils.ConvertUtilsTest
+[INFO] Running org.apache.commons.beanutils.MethodUtilsTest
+[INFO] Tests run: 32, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s -- in org.apache.commons.beanutils.MethodUtilsTest
+[INFO] Running org.apache.commons.beanutils.DynaRowSetTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 s -- in org.apache.commons.beanutils.DynaRowSetTest
+[INFO] Running org.apache.commons.beanutils.BeanPropertyValueEqualsPredicateTest
+[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s -- in org.apache.commons.beanutils.BeanPropertyValueEqualsPredicateTest
+[INFO] Running org.apache.commons.beanutils.expression.DefaultResolverTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s -- in org.apache.commons.beanutils.expression.DefaultResolverTest
+[INFO] Running org.apache.commons.beanutils.BeanToPropertyValueTransformerTest
+[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s -- in org.apache.commons.beanutils.BeanToPropertyValueTransformerTest
+[INFO] Running org.apache.commons.beanutils.DynaBeanMapDecoratorTest
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s -- in org.apache.commons.beanutils.DynaBeanMapDecoratorTest
+[INFO] Running org.apache.commons.beanutils.LazyDynaListTest
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.049 s -- in org.apache.commons.beanutils.LazyDynaListTest
+[INFO] Running org.apache.commons.beanutils.locale.LocaleConvertUtilsTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s -- in org.apache.commons.beanutils.locale.LocaleConvertUtilsTest
+[INFO] Running org.apache.commons.beanutils.locale.LocaleBeanificationTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.243 s -- in org.apache.commons.beanutils.locale.LocaleBeanificationTest
+[INFO] Running org.apache.commons.beanutils.locale.LocaleBeanUtilsTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s -- in org.apache.commons.beanutils.locale.LocaleBeanUtilsTest
+[INFO] Running org.apache.commons.beanutils.locale.converters.ShortLocaleConverterTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s -- in org.apache.commons.beanutils.locale.converters.ShortLocaleConverterTest
+[INFO] Running org.apache.commons.beanutils.locale.converters.ByteLocaleConverterTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s -- in org.apache.commons.beanutils.locale.converters.ByteLocaleConverterTest
+[INFO] Running org.apache.commons.beanutils.locale.converters.DecimalLocaleConverterTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s -- in org.apache.commons.beanutils.locale.converters.DecimalLocaleConverterTest
+[INFO] Running org.apache.commons.beanutils.locale.converters.DoubleLocaleConverterTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s -- in org.apache.commons.beanutils.locale.converters.DoubleLocaleConverterTest
+[INFO] Running org.apache.commons.beanutils.locale.converters.DateLocaleConverterTest
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 s -- in org.apache.commons.beanutils.locale.converters.DateLocaleConverterTest
+[INFO] Running org.apache.commons.beanutils.locale.converters.BigDecimalLocaleConverterTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s -- in org.apache.commons.beanutils.locale.converters.BigDecimalLocaleConverterTest
+[INFO] Running org.apache.commons.beanutils.locale.converters.LongLocaleConverterTest

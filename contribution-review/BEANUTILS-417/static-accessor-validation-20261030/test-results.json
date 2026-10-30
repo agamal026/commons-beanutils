@@ -1,0 +1,2020 @@
+{
+  "focused": {
+    "counts": {
+      "tests": 105,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 1,
+      "passed": 104
+    },
+    "suite_count": 5,
+    "suites": [
+      {
+        "tests": 2,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 1,
+        "name": "org.apache.commons.beanutils.DynaPropertySerializationReadVersion1Test",
+        "passed": 1
+      },
+      {
+        "tests": 45,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "passed": 45
+      },
+      {
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.DynaPropertySubclassCompatibilityTest",
+        "passed": 1
+      },
+      {
+        "tests": 2,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.DynaPropertyTest",
+        "passed": 2
+      },
+      {
+        "tests": 55,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "passed": 55
+      }
+    ],
+    "all_nonpassed_cases": [
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationReadVersion1Test",
+        "name": "testDeserializeFromTargetDirectory",
+        "status": "skipped",
+        "reason": "Requires manual execution of main() to produce files first"
+      }
+    ],
+    "dyna_property_cases": [
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationReadVersion1Test",
+        "name": "testDeserializeFromTargetDirectory",
+        "status": "skipped",
+        "reason": "Requires manual execution of main() to produce files first"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationReadVersion1Test",
+        "name": "testDeserializeFromResources",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testRoundTripListTypeWithExplicitContentType",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testRoundTripLongPrimitiveType",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testRoundTripBytePrimitiveType",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testTypeIsPreservedAfterRoundTripForEveryPrimitive",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testRoundTripIntegerWrapperType",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testReadObjectThrowsStreamCorruptedExceptionForInvalidPrimitiveTypeConstant",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testLegacyPropertyCanBeReserializedAndCloned",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testRoundTripObjectType",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testRoundTripCharPrimitiveType",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testRoundTripMapTypeWithNoContentType",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testReadObjectThrowsStreamCorruptedExceptionForInvalidContentTypePrimitiveConstant",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testRoundTripIntPrimitiveType",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testRoundTripNameOnly",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testRoundTripBooleanPrimitiveType",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testRoundTripMapTypeWithObjectContentType",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testWireFormatPrimitiveTypeDataFollowsNameField",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testRoundTripListTypeWithPrimitiveContentType",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testRoundTripObjectArrayType",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testSerializingObjectCloner(DynaProperty)[1]",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testSerializingObjectCloner(DynaProperty)[2]",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testSerializingObjectCloner(DynaProperty)[3]",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testSerializingObjectCloner(DynaProperty)[4]",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testSerializingObjectCloner(DynaProperty)[5]",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testSerializingObjectCloner(DynaProperty)[6]",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testSerializingObjectCloner(DynaProperty)[7]",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testSerializingObjectCloner(DynaProperty)[8]",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testIsIndexedPreservedAfterRoundTrip",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testContentTypeIsNullForSimpleProperty",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testRoundTripConcreteListSubtype",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testRoundTripStringType",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testRoundTripConcreteMapSubtype",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testMultipleSerializationsProduceSameResult",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testRoundTripShortPrimitiveType",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testRoundTripPrimitiveArrayType",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testRoundTripListTypeWithNoContentType",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testNameIsPreservedAfterRoundTrip",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testToStringAfterRoundTrip",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testRoundTripMapTypeWithPrimitiveContentType",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testIsMappedPreservedAfterRoundTrip",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testSerializationIsIdempotent",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testRoundTripDoublePrimitiveType",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testSubclassCanBeReserializedAndCloned",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testWireFormatContentTypeDataFollowsNameFieldForMappedProperty",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testRoundTripFloatPrimitiveType",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testWireFormatObjectTypeDataFollowsNameField",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySubclassCompatibilityTest",
+        "name": "testSubclassLegacyStreamMethodDoesNotControlDeserialization",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyTest",
+        "name": "testEqualsObject",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyTest",
+        "name": "testHashCode",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testGetNestedString",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testSetNestedUnknown",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testSetSimpleBoolean",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testGetNestedReadOnly",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testGetSimpleArguments",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testSetNestedBoolean",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testSetNestedDouble",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testSetNestedFloat",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testSetNestedShort",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testGetSimpleInt",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testSetNestedString",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testSetSimpleFloat",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testSetSimpleShort",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testSetSimpleArguments",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testSetNestedInt",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testGetIndexedValues",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testGetSimpleDouble",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testGetSimpleUnknown",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testGetMappedSlashes",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testGetSimpleNested",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testGetNestedUnknown",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testGetNestedArguments",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testGetSimpleBoolean",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testSetSimpleIndexed",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testGetMappedValues",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testGetSimpleString",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testGetSimpleLong",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testGetNestedBoolean",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testSetSimpleInt",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testSetIndexedArguments",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testSetSimpleDouble",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testGetNestedFloat",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testGetNestedShort",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testGetNestedLong",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testSetSimpleNested",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testGetMappedArguments",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testSetNestedArguments",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testSetSimpleLong",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testGetSimpleFloat",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testGetSimpleShort",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testSetMappedValues",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testSetSimpleString",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testGetMappedPeriods",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testSetNestedLong",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testSetNestedWriteOnly",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testSetNestedReadOnly",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testCopyPropertiesMap",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testDescribe",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testSetMappedArguments",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testGetNestedDouble",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testGetSimpleIndexed",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testGetIndexedArguments",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testSetIndexedValues",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testGetNestedInt",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testSetSimpleUnknown",
+        "status": "passed"
+      }
+    ]
+  },
+  "default": {
+    "counts": {
+      "tests": 1294,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 8,
+      "passed": 1286
+    },
+    "suite_count": 105,
+    "suites": [
+      {
+        "tests": 35,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.BasicDynaBeanTest",
+        "passed": 35
+      },
+      {
+        "tests": 8,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.BeanComparatorTest",
+        "passed": 8
+      },
+      {
+        "tests": 4,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.BeanIntrospectionDataTest",
+        "passed": 4
+      },
+      {
+        "tests": 64,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 3,
+        "name": "org.apache.commons.beanutils.BeanMapTest",
+        "passed": 61
+      },
+      {
+        "tests": 4,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.BeanPredicateTest",
+        "passed": 4
+      },
+      {
+        "tests": 26,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.BeanPropertyValueChangeClosureTest",
+        "passed": 26
+      },
+      {
+        "tests": 17,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.BeanPropertyValueEqualsPredicateTest",
+        "passed": 17
+      },
+      {
+        "tests": 17,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.BeanToPropertyValueTransformerTest",
+        "passed": 17
+      },
+      {
+        "tests": 55,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.BeanUtils2Test",
+        "passed": 55
+      },
+      {
+        "tests": 55,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.BeanUtilsTest",
+        "passed": 55
+      },
+      {
+        "tests": 8,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.BeanificationTest",
+        "passed": 8
+      },
+      {
+        "tests": 11,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.ConstructorUtilsTest",
+        "passed": 11
+      },
+      {
+        "tests": 13,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.ConvertUtilsTest",
+        "passed": 13
+      },
+      {
+        "tests": 9,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.DefaultIntrospectionContextTest",
+        "passed": 9
+      },
+      {
+        "tests": 13,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.DynaBeanMapDecoratorTest",
+        "passed": 13
+      },
+      {
+        "tests": 29,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.DynaBeanUtilsTest",
+        "passed": 29
+      },
+      {
+        "tests": 2,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 1,
+        "name": "org.apache.commons.beanutils.DynaPropertySerializationReadVersion1Test",
+        "passed": 1
+      },
+      {
+        "tests": 45,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "passed": 45
+      },
+      {
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.DynaPropertySubclassCompatibilityTest",
+        "passed": 1
+      },
+      {
+        "tests": 2,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.DynaPropertyTest",
+        "passed": 2
+      },
+      {
+        "tests": 55,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "passed": 55
+      },
+      {
+        "tests": 8,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.DynaResultSetTest",
+        "passed": 8
+      },
+      {
+        "tests": 9,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.DynaRowSetTest",
+        "passed": 9
+      },
+      {
+        "tests": 3,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.FluentPropertyBeanIntrospectorTest",
+        "passed": 3
+      },
+      {
+        "tests": 29,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 2,
+        "name": "org.apache.commons.beanutils.IndexedPropertyTest",
+        "passed": 27
+      },
+      {
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.JdbcDynaClassLocaleTest",
+        "passed": 1
+      },
+      {
+        "tests": 16,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.LazyDynaBeanTest",
+        "passed": 16
+      },
+      {
+        "tests": 15,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.LazyDynaClassTest",
+        "passed": 15
+      },
+      {
+        "tests": 15,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.LazyDynaListTest",
+        "passed": 15
+      },
+      {
+        "tests": 17,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.LazyDynaMapTest",
+        "passed": 17
+      },
+      {
+        "tests": 17,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.MappedPropertyTest",
+        "passed": 17
+      },
+      {
+        "tests": 32,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.MethodUtilsTest",
+        "passed": 32
+      },
+      {
+        "tests": 116,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.PropertyUtilsTest",
+        "passed": 116
+      },
+      {
+        "tests": 4,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.SuppressPropertiesBeanIntrospectorTest",
+        "passed": 4
+      },
+      {
+        "tests": 43,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.WrapDynaBeanTest",
+        "passed": 43
+      },
+      {
+        "tests": 2,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.WrapDynaClassTest",
+        "passed": 2
+      },
+      {
+        "tests": 4,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.bugs.EnumDeclaringClassTest",
+        "passed": 4
+      },
+      {
+        "tests": 3,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.bugs.Jira157Test",
+        "passed": 3
+      },
+      {
+        "tests": 12,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.bugs.Jira18Test",
+        "passed": 12
+      },
+      {
+        "tests": 6,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.bugs.Jira273Test",
+        "passed": 6
+      },
+      {
+        "tests": 3,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.bugs.Jira298Test",
+        "passed": 3
+      },
+      {
+        "tests": 2,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.bugs.Jira339Test",
+        "passed": 2
+      },
+      {
+        "tests": 2,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.bugs.Jira345Test",
+        "passed": 2
+      },
+      {
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.bugs.Jira347Test",
+        "passed": 1
+      },
+      {
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.bugs.Jira349Test",
+        "passed": 1
+      },
+      {
+        "tests": 3,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.bugs.Jira357Test",
+        "passed": 3
+      },
+      {
+        "tests": 2,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.bugs.Jira358Test",
+        "passed": 2
+      },
+      {
+        "tests": 4,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.bugs.Jira359Test",
+        "passed": 4
+      },
+      {
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.bugs.Jira368Test",
+        "passed": 1
+      },
+      {
+        "tests": 3,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.bugs.Jira369Test",
+        "passed": 3
+      },
+      {
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.bugs.Jira381Test",
+        "passed": 1
+      },
+      {
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.bugs.Jira411Test",
+        "passed": 1
+      },
+      {
+        "tests": 2,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 2,
+        "name": "org.apache.commons.beanutils.bugs.Jira422Test",
+        "passed": 0
+      },
+      {
+        "tests": 2,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.bugs.Jira422bTest",
+        "passed": 2
+      },
+      {
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.bugs.Jira454Test",
+        "passed": 1
+      },
+      {
+        "tests": 2,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.bugs.Jira456Test",
+        "passed": 2
+      },
+      {
+        "tests": 2,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.bugs.Jira458Test",
+        "passed": 2
+      },
+      {
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.bugs.Jira463Test",
+        "passed": 1
+      },
+      {
+        "tests": 4,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.bugs.Jira465Test",
+        "passed": 4
+      },
+      {
+        "tests": 8,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.bugs.Jira492Test",
+        "passed": 8
+      },
+      {
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.bugs.Jira493Test",
+        "passed": 1
+      },
+      {
+        "tests": 2,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.bugs.Jira520Test",
+        "passed": 2
+      },
+      {
+        "tests": 2,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.bugs.Jira541Test",
+        "passed": 2
+      },
+      {
+        "tests": 16,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.bugs.Jira61Test",
+        "passed": 16
+      },
+      {
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.bugs.Jira87Test",
+        "passed": 1
+      },
+      {
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.bugs.Jira92Test",
+        "passed": 1
+      },
+      {
+        "tests": 7,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.converters.ArrayConverterTestCase",
+        "passed": 7
+      },
+      {
+        "tests": 19,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.converters.BigDecimalConverterTestCase",
+        "passed": 19
+      },
+      {
+        "tests": 19,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.converters.BigIntegerConverterTestCase",
+        "passed": 19
+      },
+      {
+        "tests": 9,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.converters.BooleanArrayConverterTestCase",
+        "passed": 9
+      },
+      {
+        "tests": 7,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.converters.BooleanConverterTestCase",
+        "passed": 7
+      },
+      {
+        "tests": 20,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.converters.ByteConverterTestCase",
+        "passed": 20
+      },
+      {
+        "tests": 11,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.converters.CalendarConverterTestCase",
+        "passed": 11
+      },
+      {
+        "tests": 6,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.converters.CharacterConverterTest",
+        "passed": 6
+      },
+      {
+        "tests": 7,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.converters.ClassConverterTest",
+        "passed": 7
+      },
+      {
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.converters.ClassReloaderTest",
+        "passed": 1
+      },
+      {
+        "tests": 11,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.converters.DateConverterTest",
+        "passed": 11
+      },
+      {
+        "tests": 19,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.converters.DoubleConverterTest",
+        "passed": 19
+      },
+      {
+        "tests": 2,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.converters.FileConverterTest",
+        "passed": 2
+      },
+      {
+        "tests": 20,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.converters.FloatConverterTest",
+        "passed": 20
+      },
+      {
+        "tests": 21,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.converters.IntegerConverterTest",
+        "passed": 21
+      },
+      {
+        "tests": 21,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.converters.LongConverterTest",
+        "passed": 21
+      },
+      {
+        "tests": 20,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.converters.ShortConverterTest",
+        "passed": 20
+      },
+      {
+        "tests": 12,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.converters.SqlDateConverterTest",
+        "passed": 12
+      },
+      {
+        "tests": 11,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.converters.SqlTimeConverterTest",
+        "passed": 11
+      },
+      {
+        "tests": 11,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.converters.SqlTimestampConverterTest",
+        "passed": 11
+      },
+      {
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.converters.StringArrayConverterTest",
+        "passed": 1
+      },
+      {
+        "tests": 3,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.converters.StringConverterTest",
+        "passed": 3
+      },
+      {
+        "tests": 2,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.converters.URLConverterTest",
+        "passed": 2
+      },
+      {
+        "tests": 7,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.expression.DefaultResolverTest",
+        "passed": 7
+      },
+      {
+        "tests": 2,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.locale.LocaleBeanUtilsTest",
+        "passed": 2
+      },
+      {
+        "tests": 9,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.locale.LocaleBeanificationTest",
+        "passed": 9
+      },
+      {
+        "tests": 6,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.locale.LocaleConvertUtilsTest",
+        "passed": 6
+      },
+      {
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.locale.converters.BaseLocaleConverterTest",
+        "passed": 1
+      },
+      {
+        "tests": 11,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.locale.converters.BigDecimalLocaleConverterTest",
+        "passed": 11
+      },
+      {
+        "tests": 12,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.locale.converters.BigIntegerLocaleConverterTest",
+        "passed": 12
+      },
+      {
+        "tests": 10,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.locale.converters.ByteLocaleConverterTest",
+        "passed": 10
+      },
+      {
+        "tests": 14,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.locale.converters.DateLocaleConverterTest",
+        "passed": 14
+      },
+      {
+        "tests": 4,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.locale.converters.DecimalLocaleConverterTest",
+        "passed": 4
+      },
+      {
+        "tests": 11,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.locale.converters.DoubleLocaleConverterTest",
+        "passed": 11
+      },
+      {
+        "tests": 12,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.locale.converters.FloatLocaleConverterTest",
+        "passed": 12
+      },
+      {
+        "tests": 12,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.locale.converters.IntegerLocaleConverterTest",
+        "passed": 12
+      },
+      {
+        "tests": 11,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.locale.converters.LongLocaleConverterTest",
+        "passed": 11
+      },
+      {
+        "tests": 10,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.locale.converters.ShortLocaleConverterTest",
+        "passed": 10
+      },
+      {
+        "tests": 8,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "name": "org.apache.commons.beanutils.memoryleaktests.MemoryLeakTest",
+        "passed": 8
+      }
+    ],
+    "all_nonpassed_cases": [
+      {
+        "suite": "org.apache.commons.beanutils.BeanMapTest",
+        "name": "testReplaceKeyValueValue",
+        "status": "skipped",
+        "reason": null
+      },
+      {
+        "suite": "org.apache.commons.beanutils.BeanMapTest",
+        "name": "testReplaceKeyValue",
+        "status": "skipped",
+        "reason": null
+      },
+      {
+        "suite": "org.apache.commons.beanutils.BeanMapTest",
+        "name": "testRemoveKeyValue",
+        "status": "skipped",
+        "reason": null
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationReadVersion1Test",
+        "name": "testDeserializeFromTargetDirectory",
+        "status": "skipped",
+        "reason": "Requires manual execution of main() to produce files first"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.IndexedPropertyTest",
+        "name": "testListIndexedWriteMethod",
+        "status": "skipped",
+        "reason": null
+      },
+      {
+        "suite": "org.apache.commons.beanutils.IndexedPropertyTest",
+        "name": "testListIndexedReadMethod",
+        "status": "skipped",
+        "reason": null
+      },
+      {
+        "suite": "org.apache.commons.beanutils.bugs.Jira422Test",
+        "name": "testRootBean",
+        "status": "skipped",
+        "reason": null
+      },
+      {
+        "suite": "org.apache.commons.beanutils.bugs.Jira422Test",
+        "name": "testSecondChildBean",
+        "status": "skipped",
+        "reason": null
+      }
+    ],
+    "dyna_property_cases": [
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationReadVersion1Test",
+        "name": "testDeserializeFromTargetDirectory",
+        "status": "skipped",
+        "reason": "Requires manual execution of main() to produce files first"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationReadVersion1Test",
+        "name": "testDeserializeFromResources",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testRoundTripListTypeWithExplicitContentType",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testRoundTripLongPrimitiveType",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testRoundTripBytePrimitiveType",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testTypeIsPreservedAfterRoundTripForEveryPrimitive",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testRoundTripIntegerWrapperType",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testReadObjectThrowsStreamCorruptedExceptionForInvalidPrimitiveTypeConstant",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testLegacyPropertyCanBeReserializedAndCloned",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testRoundTripObjectType",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testRoundTripCharPrimitiveType",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testRoundTripMapTypeWithNoContentType",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testReadObjectThrowsStreamCorruptedExceptionForInvalidContentTypePrimitiveConstant",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testRoundTripIntPrimitiveType",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testRoundTripNameOnly",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testRoundTripBooleanPrimitiveType",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testRoundTripMapTypeWithObjectContentType",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testWireFormatPrimitiveTypeDataFollowsNameField",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testRoundTripListTypeWithPrimitiveContentType",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testRoundTripObjectArrayType",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testSerializingObjectCloner(DynaProperty)[1]",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testSerializingObjectCloner(DynaProperty)[2]",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testSerializingObjectCloner(DynaProperty)[3]",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testSerializingObjectCloner(DynaProperty)[4]",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testSerializingObjectCloner(DynaProperty)[5]",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testSerializingObjectCloner(DynaProperty)[6]",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testSerializingObjectCloner(DynaProperty)[7]",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testSerializingObjectCloner(DynaProperty)[8]",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testIsIndexedPreservedAfterRoundTrip",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testContentTypeIsNullForSimpleProperty",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testRoundTripConcreteListSubtype",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testRoundTripStringType",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testRoundTripConcreteMapSubtype",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testMultipleSerializationsProduceSameResult",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testRoundTripShortPrimitiveType",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testRoundTripPrimitiveArrayType",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testRoundTripListTypeWithNoContentType",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testNameIsPreservedAfterRoundTrip",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testToStringAfterRoundTrip",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testRoundTripMapTypeWithPrimitiveContentType",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testIsMappedPreservedAfterRoundTrip",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testSerializationIsIdempotent",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testRoundTripDoublePrimitiveType",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testSubclassCanBeReserializedAndCloned",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testWireFormatContentTypeDataFollowsNameFieldForMappedProperty",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testRoundTripFloatPrimitiveType",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySerializationTest",
+        "name": "testWireFormatObjectTypeDataFollowsNameField",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertySubclassCompatibilityTest",
+        "name": "testSubclassLegacyStreamMethodDoesNotControlDeserialization",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyTest",
+        "name": "testEqualsObject",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyTest",
+        "name": "testHashCode",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testGetNestedString",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testSetNestedUnknown",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testSetSimpleBoolean",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testGetNestedReadOnly",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testGetSimpleArguments",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testSetNestedBoolean",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testSetNestedDouble",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testSetNestedFloat",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testSetNestedShort",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testGetSimpleInt",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testSetNestedString",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testSetSimpleFloat",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testSetSimpleShort",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testSetSimpleArguments",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testSetNestedInt",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testGetIndexedValues",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testGetSimpleDouble",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testGetSimpleUnknown",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testGetMappedSlashes",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testGetSimpleNested",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testGetNestedUnknown",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testGetNestedArguments",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testGetSimpleBoolean",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testSetSimpleIndexed",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testGetMappedValues",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testGetSimpleString",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testGetSimpleLong",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testGetNestedBoolean",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testSetSimpleInt",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testSetIndexedArguments",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testSetSimpleDouble",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testGetNestedFloat",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testGetNestedShort",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testGetNestedLong",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testSetSimpleNested",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testGetMappedArguments",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testSetNestedArguments",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testSetSimpleLong",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testGetSimpleFloat",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testGetSimpleShort",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testSetMappedValues",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testSetSimpleString",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testGetMappedPeriods",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testSetNestedLong",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testSetNestedWriteOnly",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testSetNestedReadOnly",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testCopyPropertiesMap",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testDescribe",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testSetMappedArguments",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testGetNestedDouble",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testGetSimpleIndexed",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testGetIndexedArguments",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testSetIndexedValues",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testGetNestedInt",
+        "status": "passed"
+      },
+      {
+        "suite": "org.apache.commons.beanutils.DynaPropertyUtilsTest",
+        "name": "testSetSimpleUnknown",
+        "status": "passed"
+      }
+    ]
+  }
+}

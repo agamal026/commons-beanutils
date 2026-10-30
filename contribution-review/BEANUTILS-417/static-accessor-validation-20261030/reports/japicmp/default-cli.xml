@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<japicmp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" accessModifier="PROTECTED" creationTimestamp="2026-10-30T23:56:34.380+0900" ignoreMissingClasses="false" ignoreMissingClassesByRegularExpressions="" newJar="commons-beanutils-1.11.1-SNAPSHOT.jar" newVersion="1.11.1-SNAPSHOT" oldJar="commons-beanutils-1.11.0.jar" oldVersion="1.11.0" onlyBinaryIncompatibleModifications="false" onlyModifications="true" packagesExclude="n.a." packagesInclude="all" semanticVersioning="0.1.0" title="Comparing source compatibility of commons-beanutils-1.11.1-SNAPSHOT.jar against commons-beanutils-1.11.0.jar" xsi:noNamespaceSchemaLocation="japicmp.xsd">
+    <classes>
+        <class binaryCompatible="true" changeStatus="MODIFIED" fullyQualifiedName="org.apache.commons.beanutils.DynaProperty" javaObjectSerializationCompatible="SERIALIZABLE_INCOMPATIBLE_SUPERCLASS_MODIFIED" javaObjectSerializationCompatibleAsString="superclass modified" sourceCompatible="true">
+            <annotations/>
+            <attributes>
+                <attribute changeStatus="UNCHANGED" newValue="NON_SYNTHETIC" oldValue="NON_SYNTHETIC"/>
+            </attributes>
+            <classFileFormatVersion changeStatus="UNCHANGED" majorVersionNew="52" majorVersionOld="52" minorVersionNew="0" minorVersionOld="0"/>
+            <classType changeStatus="UNCHANGED" newType="CLASS" oldType="CLASS"/>
+            <compatibilityChanges/>
+            <constructors/>
+            <fields/>
+            <genericTemplates/>
+            <interfaces/>
+            <methods/>
+            <modifiers>
+                <modifier changeStatus="UNCHANGED" newValue="NON_FINAL" oldValue="NON_FINAL"/>
+                <modifier changeStatus="UNCHANGED" newValue="NON_STATIC" oldValue="NON_STATIC"/>
+                <modifier changeStatus="UNCHANGED" newValue="PUBLIC" oldValue="PUBLIC"/>
+                <modifier changeStatus="UNCHANGED" newValue="NON_ABSTRACT" oldValue="NON_ABSTRACT"/>
+                <modifier changeStatus="UNCHANGED" newValue="NON_SYNTHETIC" oldValue="NON_SYNTHETIC"/>
+            </modifiers>
+            <serialVersionUid serialVersionUidDefaultNew="-3084907613499830175" serialVersionUidDefaultOld="-3084907613499830175" serialVersionUidInClassNew="1" serialVersionUidInClassOld="1" serializableNew="true" serializableOld="true"/>
+            <superclass binaryCompatible="true" changeStatus="MODIFIED" sourceCompatible="true" superclassNew="org.apache.commons.beanutils.DynaPropertySerialization" superclassOld="java.lang.Object">
+                <compatibilityChanges>
+                    <compatibilityChange binaryCompatible="true" sourceCompatible="true" type="SUPERCLASS_ADDED"/>
+                </compatibilityChanges>
+            </superclass>
+        </class>
+        <class binaryCompatible="true" changeStatus="MODIFIED" fullyQualifiedName="org.apache.commons.beanutils.locale.converters.BigDecimalLocaleConverter" javaObjectSerializationCompatible="NOT_SERIALIZABLE" javaObjectSerializationCompatibleAsString="not serializable" sourceCompatible="true">
+            <annotations/>
+            <attributes>
+                <attribute changeStatus="UNCHANGED" newValue="NON_SYNTHETIC" oldValue="NON_SYNTHETIC"/>
+            </attributes>
+            <classFileFormatVersion changeStatus="UNCHANGED" majorVersionNew="52" majorVersionOld="52" minorVersionNew="0" minorVersionOld="0"/>
+            <classType changeStatus="UNCHANGED" newType="CLASS" oldType="CLASS"/>
+            <compatibilityChanges/>
+            <constructors/>
+            <fields/>
+            <genericTemplates/>
+            <interfaces/>
+            <methods>
+                <method binaryCompatible="true" changeStatus="NEW" name="isParseBigDecimal" newLineNumber="165" oldLineNumber="n.a." sourceCompatible="true">
+                    <annotations/>
+                    <attributes>
+                        <attribute changeStatus="NEW" newValue="NON_SYNTHETIC" oldValue="n.a."/>
+                    </attributes>
+                    <compatibilityChanges/>
+                    <exceptions/>
+                    <genericTemplates/>
+                    <modifiers>
+                        <modifier changeStatus="NEW" newValue="NON_FINAL" oldValue="n.a."/>
+                        <modifier changeStatus="NEW" newValue="NON_STATIC" oldValue="n.a."/>
+                        <modifier changeStatus="NEW" newValue="PROTECTED" oldValue="n.a."/>
+                        <modifier changeStatus="NEW" newValue="NON_ABSTRACT" oldValue="n.a."/>
+                        <modifier changeStatus="NEW" newValue="NON_BRIDGE" oldValue="n.a."/>
+                        <modifier changeStatus="NEW" newValue="NON_SYNTHETIC" oldValue="n.a."/>
+                    </modifiers>
+                    <parameters/>
+                    <returnType binaryCompatible="true" changeStatus="NEW" newValue="boolean" oldValue="n.a." sourceCompatible="true">
+                        <compatibilityChanges/>
+                        <newGenericTypes/>
+                        <oldGenericTypes/>
+                    </returnType>
+                </method>
+            </methods>
+            <modifiers>
+                <modifier changeStatus="UNCHANGED" newValue="NON_FINAL" oldValue="NON_FINAL"/>
+                <modifier changeStatus="UNCHANGED" newValue="NON_STATIC" oldValue="NON_STATIC"/>
+                <modifier changeStatus="UNCHANGED" newValue="PUBLIC" oldValue="PUBLIC"/>
+                <modifier changeStatus="UNCHANGED" newValue="NON_ABSTRACT" oldValue="NON_ABSTRACT"/>
+                <modifier changeStatus="UNCHANGED" newValue="NON_SYNTHETIC" oldValue="NON_SYNTHETIC"/>
+            </modifiers>
+            <serialVersionUid serialVersionUidDefaultNew="n.a." serialVersionUidDefaultOld="n.a." serialVersionUidInClassNew="n.a." serialVersionUidInClassOld="n.a." serializableNew="false" serializableOld="false"/>
+            <superclass binaryCompatible="true" changeStatus="UNCHANGED" sourceCompatible="true" superclassNew="org.apache.commons.beanutils.locale.converters.DecimalLocaleConverter" superclassOld="org.apache.commons.beanutils.locale.converters.DecimalLocaleConverter">
+                <compatibilityChanges/>
+            </superclass>
+        </class>
+        <class binaryCompatible="true" changeStatus="MODIFIED" fullyQualifiedName="org.apache.commons.beanutils.locale.converters.BigIntegerLocaleConverter" javaObjectSerializationCompatible="NOT_SERIALIZABLE" javaObjectSerializationCompatibleAsString="not serializable" sourceCompatible="true">
+            <annotations/>
+            <attributes>
+                <attribute changeStatus="UNCHANGED" newValue="NON_SYNTHETIC" oldValue="NON_SYNTHETIC"/>
+            </attributes>
+            <classFileFormatVersion changeStatus="UNCHANGED" majorVersionNew="52" majorVersionOld="52" minorVersionNew="0" minorVersionOld="0"/>
+            <classType changeStatus="UNCHANGED" newType="CLASS" oldType="CLASS"/>
+            <compatibilityChanges/>
+            <constructors/>
+            <fields/>
+            <genericTemplates/>
+            <interfaces/>
+            <methods>
+                <method binaryCompatible="true" changeStatus="NEW" name="isParseBigDecimal" newLineNumber="166" oldLineNumber="n.a." sourceCompatible="true">
+                    <annotations/>
+                    <attributes>
+                        <attribute changeStatus="NEW" newValue="NON_SYNTHETIC" oldValue="n.a."/>
+                    </attributes>
+                    <compatibilityChanges/>
+                    <exceptions/>
+                    <genericTemplates/>
+                    <modifiers>
+                        <modifier changeStatus="NEW" newValue="NON_FINAL" oldValue="n.a."/>
+                        <modifier changeStatus="NEW" newValue="NON_STATIC" oldValue="n.a."/>
+                        <modifier changeStatus="NEW" newValue="PROTECTED" oldValue="n.a."/>
+                        <modifier changeStatus="NEW" newValue="NON_ABSTRACT" oldValue="n.a."/>
+                        <modifier changeStatus="NEW" newValue="NON_BRIDGE" oldValue="n.a."/>
+                        <modifier changeStatus="NEW" newValue="NON_SYNTHETIC" oldValue="n.a."/>
+                    </modifiers>
+                    <parameters/>
+                    <returnType binaryCompatible="true" changeStatus="NEW" newValue="boolean" oldValue="n.a." sourceCompatible="true">
+                        <compatibilityChanges/>
+                        <newGenericTypes/>
+                        <oldGenericTypes/>
+                    </returnType>
+                </method>
+            </methods>
+            <modifiers>
+                <modifier changeStatus="UNCHANGED" newValue="NON_FINAL" oldValue="NON_FINAL"/>
+                <modifier changeStatus="UNCHANGED" newValue="NON_STATIC" oldValue="NON_STATIC"/>
+                <modifier changeStatus="UNCHANGED" newValue="PUBLIC" oldValue="PUBLIC"/>
+                <modifier changeStatus="UNCHANGED" newValue="NON_ABSTRACT" oldValue="NON_ABSTRACT"/>
+                <modifier changeStatus="UNCHANGED" newValue="NON_SYNTHETIC" oldValue="NON_SYNTHETIC"/>
+            </modifiers>
+            <serialVersionUid serialVersionUidDefaultNew="n.a." serialVersionUidDefaultOld="n.a." serialVersionUidInClassNew="n.a." serialVersionUidInClassOld="n.a." serializableNew="false" serializableOld="false"/>
+            <superclass binaryCompatible="true" changeStatus="UNCHANGED" sourceCompatible="true" superclassNew="org.apache.commons.beanutils.locale.converters.DecimalLocaleConverter" superclassOld="org.apache.commons.beanutils.locale.converters.DecimalLocaleConverter">
+                <compatibilityChanges/>
+            </superclass>
+        </class>
+        <class binaryCompatible="true" changeStatus="MODIFIED" fullyQualifiedName="org.apache.commons.beanutils.locale.converters.DecimalLocaleConverter" javaObjectSerializationCompatible="NOT_SERIALIZABLE" javaObjectSerializationCompatibleAsString="not serializable" sourceCompatible="true">
+            <annotations/>
+            <attributes>
+                <attribute changeStatus="UNCHANGED" newValue="NON_SYNTHETIC" oldValue="NON_SYNTHETIC"/>
+            </attributes>
+            <classFileFormatVersion changeStatus="UNCHANGED" majorVersionNew="52" majorVersionOld="52" minorVersionNew="0" minorVersionOld="0"/>
+            <classType changeStatus="UNCHANGED" newType="CLASS" oldType="CLASS"/>
+            <compatibilityChanges/>
+            <constructors/>
+            <fields/>
+            <genericTemplates/>
+            <interfaces/>
+            <methods>
+                <method binaryCompatible="true" changeStatus="NEW" name="isParseBigDecimal" newLineNumber="190" oldLineNumber="n.a." sourceCompatible="true">
+                    <annotations/>
+                    <attributes>
+                        <attribute changeStatus="NEW" newValue="NON_SYNTHETIC" oldValue="n.a."/>
+                    </attributes>
+                    <compatibilityChanges/>
+                    <exceptions/>
+                    <genericTemplates/>
+                    <modifiers>
+                        <modifier changeStatus="NEW" newValue="NON_FINAL" oldValue="n.a."/>
+                        <modifier changeStatus="NEW" newValue="NON_STATIC" oldValue="n.a."/>
+                        <modifier changeStatus="NEW" newValue="PROTECTED" oldValue="n.a."/>
+                        <modifier changeStatus="NEW" newValue="NON_ABSTRACT" oldValue="n.a."/>
+                        <modifier changeStatus="NEW" newValue="NON_BRIDGE" oldValue="n.a."/>
+                        <modifier changeStatus="NEW" newValue="NON_SYNTHETIC" oldValue="n.a."/>
+                    </modifiers>
+                    <parameters/>
+                    <returnType binaryCompatible="true" changeStatus="NEW" newValue="boolean" oldValue="n.a." sourceCompatible="true">
+                        <compatibilityChanges/>
+                        <newGenericTypes/>
+                        <oldGenericTypes/>
+                    </returnType>
+                </method>
+            </methods>
+            <modifiers>
+                <modifier changeStatus="UNCHANGED" newValue="NON_FINAL" oldValue="NON_FINAL"/>
+                <modifier changeStatus="UNCHANGED" newValue="NON_STATIC" oldValue="NON_STATIC"/>
+                <modifier changeStatus="UNCHANGED" newValue="PUBLIC" oldValue="PUBLIC"/>
+                <modifier changeStatus="UNCHANGED" newValue="NON_ABSTRACT" oldValue="NON_ABSTRACT"/>
+                <modifier changeStatus="UNCHANGED" newValue="NON_SYNTHETIC" oldValue="NON_SYNTHETIC"/>
+            </modifiers>
+            <serialVersionUid serialVersionUidDefaultNew="n.a." serialVersionUidDefaultOld="n.a." serialVersionUidInClassNew="n.a." serialVersionUidInClassOld="n.a." serializableNew="false" serializableOld="false"/>
+            <superclass binaryCompatible="true" changeStatus="UNCHANGED" sourceCompatible="true" superclassNew="org.apache.commons.beanutils.locale.BaseLocaleConverter" superclassOld="org.apache.commons.beanutils.locale.BaseLocaleConverter">
+                <compatibilityChanges/>
+            </superclass>
+        </class>
+    </classes>
+</japicmp>

@@ -1,0 +1,81 @@
+Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------< commons-beanutils:commons-beanutils >-----------------
+[INFO] Building Apache Commons BeanUtils 1.11.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[WARNING] Parameter 'forkMode' is unknown for plugin 'maven-surefire-plugin:3.6.0:test (default-test)'
+[WARNING] The POM for commons-collections:commons-collections-testframework:jar:3.2.1 is missing, no dependency information available
+[INFO] 
+[INFO] --- enforcer:3.6.3:enforce (enforce-maven-version) @ commons-beanutils ---
+[INFO] Rule 0: org.apache.maven.enforcer.rules.version.RequireMavenVersion passed
+[INFO] 
+[INFO] --- enforcer:3.6.3:enforce (enforce-java-version) @ commons-beanutils ---
+[INFO] Rule 0: org.apache.maven.enforcer.rules.version.RequireJavaVersion passed
+[INFO] 
+[INFO] --- apache-rat:0.18:check (rat-check) @ commons-beanutils ---
+[INFO] No issues found.
+[INFO] 
+[INFO] --- artifact:3.7.0:check-buildplan (check-buildplan) @ commons-beanutils ---
+[WARNING] Parameter 'forkMode' is unknown for plugin 'maven-surefire-plugin:3.6.0:test (default-test)'
+[INFO] No known issue in 19 plugins
+[INFO] 
+[INFO] --- build-helper:3.6.2:parse-version (parse-version) @ commons-beanutils ---
+[INFO] 
+[INFO] --- antrun:3.2.0:run (javadoc.resources) @ commons-beanutils ---
+[INFO] Executing tasks
+[INFO]      [copy] Copying 2 files to $CHECKOUT/target/apidocs/META-INF
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- remote-resources:3.3.0:process (process-resource-bundles) @ commons-beanutils ---
+[INFO] Skipping remote resources execution.
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ commons-beanutils ---
+[INFO] skip non existing resourceDirectory $CHECKOUT/src/main/resources
+[INFO] Copying 2 resources from . to target/classes/META-INF
+[INFO] 
+[INFO] --- compiler:3.16.0:compile (default-compile) @ commons-beanutils ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 112 source files with javac [debug release 8] to target/classes
+[INFO] $CHECKOUT/src/main/java/org/apache/commons/beanutils/BeanComparator.java: Some input files use unchecked or unsafe operations.
+[INFO] $CHECKOUT/src/main/java/org/apache/commons/beanutils/BeanComparator.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- bundle:6.2.0:manifest (bundle-manifest) @ commons-beanutils ---
+[INFO] No MANIFEST.MF file found, generating manifest.
+[INFO] Writing manifest: $CHECKOUT/target/osgi/MANIFEST.MF
+[INFO] 
+[INFO] --- resources:3.5.0:testResources (default-testResources) @ commons-beanutils ---
+[INFO] Copying 22 resources from src/test/resources to target/test-classes
+[INFO] Copying 2 resources from . to target/test-classes/META-INF
+[INFO] 
+[INFO] --- compiler:3.16.0:testCompile (default-testCompile) @ commons-beanutils ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 157 source files with javac [debug release 8] to target/test-classes
+[INFO] $CHECKOUT/src/test/java/org/apache/commons/beanutils/converters/BooleanArrayConverterTestCase.java: Some input files use or override a deprecated API.
+[INFO] $CHECKOUT/src/test/java/org/apache/commons/beanutils/converters/BooleanArrayConverterTestCase.java: Recompile with -Xlint:deprecation for details.
+[INFO] $CHECKOUT/src/test/java/org/apache/commons/beanutils/bugs/EnumDeclaringClassTest.java: $CHECKOUT/src/test/java/org/apache/commons/beanutils/bugs/EnumDeclaringClassTest.java uses unchecked or unsafe operations.
+[INFO] $CHECKOUT/src/test/java/org/apache/commons/beanutils/bugs/EnumDeclaringClassTest.java: Recompile with -Xlint:unchecked for details.
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] $CHECKOUT/src/test/java/org/apache/commons/beanutils/DynaPropertySubclassCompatibilityTest.java:[44,24] isLegacyStream() in org.apache.commons.beanutils.DynaPropertySubclassCompatibilityTest.ExistingProperty cannot override isLegacyStream() in org.apache.commons.beanutils.DynaPropertySerialization
+  overridden method is final
+[INFO] 1 error
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  30.583 s
+[INFO] Finished at: 2026-10-30T23:51:35+09:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.16.0:testCompile (default-testCompile) on project commons-beanutils: Compilation failure
+[ERROR] $CHECKOUT/src/test/java/org/apache/commons/beanutils/DynaPropertySubclassCompatibilityTest.java:[44,24] isLegacyStream() in org.apache.commons.beanutils.DynaPropertySubclassCompatibilityTest.ExistingProperty cannot override isLegacyStream() in org.apache.commons.beanutils.DynaPropertySerialization
+[ERROR]   overridden method is final
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

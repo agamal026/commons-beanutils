@@ -1,0 +1,25 @@
+{
+  "base_head": "1d95c95c3045da8939db4c93ba2d13cf27ae241f",
+  "tree": "285a9ca59ab976121d2935722875f310d80756b6",
+  "patch_sha256": "40b5bbac26ff116f8695622fcd4be53d4ba052e8ecd1f0df80d1ab93bef629db",
+  "files": [
+    {
+      "path": "src/main/java/org/apache/commons/beanutils/DynaProperty.java",
+      "bytes": 12327,
+      "git_blob": "63f84235ee6df6d626d876594278f9d68408d7b6",
+      "sha256": "fa0fa20815bc547f7e474cf7bd2c0fc8d0d1a15ad01fba727ac52b54330b2432"
+    },
+    {
+      "path": "src/main/java/org/apache/commons/beanutils/DynaPropertySerialization.java",
+      "bytes": 1891,
+      "git_blob": "38a611534cff4e0d7d0223b95a6eb6b22ef42c16",
+      "sha256": "bfa6611259d872f270a1f94616fd090a9108cdc39abd06de9637beeb73274862"
+    },
+    {
+      "path": "src/test/java/org/apache/commons/beanutils/DynaPropertySubclassCompatibilityTest.java",
+      "bytes": 2539,
+      "git_blob": "6b4f02eb29857fa25c0520e33b678938aaa2e56d",
+      "sha256": "f3720edd7be38b1640f802f1002bcd4967a78b3c7c126233c4fd36fefc09d627"
+    }
+  ]
+}

@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="12.3.1">
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/BeanIntrospector.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/LazyDynaMap.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/IntrospectionContext.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/LazyDynaBean.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/WeakFastHashMap.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/PropertyUtilsBean.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/JDBCDynaClass.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/MutableDynaClass.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/ConstructorUtils.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/DefaultIntrospectionContext.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/DynaProperty.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/WrapDynaClass.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/DynaBean.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/ResultSetIterator.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/ContextClassLoaderLocal.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/LazyDynaList.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/BasicDynaClass.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/RowSetDynaClass.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/BeanPropertyValueChangeClosure.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/BeanIntrospectionData.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/DefaultBeanIntrospector.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/WrapDynaBean.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/package-info.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/FluentPropertyBeanIntrospector.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/BeanAccessLanguageException.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/BeanUtilsBean.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/BeanToPropertyValueTransformer.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/expression/Resolver.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/expression/package-info.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/expression/DefaultResolver.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/MethodUtils.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/ConvertingWrapDynaBean.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/DynaClass.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/BeanComparator.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/MappedPropertyDescriptor.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/ConvertUtilsBean.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/BaseDynaBeanMapDecorator.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/BeanPredicate.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/ConvertUtils.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/DynaPropertySerialization.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/ResultSetDynaClass.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/DynaBeanMapDecorator.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/BeanUtilsBean2.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/Converter.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/ConversionException.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/locale/LocaleBeanUtils.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/locale/LocaleConvertUtils.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/locale/LocaleBeanUtilsBean.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/locale/LocaleConvertUtilsBean.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/locale/package-info.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/locale/LocaleConverter.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/locale/BaseLocaleConverter.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/locale/converters/SqlDateLocaleConverter.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/locale/converters/SqlTimeLocaleConverter.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/locale/converters/StringLocaleConverter.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/locale/converters/DateLocaleConverter.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/locale/converters/LongLocaleConverter.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/locale/converters/package-info.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/locale/converters/DecimalLocaleConverter.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/locale/converters/ShortLocaleConverter.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/locale/converters/IntegerLocaleConverter.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/locale/converters/SqlTimestampLocaleConverter.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/locale/converters/FloatLocaleConverter.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/locale/converters/BigDecimalLocaleConverter.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/locale/converters/DoubleLocaleConverter.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/locale/converters/BigIntegerLocaleConverter.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/locale/converters/ByteLocaleConverter.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/NestedNullException.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/DynaBeanPropertyMapDecorator.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/BasicDynaBean.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/SuppressPropertiesBeanIntrospector.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/BeanPropertyValueEqualsPredicate.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/PropertyUtils.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/LazyDynaClass.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/BeanMap.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/ConvertUtilsBean2.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/converters/SqlDateConverter.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/converters/ByteArrayConverter.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/converters/ConverterFacade.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/converters/FileConverter.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/converters/ArrayConverter.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/converters/DoubleConverter.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/converters/CharacterArrayConverter.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/converters/ByteConverter.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/converters/StringArrayConverter.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/converters/AbstractArrayConverter.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/converters/IntegerConverter.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/converters/StringConverter.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/converters/NumberConverter.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/converters/ShortArrayConverter.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/converters/AbstractConverter.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/converters/package-info.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/converters/IntegerArrayConverter.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/converters/BigIntegerConverter.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/converters/FloatConverter.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/converters/DoubleArrayConverter.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/converters/BooleanConverter.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/converters/ClassConverter.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/converters/FloatArrayConverter.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/converters/ShortConverter.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/converters/BooleanArrayConverter.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/converters/CalendarConverter.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/converters/DateConverter.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/converters/LongArrayConverter.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/converters/SqlTimestampConverter.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/converters/SqlTimeConverter.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/converters/CharacterConverter.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/converters/DateTimeConverter.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/converters/LongConverter.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/converters/URLConverter.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/converters/BigDecimalConverter.java">
+</file>
+<file name="$CHECKOUT/src/main/java/org/apache/commons/beanutils/BeanUtils.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/BeanToPropertyValueTransformerTest.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/PropsFirstPropertyUtilsBean.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/BeanComparatorTest.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/BeanUtilCaches.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/TestBean.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/DynaBeanMapDecoratorTest.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/LazyDynaBeanTest.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/memoryleaktests/MemoryLeakTest.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/memoryleaktests/pojotests/CustomInteger.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/memoryleaktests/pojotests/SomeMappedPojo.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/memoryleaktests/pojotests/SomePojo.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/PrimitiveBean.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/Child.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/ThrowExceptionConverter.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/PropertyUtilsTest.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/LazyDynaListTest.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/BenchBean.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/A.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/MappedPropertyTestBean.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/FluentIntrospectionTestBean.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/BeanificationTest.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/MappedPropertyTest.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/LazyDynaClassTest.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/MappedPropertyChildInterface.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/TestEnum.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/BeanMapTest.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/expression/DefaultResolverTest.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/MappedPropertyTestInterface.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/DynaRowSetTest.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/AlphaBean.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/BetaBean.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/FluentPropertyBeanIntrospectorTest.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/ExtendMapBean.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/BeanWithInnerBean.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/WrapDynaBeanTest.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/SonOfAlphaBean.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/AbstractParent.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/BeanIntrospectionDataTest.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/WrapDynaClassTest.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/DynaPropertySerializationTest.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/TestBeanPublicSubclass.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/SuppressPropertiesBeanIntrospectorTest.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/BeanUtilsTest.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/LazyDynaMapTest.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/priv/PrivateIndirect.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/priv/PrivateBeanSubclass.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/priv/PackageBean.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/priv/PublicSubBean.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/priv/PrivateDirect.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/priv/PrivateBean.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/priv/PrivateBeanFactory.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/BeanUtilsBenchCase.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/JdbcDynaClassLocaleTest.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/locale/LocaleBeanificationTest.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/locale/LocaleConvertUtilsTest.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/locale/LocaleBeanUtilsTest.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/locale/LocaleConvertTestSuite.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/locale/converters/IntegerLocaleConverterTest.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/locale/converters/BaseLocaleConverterTest.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/locale/converters/BigDecimalLocaleConverterTest.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/locale/converters/FloatLocaleConverterTest.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/locale/converters/ShortLocaleConverterTest.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/locale/converters/DecimalLocaleConverterTest.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/locale/converters/DateLocaleConverterTest.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/locale/converters/LongLocaleConverterTest.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/locale/converters/DoubleLocaleConverterTest.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/locale/converters/ByteLocaleConverterTest.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/locale/converters/BigIntegerLocaleConverterTest.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/AbstractChild.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/BeanPropertyValueEqualsPredicateTest.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/IndexedTestBean.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/DynaPropertySerializationReadVersion1Test.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/DynaBeanUtilsTest.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/TestBeanPackageSubclass.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/DynaPropertyTest.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/DefaultIntrospectionContextTest.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/PropertyUtilsBenchCase.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/BeanPropertyValueChangeClosureTest.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/DynaPropertySubclassCompatibilityTest.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/BeanPredicateTest.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/DynaPropertyUtilsTest.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/NestedTestBean.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/BeanUtils2Test.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/BasicDynaBeanTest.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/TestResultSet.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/PassTestException.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/ConvertUtilsTest.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/converters/SqlTimestampConverterTest.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/converters/FileConverterTest.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/converters/CharacterConverterTest.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/converters/BigDecimalConverterTestCase.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/converters/ClassReloaderTest.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/converters/DateConverterTest.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/converters/FloatConverterTest.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/converters/StringConverterTest.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/converters/StringArrayConverterTest.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/converters/BooleanArrayConverterTestCase.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/converters/LongConverterTest.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/converters/IntegerConverterTest.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/converters/ShortConverterTest.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/converters/ClassConverterTest.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/converters/DoubleConverterTest.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/converters/BigIntegerConverterTestCase.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/converters/SqlTimeConverterTest.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/converters/ClassReloader.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/converters/ArrayConverterTestCase.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/converters/URLConverterTest.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/converters/NumberConverterTest.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/converters/CalendarConverterTestCase.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/converters/SqlDateConverterTest.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/converters/DateConverterTestBase.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/converters/ByteConverterTestCase.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/converters/BooleanConverterTestCase.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/converters/ConverterTestSuite.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/converters/MemoryTest.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/IndexedPropertyTest.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/bugs/Jira368Test.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/bugs/Jira493Test.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/bugs/Jira157Test.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/bugs/Jira18Test.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/bugs/Jira492Test.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/bugs/Jira454Test.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/bugs/Jira369Test.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/bugs/other/Jira18BeanFactory.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/bugs/other/Jira87BeanFactory.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/bugs/other/Jira61BeanFactory.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/bugs/other/Jira273BeanFactory.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/bugs/other/Jira492IndexedListsSupport.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/bugs/other/Jira298BeanFactory.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/bugs/Jira520Test.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/bugs/Jira541Test.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/bugs/Jira92Test.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/bugs/EnumDeclaringClassTest.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/bugs/Jira61Test.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/bugs/Jira458Test.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/bugs/Jira357Test.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/bugs/Jira339Test.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/bugs/Jira358Test.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/bugs/Jira465Test.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/bugs/Jira463Test.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/bugs/Jira87Test.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/bugs/Jira273Test.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/bugs/Jira349Test.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/bugs/Jira381Test.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/bugs/Jira422bTest.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/bugs/Jira359Test.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/bugs/Jira298Test.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/bugs/Jira456Test.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/bugs/Jira422Test.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/bugs/Jira411Test.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/bugs/Jira347Test.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/bugs/Jira345Test.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/TestResultSetMetaData.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/ConstructorUtilsTest.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/MappedPropertyChildBean.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/DynaResultSetTest.java">
+</file>
+<file name="$CHECKOUT/src/test/java/org/apache/commons/beanutils/MethodUtilsTest.java">
+</file>
+</checkstyle>
